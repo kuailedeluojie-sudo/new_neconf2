@@ -950,35 +950,35 @@ compat.h
 libnetconf.h
 /home/mo/share/netconf2_new/libnetconf2/src/libnetconf.h
 
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
+/opt/libyang/_install/include/libyang/dict.h
 stdint.h
 -
 
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
+/opt/libyang/_install/include/libyang/libyang.h
 stdio.h
 -
 tree_schema.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
+/opt/libyang/_install/include/libyang/tree_schema.h
 tree_data.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
+/opt/libyang/_install/include/libyang/tree_data.h
 xml.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+/opt/libyang/_install/include/libyang/xml.h
 dict.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
+/opt/libyang/_install/include/libyang/dict.h
 
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
+/opt/libyang/_install/include/libyang/tree_data.h
 stddef.h
 -
 stdint.h
 -
 libyang.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
+/opt/libyang/_install/include/libyang/libyang.h
 tree_schema.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
+/opt/libyang/_install/include/libyang/tree_schema.h
 xml.h
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+/opt/libyang/_install/include/libyang/xml.h
 
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
+/opt/libyang/_install/include/libyang/tree_schema.h
 limits.h
 -
 stddef.h
@@ -990,7 +990,7 @@ stdio.h
 sys/types.h
 -
 
-/home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+/opt/libyang/_install/include/libyang/xml.h
 sys/types.h
 -
 stdio.h

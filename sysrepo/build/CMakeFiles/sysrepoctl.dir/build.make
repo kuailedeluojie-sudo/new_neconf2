@@ -102,7 +102,7 @@ sysrepoctl: CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o
 sysrepoctl: CMakeFiles/compat.dir/compat/compat.c.o
 sysrepoctl: CMakeFiles/sysrepoctl.dir/build.make
 sysrepoctl: libsysrepo.so.5.5.8
-sysrepoctl: /home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+sysrepoctl: /opt/libyang/_install/lib/libyang.so.1.8.4
 sysrepoctl: CMakeFiles/sysrepoctl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable sysrepoctl"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sysrepoctl.dir/link.txt --verbose=$(VERBOSE)

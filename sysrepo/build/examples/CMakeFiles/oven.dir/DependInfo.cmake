@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
   "../src"
-  "/home/mo/share/netconf2_new/libyang/_install/include"
+  "/opt/libyang/_install/include"
   )
 
 # Targets to which this target links.

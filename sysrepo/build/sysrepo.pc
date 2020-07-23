@@ -1,4 +1,4 @@
-prefix=/home/mo/share/netconf2_new/sysrepo/_install
+prefix=/opt/sysrepo/_install
 includedir=${prefix}/include
 libdir=${prefix}/lib
 
@@ -10,4 +10,4 @@ Libs: -L${libdir} -lsysrepo
 Cflags: -I${includedir}
 
 SR_REPO_PATH=/home/mo/share/netconf2_new/sysrepo/build/repository
-SRPD_PLUGINS_PATH=/home/mo/share/netconf2_new/sysrepo/_install/lib/sysrepo/plugins
+SRPD_PLUGINS_PATH=/opt/sysrepo/_install/lib/sysrepo/plugins
