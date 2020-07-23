@@ -1,0 +1,13 @@
+prefix=/opt/sysrepo/_install
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: sysrepo
+Description: YANG-based system repository for all-around configuration management.
+Version: 1.4.66
+Requires.private: libyang
+Libs: -L${libdir} -lsysrepo
+Cflags: -I${includedir}
+
+SR_REPO_PATH=/home/mo/share/netconf2_new/sysrepo/build/repository
+SRPD_PLUGINS_PATH=/opt/sysrepo/_install/lib/sysrepo/plugins

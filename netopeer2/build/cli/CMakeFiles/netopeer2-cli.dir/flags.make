@@ -6,5 +6,5 @@ C_FLAGS =  -DHAVE_MKSTEMPS -g -O0 -DDEBUG   -Wall -Wextra -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mo/share/netconf2_new/netopeer2/build -I/home/mo/share/netconf2/lib/libssh/_install/include -I/home/mo/share/netconf2/lib/libnetconf2/_install/include -I/home/mo/share/netconf2/lib/openssl/debug/output/include -I/opt/libyang/_install/include -I/opt/libnetconf2/_install/include -I/opt/sysrepo/_install/include -I/home/mo/share/netconf2_new/netopeer2/build/cli 
+C_INCLUDES = -I/home/mo/share/netconf2_new/netopeer2/build -I/home/mo/share/netconf2/lib/libssh/_install/include -I/home/mo/share/netconf2/lib/libnetconf2/_install/include -I/home/mo/share/netconf2/lib/openssl/debug/output/include -I/opt/libyang/include -I/opt/libnetconf2/include -I/opt/sysrepo/include -I/home/mo/share/netconf2_new/netopeer2/build/cli 
 

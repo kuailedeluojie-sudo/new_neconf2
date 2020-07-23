@@ -32,7 +32,7 @@
 #define SRPD_WORK_DIR "/"
 
 /** sysrepo-plugind plugins directory */
-#define SRPD_PLUGINS_PATH "/opt/sysrepo/_install/lib/sysrepo/plugins"
+#define SRPD_PLUGINS_PATH "/opt/sysrepo/lib/sysrepo/plugins"
 
 /** whether mkstemps is found on the system */
 #define SR_HAVE_MKSTEMPS

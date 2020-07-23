@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/opt/netopeer2/_install")
+  set(CMAKE_INSTALL_PREFIX "/opt/netopeer2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,14 +39,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/opt/netopeer2/_install/share/yang/modules/netopeer2/")
+   "/opt/netopeer2/share/yang/modules/netopeer2/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/opt/netopeer2/_install/share/yang/modules/netopeer2" TYPE DIRECTORY FILES "/home/mo/share/netconf2_new/netopeer2/modules/")
+file(INSTALL DESTINATION "/opt/netopeer2/share/yang/modules/netopeer2" TYPE DIRECTORY FILES "/home/mo/share/netconf2_new/netopeer2/modules/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server"
-         OLD_RPATH "/home/mo/share/netconf2/lib/libssh/_install/lib:/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libyang/_install/lib:/opt/libnetconf2/_install/lib:/opt/sysrepo/_install/lib:"
+         OLD_RPATH "/home/mo/share/netconf2/lib/libssh/_install/lib:/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libyang/lib:/opt/libnetconf2/lib:/opt/sysrepo/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server")
@@ -72,7 +72,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
         message(STATUS "Installing missing sysrepo modules...")
-        set(ENV{NP2_MODULE_DIR} /opt/netopeer2/_install/share/yang/modules/netopeer2)
+        set(ENV{NP2_MODULE_DIR} /opt/netopeer2/share/yang/modules/netopeer2)
         set(ENV{NP2_MODULE_PERMS} 600)
         set(ENV{NP2_MODULE_OWNER} root)
         set(ENV{NP2_MODULE_GROUP} root)

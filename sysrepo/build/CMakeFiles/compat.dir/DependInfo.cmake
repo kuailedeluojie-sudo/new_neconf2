@@ -12,7 +12,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
   "../src"
-  "/opt/libyang/_install/include"
+  "/opt/libyang/include"
   )
 
 # Targets to which this target links.

@@ -143,7 +143,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/opt/sysrepo/_install
+CMAKE_INSTALL_PREFIX:PATH=/opt/sysrepo
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -318,10 +318,10 @@ LIBYANG_CPP_INCLUDE_DIR:PATH=LIBYANG_CPP_INCLUDE_DIR-NOTFOUND
 LIBYANG_CPP_LIBRARY:FILEPATH=LIBYANG_CPP_LIBRARY-NOTFOUND
 
 //No help, variable specified on the command line.
-LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/opt/libyang/_install/include
+LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/opt/libyang/include
 
 //No help, variable specified on the command line.
-LIBYANG_LIBRARIES:UNINITIALIZED=/opt/libyang/_install/lib/libyang.so.1.8.4
+LIBYANG_LIBRARIES:UNINITIALIZED=/opt/libyang/lib/libyang.so.1.8.4
 
 //Notification path, contains stored notifications.
 NOTIFICATION_PATH:PATH=
@@ -336,7 +336,7 @@ OPENSSL_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/openssl/debug/output
 OPENSSL_ROOT_DIR:UNINITIALIZED=/home/mo/share/netconf2/lib/openssl/debug/output/lib/
 
 //Sysrepo plugin daemon plugins path.
-PLUGINS_PATH:PATH=/opt/sysrepo/_install/lib/sysrepo/plugins
+PLUGINS_PATH:PATH=/opt/sysrepo/lib/sysrepo/plugins
 
 //Repository path, contains configuration schema and data files.
 REPO_PATH:PATH=/home/mo/share/netconf2_new/sysrepo/build/repository
@@ -361,7 +361,7 @@ oven_LIB_DEPENDS:STATIC=general;sysrepo;
 sysrepo_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/sysrepo/build
 
 //Dependencies for the target
-sysrepo_LIB_DEPENDS:STATIC=general;/opt/libyang/_install/lib/libyang.so.1.8.4;
+sysrepo_LIB_DEPENDS:STATIC=general;/opt/libyang/lib/libyang.so.1.8.4;
 
 //Value Computed by CMake
 sysrepo_SOURCE_DIR:STATIC=/home/mo/share/netconf2_new/sysrepo
@@ -591,5 +591,5 @@ SR_HAVE_PTHREAD_MUTEX_TIMEDLOCK:INTERNAL=1
 //Have include stdatomic.h
 SR_HAVE_STDATOMIC:INTERNAL=
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/sysrepo/_install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/sysrepo
 

@@ -3,11 +3,11 @@
 
 CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: ../src/sysrepo.h
 CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: ../src/executables/sysrepo-plugind.c
-CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: bin_common.h
 CMakeFiles/sysrepo-plugind.dir/src/executables/sysrepo-plugind.c.o: compat.h
 

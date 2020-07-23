@@ -3,11 +3,11 @@
 
 CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: ../src/sysrepo.h
 CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: ../src/executables/sysrepoctl.c
-CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: bin_common.h
 CMakeFiles/sysrepoctl.dir/src/executables/sysrepoctl.c.o: compat.h
 

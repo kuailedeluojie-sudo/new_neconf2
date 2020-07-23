@@ -43,12 +43,12 @@ CMakeFiles/serverobj.dir/src/common.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/common.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/common.c.o: ../src/netconf_acm.h
 CMakeFiles/serverobj.dir/src/common.c.o: ../src/netconf_monitoring.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/common.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/common.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/common.c.o: compat.h
 CMakeFiles/serverobj.dir/src/common.c.o: config.h
 
@@ -92,12 +92,12 @@ CMakeFiles/serverobj.dir/src/log.c.o: /home/mo/share/netconf2/lib/openssl/debug/
 CMakeFiles/serverobj.dir/src/log.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/log.c.o: ../src/log.c
 CMakeFiles/serverobj.dir/src/log.c.o: ../src/log.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/log.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/log.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/log.c.o: compat.h
 CMakeFiles/serverobj.dir/src/log.c.o: config.h
 
@@ -142,12 +142,12 @@ CMakeFiles/serverobj.dir/src/netconf.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf.c.o: ../src/netconf.c
 CMakeFiles/serverobj.dir/src/netconf.c.o: ../src/netconf_acm.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf.c.o: config.h
 
@@ -192,12 +192,12 @@ CMakeFiles/serverobj.dir/src/netconf_acm.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_acm.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_acm.c.o: ../src/netconf_acm.c
 CMakeFiles/serverobj.dir/src/netconf_acm.c.o: ../src/netconf_acm.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_acm.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_acm.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_acm.c.o: config.h
 
@@ -242,12 +242,12 @@ CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: ../src/netconf_monitoring.c
 CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: ../src/netconf_monitoring.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o: config.h
 
@@ -292,12 +292,12 @@ CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: ../src/netconf_acm.h
 CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: ../src/netconf_nmda.c
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_nmda.c.o: config.h
 
@@ -341,12 +341,12 @@ CMakeFiles/serverobj.dir/src/netconf_server.c.o: /home/mo/share/netconf2/lib/ope
 CMakeFiles/serverobj.dir/src/netconf_server.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_server.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_server.c.o: ../src/netconf_server.c
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_server.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_server.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_server.c.o: config.h
 
@@ -391,12 +391,12 @@ CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: ../src/netconf_server.h
 CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: ../src/netconf_server_ssh.c
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o: config.h
 
@@ -441,12 +441,12 @@ CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: ../src/common.h
 CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: ../src/log.h
 CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: ../src/netconf_server.h
 CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: ../src/netconf_server_tls.c
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/_install/include/libyang/xml.h
-CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/sysrepo/_install/include/sysrepo.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/libyang/include/libyang/xml.h
+CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: /opt/sysrepo/include/sysrepo.h
 CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: compat.h
 CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o: config.h
 

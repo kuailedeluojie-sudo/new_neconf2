@@ -54,11 +54,11 @@ CMakeFiles/netconf2.dir/src/io.c.o: ../src/messages_server.h
 CMakeFiles/netconf2.dir/src/io.c.o: ../src/netconf.h
 CMakeFiles/netconf2.dir/src/io.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/io.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/io.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/io.c.o: compat.h
 CMakeFiles/netconf2.dir/src/io.c.o: src/config.h
 
@@ -114,11 +114,11 @@ CMakeFiles/netconf2.dir/src/log.c.o: ../src/messages_server.h
 CMakeFiles/netconf2.dir/src/log.c.o: ../src/netconf.h
 CMakeFiles/netconf2.dir/src/log.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/log.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/log.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/log.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/messages_client.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -173,11 +173,11 @@ CMakeFiles/netconf2.dir/src/messages_client.c.o: ../src/messages_server.h
 CMakeFiles/netconf2.dir/src/messages_client.c.o: ../src/netconf.h
 CMakeFiles/netconf2.dir/src/messages_client.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/messages_client.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/messages_client.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/messages_client.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/messages_server.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -233,11 +233,11 @@ CMakeFiles/netconf2.dir/src/messages_server.c.o: ../src/netconf.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o: ../src/session_server.h
-CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/messages_server.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o: compat.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o: src/config.h
 
@@ -296,11 +296,11 @@ CMakeFiles/netconf2.dir/src/session.c.o: ../src/session.c
 CMakeFiles/netconf2.dir/src/session.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/session.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/session.c.o: ../src/session_server.h
-CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session.c.o: compat.h
 CMakeFiles/netconf2.dir/src/session.c.o: src/config.h
 
@@ -359,11 +359,11 @@ CMakeFiles/netconf2.dir/src/session_client.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/session_client.c.o: ../src/session_client.c
 CMakeFiles/netconf2.dir/src/session_client.c.o: ../src/session_client.h
 CMakeFiles/netconf2.dir/src/session_client.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_client.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_client.c.o: compat.h
 CMakeFiles/netconf2.dir/src/session_client.c.o: src/config.h
 
@@ -421,11 +421,11 @@ CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: ../src/session_client.h
 CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: ../src/session_client_ch.h
 CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: ../src/session_client_ssh.c
 CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_client_ssh.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -483,11 +483,11 @@ CMakeFiles/netconf2.dir/src/session_client_tls.c.o: ../src/session_client.h
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o: ../src/session_client_ch.h
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o: ../src/session_client_tls.c
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o: ../src/session_p.h
-CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_client_tls.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/session_server.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -544,11 +544,11 @@ CMakeFiles/netconf2.dir/src/session_server.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/session_server.c.o: ../src/session_server.c
 CMakeFiles/netconf2.dir/src/session_server.c.o: ../src/session_server.h
 CMakeFiles/netconf2.dir/src/session_server.c.o: ../src/session_server_ch.h
-CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_server.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_server.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -605,11 +605,11 @@ CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: ../src/session_server.h
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: ../src/session_server_ch.h
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: ../src/session_server_ssh.c
-CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o: src/config.h
 
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -669,11 +669,11 @@ CMakeFiles/netconf2.dir/src/session_server_tls.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: ../src/session_server.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: ../src/session_server_ch.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: ../src/session_server_tls.c
-CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/session_server_tls.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: compat.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o: src/config.h
 
@@ -729,11 +729,11 @@ CMakeFiles/netconf2.dir/src/time.c.o: ../src/netconf.h
 CMakeFiles/netconf2.dir/src/time.c.o: ../src/session.h
 CMakeFiles/netconf2.dir/src/time.c.o: ../src/session_p.h
 CMakeFiles/netconf2.dir/src/time.c.o: ../src/time.c
-CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/_install/include/libyang/dict.h
-CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/_install/include/libyang/libyang.h
-CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/_install/include/libyang/xml.h
+CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/include/libyang/dict.h
+CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/include/libyang/libyang.h
+CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/include/libyang/tree_data.h
+CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/include/libyang/tree_schema.h
+CMakeFiles/netconf2.dir/src/time.c.o: /opt/libyang/include/libyang/xml.h
 CMakeFiles/netconf2.dir/src/time.c.o: compat.h
 CMakeFiles/netconf2.dir/src/time.c.o: src/config.h
 

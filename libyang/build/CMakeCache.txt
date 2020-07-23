@@ -114,7 +114,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/opt/libyang/_install
+CMAKE_INSTALL_PREFIX:PATH=/opt/libyang
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -319,7 +319,7 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Directory with libyang plugins (extensions and user types), should
 // include major SO version
-PLUGINS_DIR:STRING=/opt/libyang/_install/lib/libyang1
+PLUGINS_DIR:STRING=/opt/libyang/lib/libyang1
 
 //Path to a program.
 RPM_BUILDER:FILEPATH=RPM_BUILDER-NOTFOUND
@@ -572,5 +572,5 @@ IS_BIG_ENDIAN:INTERNAL=0
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/libyang/_install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/libyang
 

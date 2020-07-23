@@ -10,11 +10,11 @@ CMakeFiles/srobj.dir/src/common.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/common.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/edit_diff.c.o
@@ -26,11 +26,11 @@ CMakeFiles/srobj.dir/src/edit_diff.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/edit_diff.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/log.c.o
@@ -42,11 +42,11 @@ CMakeFiles/srobj.dir/src/log.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/log.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/lyd_mods.c.o
@@ -67,11 +67,11 @@ CMakeFiles/srobj.dir/src/lyd_mods.c.o
  /home/mo/share/netconf2_new/sysrepo/modules/sysrepo_monitoring_yang.h
  /home/mo/share/netconf2_new/sysrepo/modules/sysrepo_yang.h
  /home/mo/share/netconf2_new/sysrepo/src/lyd_mods.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/modinfo.c.o
@@ -83,11 +83,11 @@ CMakeFiles/srobj.dir/src/modinfo.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/modinfo.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/replay.c.o
@@ -99,11 +99,11 @@ CMakeFiles/srobj.dir/src/replay.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/replay.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/shm_main.c.o
@@ -115,11 +115,11 @@ CMakeFiles/srobj.dir/src/shm_main.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/shm_main.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/shm_mod.c.o
@@ -131,11 +131,11 @@ CMakeFiles/srobj.dir/src/shm_mod.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/shm_mod.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/shm_sub.c.o
@@ -147,11 +147,11 @@ CMakeFiles/srobj.dir/src/shm_sub.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/shm_sub.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/sysrepo.c.o
@@ -163,11 +163,11 @@ CMakeFiles/srobj.dir/src/sysrepo.c.o
  ../src/shm.h
  ../src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/sysrepo.c
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/utils/values.c.o
@@ -181,11 +181,11 @@ CMakeFiles/srobj.dir/src/utils/values.c.o
  /home/mo/share/netconf2_new/sysrepo/src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/utils/values.c
  /home/mo/share/netconf2_new/sysrepo/src/utils/values.h
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h
 CMakeFiles/srobj.dir/src/utils/xpath.c.o
@@ -199,10 +199,10 @@ CMakeFiles/srobj.dir/src/utils/xpath.c.o
  /home/mo/share/netconf2_new/sysrepo/src/sysrepo.h
  /home/mo/share/netconf2_new/sysrepo/src/utils/xpath.c
  /home/mo/share/netconf2_new/sysrepo/src/utils/xpath.h
- /opt/libyang/_install/include/libyang/dict.h
- /opt/libyang/_install/include/libyang/libyang.h
- /opt/libyang/_install/include/libyang/tree_data.h
- /opt/libyang/_install/include/libyang/tree_schema.h
- /opt/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  common.h
  compat.h

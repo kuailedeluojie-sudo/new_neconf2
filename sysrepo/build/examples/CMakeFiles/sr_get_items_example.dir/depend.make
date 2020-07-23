@@ -3,9 +3,9 @@
 
 examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: ../src/sysrepo.h
 examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: ../examples/sr_get_items_example.c
-examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/_install/include/libyang/dict.h
-examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/_install/include/libyang/libyang.h
-examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/_install/include/libyang/tree_data.h
-examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/_install/include/libyang/tree_schema.h
-examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/_install/include/libyang/xml.h
+examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/include/libyang/dict.h
+examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/include/libyang/libyang.h
+examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/include/libyang/tree_data.h
+examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/include/libyang/tree_schema.h
+examples/CMakeFiles/sr_get_items_example.dir/sr_get_items_example.c.o: /opt/libyang/include/libyang/xml.h
 
