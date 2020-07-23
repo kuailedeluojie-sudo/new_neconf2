@@ -1,25 +1,25 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3403d/fast && /usr/bin/make  -f CMakeFiles/cmTC_3403d.dir/build.make CMakeFiles/cmTC_3403d.dir/build
+Run Build Command(s):/usr/bin/make cmTC_17e88/fast && /usr/bin/make  -f CMakeFiles/cmTC_17e88.dir/build.make CMakeFiles/cmTC_17e88.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3403d.dir/src.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3403d.dir/src.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3403d
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3403d.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_3403d.dir/src.c.o  -o cmTC_3403d 
-CMakeFiles/cmTC_3403d.dir/src.c.o: In function `main':
+Building C object CMakeFiles/cmTC_17e88.dir/src.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_17e88.dir/src.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_17e88
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17e88.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_17e88.dir/src.c.o  -o cmTC_17e88 
+CMakeFiles/cmTC_17e88.dir/src.c.o: In function `main':
 src.c:(.text+0x44): undefined reference to `pthread_create'
 src.c:(.text+0x50): undefined reference to `pthread_detach'
 src.c:(.text+0x5c): undefined reference to `pthread_cancel'
 src.c:(.text+0x6c): undefined reference to `pthread_join'
 src.c:(.text+0x7c): undefined reference to `pthread_atfork'
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_3403d.dir/build.make:106: recipe for target 'cmTC_3403d' failed
-make[1]: *** [cmTC_3403d] Error 1
+CMakeFiles/cmTC_17e88.dir/build.make:106: recipe for target 'cmTC_17e88' failed
+make[1]: *** [cmTC_17e88] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_3403d/fast' failed
-make: *** [cmTC_3403d/fast] Error 2
+Makefile:141: recipe for target 'cmTC_17e88/fast' failed
+make: *** [cmTC_17e88/fast] Error 2
 
 
 Source file was:
@@ -46,49 +46,49 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_76bbf/fast && /usr/bin/make  -f CMakeFiles/cmTC_76bbf.dir/build.make CMakeFiles/cmTC_76bbf.dir/build
+Run Build Command(s):/usr/bin/make cmTC_4a9f3/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a9f3.dir/build.make CMakeFiles/cmTC_4a9f3.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_76bbf.dir/CheckFunctionExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_76bbf.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
-Linking C executable cmTC_76bbf
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76bbf.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_76bbf.dir/CheckFunctionExists.c.o  -o cmTC_76bbf  -lpthreads 
+Building C object CMakeFiles/cmTC_4a9f3.dir/CheckFunctionExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4a9f3.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4a9f3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a9f3.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4a9f3.dir/CheckFunctionExists.c.o  -o cmTC_4a9f3  -lpthreads 
 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/ld: cannot find -lpthreads
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_76bbf.dir/build.make:106: recipe for target 'cmTC_76bbf' failed
-make[1]: *** [cmTC_76bbf] Error 1
+CMakeFiles/cmTC_4a9f3.dir/build.make:106: recipe for target 'cmTC_4a9f3' failed
+make[1]: *** [cmTC_4a9f3] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_76bbf/fast' failed
-make: *** [cmTC_76bbf/fast] Error 2
+Makefile:141: recipe for target 'cmTC_4a9f3/fast' failed
+make: *** [cmTC_4a9f3/fast] Error 2
 
 
 
 Determining if the include file stdatomic.h exists failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6824c/fast && /usr/bin/make  -f CMakeFiles/cmTC_6824c.dir/build.make CMakeFiles/cmTC_6824c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f3934/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3934.dir/build.make CMakeFiles/cmTC_f3934.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6824c.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1   -o CMakeFiles/cmTC_6824c.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_f3934.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1   -o CMakeFiles/cmTC_f3934.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: error: stdatomic.h: No such file or directory
-CMakeFiles/cmTC_6824c.dir/build.make:85: recipe for target 'CMakeFiles/cmTC_6824c.dir/CheckIncludeFile.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_6824c.dir/CheckIncludeFile.c.o] Error 1
+CMakeFiles/cmTC_f3934.dir/build.make:85: recipe for target 'CMakeFiles/cmTC_f3934.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f3934.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_6824c/fast' failed
-make: *** [cmTC_6824c/fast] Error 2
+Makefile:141: recipe for target 'cmTC_f3934/fast' failed
+make: *** [cmTC_f3934/fast] Error 2
 
 
 
 Determining if the include file shadow.h exists failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b234e/fast && /usr/bin/make  -f CMakeFiles/cmTC_b234e.dir/build.make CMakeFiles/cmTC_b234e.dir/build
+Run Build Command(s):/usr/bin/make cmTC_91b4a/fast && /usr/bin/make  -f CMakeFiles/cmTC_91b4a.dir/build.make CMakeFiles/cmTC_91b4a.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b234e.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DNC_ENABLED_TLS -DNC_ENABLED_SSH    -o CMakeFiles/cmTC_b234e.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_b234e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b234e.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DNC_ENABLED_TLS -DNC_ENABLED_SSH     -rdynamic CMakeFiles/cmTC_b234e.dir/CheckIncludeFile.c.o  -o cmTC_b234e  -Wl,-rpath,/home/mo/share/netconf2/lib/libssh/_install/lib -lpthread /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1 -lcrypt 
+Building C object CMakeFiles/cmTC_91b4a.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DNC_ENABLED_TLS -DNC_ENABLED_SSH    -o CMakeFiles/cmTC_91b4a.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_91b4a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91b4a.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DNC_ENABLED_TLS -DNC_ENABLED_SSH     -rdynamic CMakeFiles/cmTC_91b4a.dir/CheckIncludeFile.c.o  -o cmTC_91b4a  -Wl,-rpath,/home/mo/share/netconf2/lib/libssh/_install/lib -lpthread /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1 -lcrypt 
 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/ld: warning: libcrypto.so.1.1, needed by /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1, not found (try using -rpath or -rpath-link)
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_aes_192_cbc@OPENSSL_1_1_0'
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_PKEY_set1_DSA@OPENSSL_1_1_0'
@@ -240,24 +240,24 @@ Linking C executable cmTC_b234e
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EC_KEY_set_private_key@OPENSSL_1_1_0'
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_PKEY_get1_DSA@OPENSSL_1_1_0'
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_b234e.dir/build.make:107: recipe for target 'cmTC_b234e' failed
-make[1]: *** [cmTC_b234e] Error 1
+CMakeFiles/cmTC_91b4a.dir/build.make:107: recipe for target 'cmTC_91b4a' failed
+make[1]: *** [cmTC_91b4a] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_b234e/fast' failed
-make: *** [cmTC_b234e/fast] Error 2
+Makefile:141: recipe for target 'cmTC_91b4a/fast' failed
+make: *** [cmTC_91b4a/fast] Error 2
 
 
 
 Determining if the include file crypt.h exists failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4fc7b/fast && /usr/bin/make  -f CMakeFiles/cmTC_4fc7b.dir/build.make CMakeFiles/cmTC_4fc7b.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c735e/fast && /usr/bin/make  -f CMakeFiles/cmTC_c735e.dir/build.make CMakeFiles/cmTC_c735e.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4fc7b.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DNC_ENABLED_TLS -DNC_ENABLED_SSH    -o CMakeFiles/cmTC_4fc7b.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_4fc7b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fc7b.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DNC_ENABLED_TLS -DNC_ENABLED_SSH     -rdynamic CMakeFiles/cmTC_4fc7b.dir/CheckIncludeFile.c.o  -o cmTC_4fc7b  -Wl,-rpath,/home/mo/share/netconf2/lib/libssh/_install/lib -lpthread /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1 -lcrypt 
+Building C object CMakeFiles/cmTC_c735e.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DNC_ENABLED_TLS -DNC_ENABLED_SSH    -o CMakeFiles/cmTC_c735e.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c735e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c735e.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DNC_ENABLED_TLS -DNC_ENABLED_SSH     -rdynamic CMakeFiles/cmTC_c735e.dir/CheckIncludeFile.c.o  -o cmTC_c735e  -Wl,-rpath,/home/mo/share/netconf2/lib/libssh/_install/lib -lpthread /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1 -lcrypt 
 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/ld: warning: libcrypto.so.1.1, needed by /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1, not found (try using -rpath or -rpath-link)
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_aes_192_cbc@OPENSSL_1_1_0'
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_PKEY_set1_DSA@OPENSSL_1_1_0'
@@ -409,11 +409,11 @@ Linking C executable cmTC_4fc7b
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EC_KEY_set_private_key@OPENSSL_1_1_0'
 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1: undefined reference to `EVP_PKEY_get1_DSA@OPENSSL_1_1_0'
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_4fc7b.dir/build.make:107: recipe for target 'cmTC_4fc7b' failed
-make[1]: *** [cmTC_4fc7b] Error 1
+CMakeFiles/cmTC_c735e.dir/build.make:107: recipe for target 'cmTC_c735e' failed
+make[1]: *** [cmTC_c735e] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_4fc7b/fast' failed
-make: *** [cmTC_4fc7b/fast] Error 2
+Makefile:141: recipe for target 'cmTC_c735e/fast' failed
+make: *** [cmTC_c735e/fast] Error 2
 
 
 
