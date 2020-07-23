@@ -1,0 +1,42 @@
+Source: sysrepo
+Maintainer: CESNET <mvasko@cesnet.cz>
+Priority: extra
+Standards-Version: 3.8.2
+Build-Depends: debhelper (>= 9), gcc
+Homepage: https://github.com/sysrepo/sysrepo
+
+Package: sysrepo
+Depends: libyang (>=1.0.165), ${shlibs:Depends}
+Section: libs
+Architecture: any
+Description: YANG-based system repository for all-around configuration management.
+
+Package: sysrepo-dev
+Depends: libyang-dev (>=1.0.165), sysrepo (=1.4.66)
+Section: libdevel
+Architecture: any
+Description: Sysrepo library headers for C.
+
+Package: sysrepo-dbg
+Depends: sysrepo (=1.4.66)
+Section: debug
+Architecture: any
+Description: Sysrepo library debug symbols.
+
+Package: sysrepo-cpp
+Depends: libyang-cpp (>=1.0.165), sysrepo (=1.4.66)
+Section: libs
+Architecture: any
+Description: Sysrepo library bindings in C++ language.
+
+Package: sysrepo-cpp-dev
+Depends: libyang-cpp-dev (>=1.0.165), sysrepo-cpp (=1.4.66)
+Section: libdevel
+Architecture: any
+Description: Headers of Sysrepo library bindings in C++ language.
+
+Package: sysrepo-cpp-dbg
+Depends: sysrepo-cpp (=1.4.66)
+Section: debug
+Architecture: any
+Description: Sysrepo library C++ bindings debug symbols.

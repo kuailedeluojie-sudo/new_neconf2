@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_strip:
+	dh_strip -psysrepo  --dbg-package=sysrepo-dbg
+	dh_strip -psysrepo-cpp --dbg-package=sysrepo-cpp-dbg
+#	dh_strip -ppython3-sysrepo --dbg-package=python3-sysrepo-dbg
+
+override_dh_auto_configure:
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE="Package" -DGEN_LANGUAGE_BINDINGS=ON -DGEN_PYTHON_BINDINGS=OFF .
+
+override_dh_auto_test:
+	SYSREPO_REPOSITORY_PATH=$PWD ctest --output-on-failure

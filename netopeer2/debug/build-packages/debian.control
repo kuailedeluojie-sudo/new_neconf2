@@ -1,0 +1,18 @@
+Source: netopeer2
+Maintainer: CESNET <mvasko@cesnet.cz>
+Priority: extra
+Standards-Version: 3.8.2
+Build-Depends: debhelper (>= 9), gcc
+Homepage: https://github.com/cesnet/netopeer2
+
+Package: netopeer2
+Depends: libyang (>= 1.0), sysrepo (>= 1.4.57), libnetconf2 (>= 1.1.23), libssh-4 (>= 0.7.1), openssl, ${shlibs:Depends}
+Section: libs
+Architecture: any
+Description: NETCONF tools suite including a server and command-line client
+
+Package: netopeer2-dbg
+Depends: netopeer2 (=1.1.34)
+Section: debug
+Architecture: any
+Description: Debug symbols for the server and client.
