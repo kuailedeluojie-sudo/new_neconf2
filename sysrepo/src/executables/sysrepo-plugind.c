@@ -333,11 +333,12 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
 int
 main(int argc, char** argv)
 {
-    struct srpd_plugin_s *plugins = NULL;
-    sr_conn_ctx_t *conn = NULL;
-    sr_session_ctx_t *sess = NULL;
-    sr_log_level_t log_level = SR_LL_ERR;
+    struct srpd_plugin_s *plugins = NULL; //插件结构
+    sr_conn_ctx_t *conn = NULL;          //sysrepo连接的上下文，该结构定义于common.h.in中
+    sr_session_ctx_t *sess = NULL;       //sysrepo回话的上下文，该结构定义于conmon.h.in中
+    sr_log_level_t log_level = SR_LL_ERR;  //默认的log等级，默认是ERR
     int plugin_count = 0, i, r, rc = EXIT_FAILURE, opt, debug = 0;
+    //命令行支持的参数
     struct option options[] = {
         {"help",      no_argument,       NULL, 'h'},
         {"version",   no_argument,       NULL, 'V'},
@@ -346,6 +347,8 @@ main(int argc, char** argv)
         {NULL,        0,                 NULL, 0},
     };
 
+    //整个while循环是解析命令的参数，例如，在调试时，输入"sysrepo-plugind -d -v 4"
+    //为debug模式下的log级别DBG级，将打印全部的调试信息
     /* process options */
     opterr = 0;
     while ((opt = getopt_long(argc, argv, "hVv:d", options, NULL)) != -1) {
@@ -393,6 +396,7 @@ main(int argc, char** argv)
     }
 
     /* load plugins */
+    //加载所有的pluginl，这是整个main函数的第一个核心点，关系用户开发的plugin是否正确加载
     if (load_plugins(&plugins, &plugin_count)) {
         goto cleanup;
     }
