@@ -161,8 +161,8 @@ netopeer2-cli: cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o
 netopeer2-cli: cli/CMakeFiles/netopeer2-cli.dir/linenoise/linenoise.c.o
 netopeer2-cli: CMakeFiles/compat.dir/compat/compat.c.o
 netopeer2-cli: cli/CMakeFiles/netopeer2-cli.dir/build.make
-netopeer2-cli: /opt/libyang/lib/libyang.so.1.8.4
-netopeer2-cli: /opt/libnetconf2/lib/libnetconf2.so.1.3.5
+netopeer2-cli: /home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+netopeer2-cli: /home/mo/share/netconf2_new/libnetconf2/_install/lib/libnetconf2.so.1.3.5
 netopeer2-cli: /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
 netopeer2-cli: /home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so.1.1
 netopeer2-cli: cli/CMakeFiles/netopeer2-cli.dir/link.txt

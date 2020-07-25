@@ -38,6 +38,11 @@ CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openss
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/symhacks.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509_vfy.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/common.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/log.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/main.c
@@ -48,12 +53,7 @@ CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_nmda.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server_ssh.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server_tls.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/dict.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/libyang.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/tree_data.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/tree_schema.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/xml.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/sysrepo/include/sysrepo.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2_new/sysrepo/_install/include/sysrepo.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: compat.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: config.h
 

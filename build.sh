@@ -7,10 +7,11 @@ cd ../libnetconf2
 cd ../netopeer2
 ./build.sh
 cd ..
-rm bin -rf
+rm ./bin -rf
 mkdir bin
-rm lib -rf
+rm ./lib -rf
 mkdir lib
+
 cp  */*/bin/* ./bin/
 cp  */*/lib/* ./lib/
 

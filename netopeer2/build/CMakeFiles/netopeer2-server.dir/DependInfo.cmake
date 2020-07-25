@@ -14,9 +14,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/mo/share/netconf2/lib/libssh/_install/include"
   "/home/mo/share/netconf2/lib/libnetconf2/_install/include"
   "/home/mo/share/netconf2/lib/openssl/debug/output/include"
-  "/opt/libyang/include"
-  "/opt/libnetconf2/include"
-  "/opt/sysrepo/include"
+  "/home/mo/share/netconf2_new/libyang/_install/include"
+  "/home/mo/share/netconf2_new/libnetconf2/_install/include"
+  "/home/mo/share/netconf2_new/sysrepo/_install/include"
   )
 
 # Targets to which this target links.

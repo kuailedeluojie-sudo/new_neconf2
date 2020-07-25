@@ -100,7 +100,7 @@ notif_subscribe_example_EXTERNAL_OBJECTS =
 examples/notif_subscribe_example: examples/CMakeFiles/notif_subscribe_example.dir/notif_subscribe_example.c.o
 examples/notif_subscribe_example: examples/CMakeFiles/notif_subscribe_example.dir/build.make
 examples/notif_subscribe_example: libsysrepo.so.5.5.8
-examples/notif_subscribe_example: /opt/libyang/lib/libyang.so.1.8.4
+examples/notif_subscribe_example: /home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
 examples/notif_subscribe_example: examples/CMakeFiles/notif_subscribe_example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable notif_subscribe_example"
 	cd /home/mo/share/netconf2_new/sysrepo/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/notif_subscribe_example.dir/link.txt --verbose=$(VERBOSE)

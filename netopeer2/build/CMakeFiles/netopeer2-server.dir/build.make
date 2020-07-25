@@ -121,9 +121,9 @@ netopeer2-server: CMakeFiles/compat.dir/compat/compat.c.o
 netopeer2-server: CMakeFiles/netopeer2-server.dir/build.make
 netopeer2-server: /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
 netopeer2-server: /home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so.1.1
-netopeer2-server: /opt/libyang/lib/libyang.so.1.8.4
-netopeer2-server: /opt/libnetconf2/lib/libnetconf2.so.1.3.5
-netopeer2-server: /opt/sysrepo/lib/libsysrepo.so.5.5.8
+netopeer2-server: /home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+netopeer2-server: /home/mo/share/netconf2_new/libnetconf2/_install/lib/libnetconf2.so.1.3.5
+netopeer2-server: /home/mo/share/netconf2_new/sysrepo/_install/lib/libsysrepo.so.5.5.8
 netopeer2-server: CMakeFiles/netopeer2-server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable netopeer2-server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/netopeer2-server.dir/link.txt --verbose=$(VERBOSE)

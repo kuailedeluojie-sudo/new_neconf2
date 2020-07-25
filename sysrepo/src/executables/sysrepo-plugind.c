@@ -250,12 +250,32 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
     *plugin_count = 0;
 
     /* get plugins dir from environment variable, or use default one */
+      /* bin_common.h.in #define SRPD_PLUGINS_PATH "@PLUGINS_PATH@"
+     * @PLUGINS_PATH@在CMakeList.txt中定义，在编译时也可以自定义
+     * CMakeList.txt对其定义如下
+     * if(NOT PLUGINS_PATH)
+     * set(PLUGINS_PATH             
+     *    "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}/sysrepo/plugins/" CACHE PATH
+     *   "Sysrepo plugin daemon plugins path.")
+     *   endif()
+     *  用户不指定plugin的路径时，debian系统默认将plugin的动态库文件*.so安装 
+     *    于/usr/lib/x86_64-linux-gnu/sysrepo/plugins/目录下，
+     *  而Centos系统的默认安装路径为/usr/lib/sysrepo/plugins，在开发plugind时，安装路径也需要 
+     *  指定到该路径下，否则，*.so找不到，则load不成功。
+     */
+
     plugins_dir = getenv("SRPD_PLUGINS_PATH");
     if (!plugins_dir) {
         plugins_dir = SRPD_PLUGINS_PATH;
     }
 
     /* create the directory if it does not exist */
+    /* access函数，:检查调用进程是否可以对指定的文件执行某种操作， F_OK文件是否存在
+     * 本段代码是检测SRPD_PLUGINS_PATH目录是否存在，如果不存在，调用sr_mkpath创建目录，并设置*            
+     * 目录的访问权限000777。本段代码是安全性代码，确保指定的路径存在。对于实际开发中，是通过编 
+     * 译是指定，不存在路径的动态库无法安装。
+     */
+
     if (access(plugins_dir, F_OK) == -1) {
         if (errno != ENOENT) {
             error_print(0, "Checking plugins dir existence failed (%s).", strerror(errno));
@@ -267,11 +287,17 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         }
     }
 
+    /* opendir函数，找开指定的目录文件，并返回DIR*形态的目录流，
+     * 目录的读取与搜查也都需要此目录流 
+     */
+
     dir = opendir(plugins_dir);
     if (!dir) {
         error_print(0, "Opening \"%s\" directory failed (%s).", plugins_dir, strerror(errno));
         return -1;
     }
+        /*readdir函数，读取目录，返回参数dir目录流的下个目录进入点
+     * 返回的结果是struct dirent的内容*/
 
     while ((ent = readdir(dir))) {
         if (!strcmp(ent->d_name, ".") || !strcmp(ent->d_name, "..")) {
@@ -279,11 +305,16 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         }
 
         /* open the plugin */
+         /*将SRPD_PLUGINS_PATH与也读取的目录文件名，组成一个完成的动态库路径，供后面操作。*/
+
         if (asprintf(&path, "%s/%s", plugins_dir, ent->d_name) == -1) {
             error_print(0, "asprintf() failed (%s).", strerror(errno));
             rc = -1;
             break;
         }
+         /*RTLD_LAZY:暂缓决定，等有需要时再解出符号 
+         *以RTLD_LAZY模式打开动态库，返回一个句柄给调用进程，如果失败，则返回。
+         */
         handle = dlopen(path, RTLD_LAZY);
         if (!handle) {
             error_print(0, "Opening plugin \"%s\" failed (%s).", path, dlerror());
@@ -293,7 +324,9 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         }
         free(path);
 
-        /* allocate new plugin */
+        /* allocate new plugin */、
+
+        /* 分配一个新的plugin空间，并将新分配的men挂载plugins结构下*/
         mem = realloc(*plugins, (*plugin_count + 1) * sizeof **plugins);
         if (!mem) {
             error_print(0, "realloc() failed (%s).", strerror(errno));
@@ -304,6 +337,14 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         *plugins = mem;
 
         /* find required functions */
+                /* plugins结构中有两个必须的回调函数，一个是init_cb,另一个是cleanup_cb
+         * 通过 void *dlsym(void *handle, const char* symbol);，
+         * handle是使用dlopen函数之后返回的句柄，
+         * symbol是要求获取的函数的名称。
+         * SRP_INIT_CB定义如下：#define SRP_INIT_CB     "sr_plugin_init_cb"
+         * SRP_CLEANUP_CB定义下：#define SRP_CLEANUP_CB  "sr_plugin_cleanup_cb"
+         * 此两个CB函数，也就是在开发插件中必须实现的两个入口函数，如果不存在，则加载失败。
+         */
         *(void **)&(*plugins)[*plugin_count].init_cb = dlsym(handle, SRP_INIT_CB);
         if (!(*plugins)[*plugin_count].init_cb) {
             error_print(0, "Failed to find function \"%s\" in plugin \"%s\".", SRP_INIT_CB, ent->d_name);
@@ -321,11 +362,13 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         }
 
         /* finally store the plugin */
+        
+        /*最后，本次so解析成功，保存本次so的解析结果，执行一下次目录文件的读取*/
         (*plugins)[*plugin_count].handle = handle;
         (*plugins)[*plugin_count].private_data = NULL;
         ++(*plugin_count);
     }
-
+      /*目录文件读取结束，关闭目录读取流，返回的参考中有插件结构plugins。*/
     closedir(dir);
     return rc;
 }
