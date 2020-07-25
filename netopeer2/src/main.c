@@ -632,13 +632,15 @@ server_init(void)
     int rc;
 
     /* connect to the sysrepo and set edit-config NACM diff check callback */
+    EINT;
     rc = sr_connect(SR_CONN_CACHE_RUNNING, &np2srv.sr_conn);
     if (rc != SR_ERR_OK) {
         ERR("Connecting to sysrepo failed (%s).", sr_strerror(rc));
         goto error;
     }
+    EINT;
     sr_set_diff_check_callback(np2srv.sr_conn, np2srv_diff_check_cb);
-
+    EINT;
     ly_ctx = sr_get_context(np2srv.sr_conn);
 
     /* server session */
@@ -648,11 +650,12 @@ server_init(void)
         goto error;
     }
 
+    ;
     /* check libyang context */
     if (np2srv_check_schemas(np2srv.sr_sess)) {
         goto error;
     }
-
+    ;
     /* init monitoring */
     ncm_init();
 
@@ -663,33 +666,33 @@ server_init(void)
     if (nc_server_init((struct ly_ctx *)ly_ctx)) {
         goto error;
     }
-
+    EINT;
     /* prepare poll session structure for libnetconf2 */
     np2srv.nc_ps = nc_ps_new();
-
+    EINT;
     /* set with-defaults capability basic-mode */
     nc_server_set_capab_withdefaults(NC_WD_EXPLICIT, NC_WD_ALL | NC_WD_ALL_TAG | NC_WD_TRIM | NC_WD_EXPLICIT);
-
+    EINT;
     /* set capabilities for the NETCONF Notifications */
     nc_server_set_capability("urn:ietf:params:netconf:capability:notification:1.0");
     nc_server_set_capability("urn:ietf:params:netconf:capability:interleave:1.0");
-
+    EINT;
     /* set URL capability */
     if (np2srv_url_setcap()) {
         goto error;
     }
-
+    EINT;
     /* set libnetconf2 global PRC callback */
     nc_set_global_rpc_clb(np2srv_rpc_cb);
-
+    EINT;
     /* set libnetconf2 SSH callbacks */
     nc_server_ssh_set_hostkey_clb(np2srv_hostkey_cb, NULL, NULL);
     nc_server_ssh_set_pubkey_auth_clb(np2srv_pubkey_auth_cb, NULL, NULL);
-
+    EINT;
     /* set libnetconf2 TLS callbacks */
     nc_server_tls_set_server_cert_clb(np2srv_cert_cb, NULL, NULL);
     nc_server_tls_set_trusted_cert_list_clb(np2srv_cert_list_cb, NULL, NULL);
-
+    EINT;
     /* UNIX socket */
     if (np2srv.unix_path) {
         if (nc_server_add_endpt("unix", NC_TI_UNIX)) {
@@ -708,6 +711,7 @@ server_init(void)
     return 0;
 
 error:
+    EINT;
     ERR("Server init failed.");
     return -1;
 }
