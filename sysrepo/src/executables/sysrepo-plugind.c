@@ -460,6 +460,9 @@ main(int argc, char** argv)
     }
 
     /* init plugins */
+     /*对所有已加载的plugin通过调用init_cb注册的回调初始化，这是整个main第二处核心点，与用户是强 
+     *相关用户开发的插件，注册，订阅，初始化都通过init_cb，否则不能将sysrepol通信连接*/
+
     for (i = 0; i < plugin_count; ++i) {
         r = plugins[i].init_cb(sess, &plugins[i].private_data);
         if (r != SR_ERR_OK) {
@@ -476,13 +479,17 @@ main(int argc, char** argv)
     pthread_mutex_unlock(&lock);
 
     /* cleanup plugins */
+    
+    /* sysrepo-plugindf正常结束后，回收plugin初始化时分配的资源*/
+
     for (i = 0; i < plugin_count; ++i) {
         plugins[i].cleanup_cb(sess, plugins[i].private_data);
     }
 
     /* success */
     rc = EXIT_SUCCESS;
-
+    
+    /*结束后，回收已分配的全部资源*/
 cleanup:
     for (i = 0; i < plugin_count; ++i) {
         dlclose(plugins[i].handle);
