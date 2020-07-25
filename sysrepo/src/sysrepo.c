@@ -223,7 +223,9 @@ cleanup:
     }
     return err_info;
 }
-
+//功能：连接sysrepo数据库
+//输入：默认的连接处理项
+//输出：该连接的数据，用于该连接的后续的操作，最后由sr_disconnect释放
 API int
 sr_connect(const sr_conn_options_t opts, sr_conn_ctx_t **conn_p)
 {
@@ -237,9 +239,15 @@ sr_connect(const sr_conn_options_t opts, sr_conn_ctx_t **conn_p)
     SR_CHECK_ARG_APIRET(!conn_p, NULL, err_info);
 
     /* check that all required directories exist */
+    //路径包括startup库的存储路径，notify的路径，sysrepo加载的yang的路径。
+    //并且获取以上路径的访问权限。与路径有关的，都在CMAkeLists.txt中定义
+    //可以修改路径，也可以使用定义的默认路径
     if ((err_info = sr_shmmain_check_dirs())) {
         goto cleanup;
     }
+
+    //创建一个基础连接结构，包括，分配连接的存储空间，初始化yang的上下文。
+    //互斥信号量初始化，共享内存文件锁权限打开，读写锁的初始化。
 
     /* create basic connection structure */
     if ((err_info = sr_conn_new(opts, &conn))) {
@@ -247,31 +255,41 @@ sr_connect(const sr_conn_options_t opts, sr_conn_ctx_t **conn_p)
     }
 
     /* CREATE LOCK */
+    //加锁
     if ((err_info = sr_shmmain_createlock(conn->main_create_lock))) {
         goto cleanup;
     }
 
     /* open the main SHM */
+    //初始化拓展SHM，打开拓展SHM，为扩展SDM分配合适的空间，并对拓展SHM做相应的初始化
     if ((err_info = sr_shmmain_main_open(&conn->main_shm, &created))) {
         goto cleanup_unlock;
     }
 
     /* open the ext SHM */
+    //初始化扩展SHM，打开扩展SHM，为扩展SHM分配合适的空间，并对扩展SHM做相应的初始化。
     if ((err_info = sr_shmmain_ext_open(&conn->ext_shm, created))) {
         goto cleanup_unlock;
     }
-
+    //指针指向共享内存首地址
     main_shm = (sr_main_shm_t *)conn->main_shm.addr;
 
     /* LYDMODS LOCK */
+    //上锁
     if ((err_info = sr_mlock(&main_shm->lydmods_lock, SR_MAIN_LOCK_TIMEOUT * 1000, __func__))) {
         goto cleanup_unlock;
     }
-
+    //加载已经存储的YANG模型，并响应任意的调试变化，并要更新connection的上下文
+    //根据前面所创建所保存的LIBYANG的上下文ly_ctx,如果检测到lyd_node不存在，则为sysrepo创建一个
+    //新的YANG模型数据结构struct lyd_node,如果存在，则解析sysrepo YANG模型数据，并对模块做上下文件的更新
+    //但是对于第一个连接，lyd_node一开始是不存在的，所以，在完成创建与加载lyd_node后，需要将全部的YANG 
+    //模型解析到lys_module->lyd_node中，一个YANG模型相当于lys_module->lyd_node的下一个节点，一个节点一个
+    //节点加载，挂载到lys_module的链表中。
     /* update connection context based on stored lydmods data */
     err_info = sr_conn_lydmods_ctx_update(&conn->ly_ctx, conn->main_shm.addr,
             created || !(opts & SR_CONN_NO_SCHED_CHANGES), opts & SR_CONN_ERR_ON_SCHED_FAIL, &sr_mods, &changed);
 
+    //解锁
     /* LYDMODS UNLOCK */
     sr_munlock(&main_shm->lydmods_lock);
 
@@ -298,7 +316,7 @@ sr_connect(const sr_conn_options_t opts, sr_conn_ctx_t **conn_p)
         if ((err_info = sr_shmmain_add(conn, sr_mods->child))) {
             goto cleanup_unlock;
         }
-
+        //初始化时，完成将startup库的文件copy到running库中，常见的配置恢复是在此处完成
         /* copy full datastore from <startup> to <running> */
         if ((err_info = sr_shmmain_files_startup2running(conn, created))) {
             goto cleanup_unlock;
@@ -372,7 +390,9 @@ cleanup:
     }
     return sr_api_ret(NULL, err_info);
 }
-
+//功能：清除与释放由sr_connect分配的连接上下文
+//在该连接下的所有session与订阅将自动停止并清理回收
+//输入：调用sr_connect中创建的连接上下文
 API int
 sr_disconnect(sr_conn_ctx_t *conn)
 {
@@ -505,7 +525,10 @@ sr_set_diff_check_callback(sr_conn_ctx_t *conn, sr_diff_check_cb callback)
 
     conn->diff_check_cb = callback;
 }
-
+//功能：开始一个新的session
+//输入:conn:由sr_connect所创建的连接
+//datastore:连接的数据库类型
+//输出：用于后续的API调用的session上下文件
 API int
 sr_session_start(sr_conn_ctx_t *conn, const sr_datastore_t datastore, sr_session_ctx_t **session)
 {
@@ -514,7 +537,7 @@ sr_session_start(sr_conn_ctx_t *conn, const sr_datastore_t datastore, sr_session
     uid_t uid;
 
     SR_CHECK_ARG_APIRET(!conn || !session, NULL, err_info);
-
+    //分配一个sizeof(**session)大小的内存空间，并初始化为0
     *session = calloc(1, sizeof **session);
     if (!*session) {
         SR_ERRINFO_MEM(&err_info);
@@ -523,6 +546,7 @@ sr_session_start(sr_conn_ctx_t *conn, const sr_datastore_t datastore, sr_session
 
     /* use new SR session ID and increment it (no lock needed, we are just reading and main SHM is never remapped) */
     main_shm = (sr_main_shm_t *)conn->main_shm.addr;
+    //使用C++的atomic机制，在C中引用，需要增加编译选项，CMakeFile.txt
     (*session)->sid.sr = ATOMIC_INC_RELAXED(main_shm->new_sr_sid);
     if ((*session)->sid.sr == (uint32_t)(ATOMIC_T_MAX - 1)) {
         /* the value in the main SHM is actually ATOMIC_T_MAX and calling another INC would cause an overflow */
@@ -602,6 +626,8 @@ sr_session_notif_buf_stop(sr_session_ctx_t *session)
  * @param[in] session Session to stop.
  * @return err_info, NULL on success.
  */
+//功能：停止当前session并且释放与该session所维系的全部资源
+//输入：sr_session_start中所创建的session上下文
 static sr_error_info_t *
 _sr_session_stop(sr_session_ctx_t *session)
 {
