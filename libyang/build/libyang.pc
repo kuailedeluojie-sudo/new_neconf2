@@ -1,5 +1,5 @@
-prefix=/home/mo/share/netconf2_new/libyang/_install
-exec_prefix=/home/mo/share/netconf2_new/libyang/_install
+prefix=/opt/libyang
+exec_prefix=/opt/libyang
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
 

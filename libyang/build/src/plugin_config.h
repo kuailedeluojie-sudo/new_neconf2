@@ -15,8 +15,8 @@
 #ifndef LY_PLUGIN_CONFIG_H_
 #define LY_PLUGIN_CONFIG_H_
 
-#define LYEXT_PLUGINS_DIR "/home/mo/share/netconf2_new/libyang/_install/lib/libyang1/extensions" /**< directory with YANG extension plugins */
-#define LY_USER_TYPES_PLUGINS_DIR "/home/mo/share/netconf2_new/libyang/_install/lib/libyang1/user_types" /**< directory with user YANG types plugins */
+#define LYEXT_PLUGINS_DIR "/opt/libyang/lib/libyang1/extensions" /**< directory with YANG extension plugins */
+#define LY_USER_TYPES_PLUGINS_DIR "/opt/libyang/lib/libyang1/user_types" /**< directory with user YANG types plugins */
 
 #if defined __linux__ || defined __unix__
 #  define LY_PLUGIN_SUFFIX ".so"

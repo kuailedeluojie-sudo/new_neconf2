@@ -3,9 +3,9 @@
 
 examples/CMakeFiles/rpc_send_example.dir/rpc_send_example.c.o
  ../src/sysrepo.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
  /home/mo/share/netconf2_new/sysrepo/examples/rpc_send_example.c
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h

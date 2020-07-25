@@ -117,7 +117,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/home/mo/share/netconf2_new/netopeer2/_install
+CMAKE_INSTALL_PREFIX:PATH=/opt/netopeer2
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -274,10 +274,10 @@ LIBCRYPTO_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/openssl/debug/outp
 LIBNETCONF2_ENABLED_SSH:BOOL=ON
 
 //No help, variable specified on the command line.
-LIBNETCONF2_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2_new/libnetconf2/_install/include
+LIBNETCONF2_INCLUDE_DIRS:UNINITIALIZED=/opt/libnetconf2/include
 
 //No help, variable specified on the command line.
-LIBNETCONF2_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2_new/libnetconf2/_install/lib/libnetconf2.so.1.3.5
+LIBNETCONF2_LIBRARIES:UNINITIALIZED=/opt/libnetconf2/lib/libnetconf2.so.1.3.5
 
 //No help, variable specified on the command line.
 LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/include
@@ -286,10 +286,10 @@ LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/in
 LIBSSH_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
 
 //No help, variable specified on the command line.
-LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2_new/libyang/_install/include
+LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/opt/libyang/include
 
 //No help, variable specified on the command line.
-LIBYANG_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+LIBYANG_LIBRARIES:UNINITIALIZED=/opt/libyang/lib/libyang.so.1.8.4
 
 //Merge default server configuration for listening on all IPv4
 // interfaces
@@ -345,10 +345,10 @@ RPC_TIMEOUT:STRING=6
 RPM_BUILDER:FILEPATH=RPM_BUILDER-NOTFOUND
 
 //No help, variable specified on the command line.
-SYSREPO_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2_new/sysrepo/_install/include
+SYSREPO_INCLUDE_DIRS:UNINITIALIZED=/opt/sysrepo/include
 
 //No help, variable specified on the command line.
-SYSREPO_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2_new/sysrepo/_install/lib/libsysrepo.so.5.5.8
+SYSREPO_LIBRARIES:UNINITIALIZED=/opt/sysrepo/lib/libsysrepo.so.5.5.8
 
 //Timeout in seconds of any sysrepo functions with custom timeout,
 // 0 is the default timeout
@@ -361,7 +361,7 @@ THREAD_COUNT:STRING=5
 VALGRIND_TESTS:BOOL=ON
 
 //Directory where to copy the YANG modules to
-YANG_MODULE_DIR:STRING=/home/mo/share/netconf2_new/netopeer2/_install/share/yang/modules/netopeer2
+YANG_MODULE_DIR:STRING=/opt/netopeer2/share/yang/modules/netopeer2
 
 //Value Computed by CMake
 netopeer2-cli_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/netopeer2/build/cli
@@ -637,7 +637,7 @@ PC_CURL_libcurl_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/mo/share/netconf2_new/netopeer2/_install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/netopeer2
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=

@@ -55,11 +55,11 @@ CMakeFiles/netconf2.dir/src/io.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/netconf.h
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h
 CMakeFiles/netconf2.dir/src/log.c.o
@@ -115,11 +115,11 @@ CMakeFiles/netconf2.dir/src/log.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/netconf.h
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/messages_client.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -174,11 +174,11 @@ CMakeFiles/netconf2.dir/src/messages_client.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/netconf.h
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/messages_server.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -234,11 +234,11 @@ CMakeFiles/netconf2.dir/src/messages_server.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session.c.o
@@ -297,11 +297,11 @@ CMakeFiles/netconf2.dir/src/session.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_client.c.o
@@ -360,11 +360,11 @@ CMakeFiles/netconf2.dir/src/session_client.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_client.c
  /home/mo/share/netconf2_new/libnetconf2/src/session_client.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_client_ssh.c.o
@@ -422,11 +422,11 @@ CMakeFiles/netconf2.dir/src/session_client_ssh.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_client_ch.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_client_ssh.c
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_client_tls.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -484,11 +484,11 @@ CMakeFiles/netconf2.dir/src/session_client_tls.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_client_ch.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_client_tls.c
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_server.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -545,11 +545,11 @@ CMakeFiles/netconf2.dir/src/session_server.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.c
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server_ch.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_server_ssh.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -606,11 +606,11 @@ CMakeFiles/netconf2.dir/src/session_server_ssh.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server_ch.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server_ssh.c
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  src/config.h
 CMakeFiles/netconf2.dir/src/session_server_tls.c.o
  /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
@@ -670,11 +670,11 @@ CMakeFiles/netconf2.dir/src/session_server_tls.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session_server.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server_ch.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_server_tls.c
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h
 CMakeFiles/netconf2.dir/src/time.c.o
@@ -730,10 +730,10 @@ CMakeFiles/netconf2.dir/src/time.c.o
  /home/mo/share/netconf2_new/libnetconf2/src/session.h
  /home/mo/share/netconf2_new/libnetconf2/src/session_p.h
  /home/mo/share/netconf2_new/libnetconf2/src/time.c
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
- /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
+ /opt/libyang/include/libyang/dict.h
+ /opt/libyang/include/libyang/libyang.h
+ /opt/libyang/include/libyang/tree_data.h
+ /opt/libyang/include/libyang/tree_schema.h
+ /opt/libyang/include/libyang/xml.h
  compat.h
  src/config.h

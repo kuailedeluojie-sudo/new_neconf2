@@ -110,7 +110,7 @@ libsysrepo.so.5.5.8: CMakeFiles/srobj.dir/src/utils/values.c.o
 libsysrepo.so.5.5.8: CMakeFiles/srobj.dir/src/utils/xpath.c.o
 libsysrepo.so.5.5.8: CMakeFiles/compat.dir/compat/compat.c.o
 libsysrepo.so.5.5.8: CMakeFiles/sysrepo.dir/build.make
-libsysrepo.so.5.5.8: /home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+libsysrepo.so.5.5.8: /opt/libyang/lib/libyang.so.1.8.4
 libsysrepo.so.5.5.8: CMakeFiles/sysrepo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libsysrepo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sysrepo.dir/link.txt --verbose=$(VERBOSE)

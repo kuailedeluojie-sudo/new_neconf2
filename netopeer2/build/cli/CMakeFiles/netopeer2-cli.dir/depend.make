@@ -50,16 +50,16 @@ cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/opens
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509_vfy.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509v3.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/commands.c
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/completion.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/dict.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/libyang.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/tree_data.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/tree_schema.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: cli/cli_version.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: compat.h
 
@@ -110,14 +110,14 @@ cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/ope
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/tls1.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509_vfy.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/completion.c
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/dict.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/libyang.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/tree_data.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/tree_schema.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: cli/cli_version.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: compat.h
 
@@ -168,15 +168,15 @@ cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/tls1.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509_vfy.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/configuration.c
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/dict.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/libyang.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/tree_data.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/tree_schema.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: cli/cli_version.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: compat.h
 
@@ -230,16 +230,16 @@ cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/d
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/tls1.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/x509_vfy.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/dict.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/libyang.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_data.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/tree_schema.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2_new/libyang/_install/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/completion.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/linenoise/linenoise.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/main.c
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/dict.h
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/libyang.h
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/tree_data.h
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/tree_schema.h
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/xml.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: cli/cli_version.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: compat.h
 

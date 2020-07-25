@@ -324,7 +324,7 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
         }
         free(path);
 
-        /* allocate new plugin */、
+        /* allocate new plugin */
 
         /* 分配一个新的plugin空间，并将新分配的men挂载plugins结构下*/
         mem = realloc(*plugins, (*plugin_count + 1) * sizeof **plugins);

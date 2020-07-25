@@ -6,5 +6,5 @@ C_FLAGS =   -Wall -lrt -pthread -Wextra  -std=c99 -g -O0 -fPIC
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mo/share/netconf2_new/sysrepo/build -I/home/mo/share/netconf2_new/sysrepo/src -I/home/mo/share/netconf2_new/libyang/_install/include 
+C_INCLUDES = -I/home/mo/share/netconf2_new/sysrepo/build -I/home/mo/share/netconf2_new/sysrepo/src -I/opt/libyang/include 
 

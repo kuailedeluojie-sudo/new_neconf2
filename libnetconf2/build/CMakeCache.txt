@@ -111,7 +111,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/home/mo/share/netconf2_new/libnetconf2/_install
+CMAKE_INSTALL_PREFIX:PATH=/opt/libnetconf2
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -278,10 +278,10 @@ LIBYANG_CPP_INCLUDE_DIR:PATH=LIBYANG_CPP_INCLUDE_DIR-NOTFOUND
 LIBYANG_CPP_LIBRARY:FILEPATH=LIBYANG_CPP_LIBRARY-NOTFOUND
 
 //No help, variable specified on the command line.
-LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2_new/libyang/_install/include
+LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/opt/libyang/include
 
 //No help, variable specified on the command line.
-LIBYANG_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4
+LIBYANG_LIBRARIES:UNINITIALIZED=/opt/libyang/lib/libyang.so.1.8.4
 
 //Maximum number of threads that could simultaneously access a
 // ps_poll structure
@@ -319,7 +319,7 @@ RPM_BUILDER:FILEPATH=RPM_BUILDER-NOTFOUND
 TIMEOUT_STEP:STRING=100
 
 //Directory with common YANG modules
-YANG_MODULE_DIR:STRING=/home/mo/share/netconf2_new/libnetconf2/_install/share/yang/modules
+YANG_MODULE_DIR:STRING=/opt/libnetconf2/share/yang/modules
 
 //Value Computed by CMake
 libnetconf2_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/libnetconf2/build
@@ -328,7 +328,7 @@ libnetconf2_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/libnetconf2/build
 libnetconf2_SOURCE_DIR:STATIC=/home/mo/share/netconf2_new/libnetconf2
 
 //Dependencies for the target
-netconf2_LIB_DEPENDS:STATIC=general;-lpthread;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libssl.so;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so;general;/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1;general;-lcrypt;general;/home/mo/share/netconf2_new/libyang/_install/lib/libyang.so.1.8.4;
+netconf2_LIB_DEPENDS:STATIC=general;-lpthread;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libssl.so;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so;general;/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1;general;-lcrypt;general;/opt/libyang/lib/libyang.so.1.8.4;
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=pkgcfg_lib__OPENSSL_crypto-NOTFOUND
@@ -567,7 +567,7 @@ OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/mo/share/netconf2_new/libnetconf2/_install
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/opt/libnetconf2
 _OPENSSL_CFLAGS:INTERNAL=
 _OPENSSL_CFLAGS_I:INTERNAL=
 _OPENSSL_CFLAGS_OTHER:INTERNAL=
