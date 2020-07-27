@@ -157,7 +157,7 @@ include_directories(${LIBSSH_INCLUDE_DIRS})
 list(APPEND CMAKE_REQUIRED_LIBRARIES ${LIBSSH_LIBRARIES}  )
 list(APPEND CMAKE_REQUIRED_INCLUDES ${LIBSSH_INCLUDE_DIRS})
 
-#复制这段话，然后把头文件路径和库所在的路径添加进来。
+#锟斤拷锟斤拷锟斤拷位锟斤拷锟饺伙拷锟斤拷头锟侥硷拷路锟斤拷锟酵匡拷锟斤拷锟节碉拷路锟斤拷锟斤拷锟接斤拷锟斤拷锟斤拷
 # warning: libcrypto.so.1.1, needed by /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1, not found (try using -rpath or -rpath-link)
 #warning: libssl.so.1.1, needed by /home/mo/share/netconf2/lib/libnetconf2/_install/lib/libnetconf2.so.1.3.5, not found (try using -rpath or -rpath-link)
 target_link_libraries(netopeer2-server ${LIBCRYPTO_LIBRARIES})
@@ -171,7 +171,7 @@ list(APPEND CMAKE_REQUIRED_INCLUDES ${LIBCRYPTO_INCLUDE_DIRS})
 #/home/mo/share/netconf2/lib/libnetconf2/_install/lib/libnetconf2.so.1.3.5
 
 # dependencies - OpenSSL (required by later libnetconf2 checks and not really the server itself)
-target_link_libraries(netopeer2-server ${OPENSSL_INCLUDE_DIRS}) #修改的地方
+target_link_libraries(netopeer2-server ${OPENSSL_INCLUDE_DIRS}) #锟睫改的地凤拷
 include_directories(${OPENSSL_INCLUDE_DIRS})
 list(APPEND CMAKE_REQUIRED_INCLUDES ${OPENSSL_INCLUDE_DIRS})
 list(APPEND CMAKE_REQUIRED_LIBRARIES ${OPENSSL_LIBRARIES})
@@ -216,6 +216,7 @@ add_subdirectory(packages)
 install(DIRECTORY "${PROJECT_SOURCE_DIR}/modules/" DESTINATION ${YANG_MODULE_DIR})
 
 # install the binary, required modules, and default configuration
+#瀹夎浜岃繘鍒舵枃浠讹紝鎵�闇�妯″潡锛屽拰榛樿閰嶇疆
 install(TARGETS netopeer2-server DESTINATION ${CMAKE_INSTALL_BINDIR})
 if(INSTALL_MODULES)
     install(CODE "
