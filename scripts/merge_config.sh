@@ -12,6 +12,7 @@ KS_KEY_NAME=genkey
 export  SYSREPOCFG=/opt/all/sysrepo/bin/sysrepocfg
 # check that there is no listen/Call Home configuration yet
 SERVER_CONFIG= `wr $SYSREPOCFG -X -x "/ietf-netconf-server:netconf-server/listen/endpoint[1]/name | /ietf-netconf-server:netconf-server/call-home/netconf-client[1]/name"`
+echo "$SERVER_CONFIG"
 if [ -z "$SERVER_CONFIG" ]; then
 
 # import default config
@@ -53,7 +54,9 @@ CONFIG="<netconf-server xmlns=\"urn:ietf:params:xml:ns:yang:ietf-netconf-server\
 TMPFILE=`mktemp -u`
 printf -- "$CONFIG" > $TMPFILE
 # apply it to startup and running
+echo "wr $SYSREPOCFG --edit=$TMPFILE -d startup -f xml -m ietf-netconf-server -v2"
 wr $SYSREPOCFG --edit=$TMPFILE -d startup -f xml -m ietf-netconf-server -v2
+echo "wr $SYSREPOCFG -C startup -m ietf-netconf-server -v2"
 wr $SYSREPOCFG -C startup -m ietf-netconf-server -v2
 # remove the tmp file
 rm $TMPFILE
