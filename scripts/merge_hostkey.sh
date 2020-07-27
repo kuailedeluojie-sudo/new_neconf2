@@ -10,19 +10,20 @@ else
     SYSREPOCFG=`which sysrepocfg`
     OPENSSL=`which openssl`
 fi
-
+export  SYSREPOCFG=/opt/all/sysrepo/bin/sysrepocfg
+export  OPENSSL=/opt/all/openssl/bin/openssl
 # check that there is no SSH key with this name yet
-KEYSTORE_KEY=`$SYSREPOCFG -X -x "/ietf-keystore:keystore/asymmetric-keys/asymmetric-key[name='genkey']/name"`
+KEYSTORE_KEY=`wr $SYSREPOCFG -X -x "/ietf-keystore:keystore/asymmetric-keys/asymmetric-key[name='genkey']/name"`
 if [ -z "$KEYSTORE_KEY" ]; then
 
 # generate a new key
-PRIVPEM=`$OPENSSL genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -outform PEM 2>/dev/null`
+PRIVPEM=`wr $OPENSSL genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -outform PEM 2>/dev/null`
 # remove header/footer
 PRIVKEY=`grep -v -- "-----" - <<STDIN
 $PRIVPEM
 STDIN`
 # get public key
-PUBPEM=`$OPENSSL rsa -pubout 2>/dev/null <<STDIN
+PUBPEM=`wr $OPENSSL rsa -pubout 2>/dev/null <<STDIN
 $PRIVPEM
 STDIN`
 # remove header/footer
