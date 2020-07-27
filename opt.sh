@@ -7,5 +7,6 @@ cd ../libnetconf2
 cd ../netopeer2
 ./build1.sh
 cd ..
+rm all -rf
 mkdir all
 cp /opt/* ./all -rf
