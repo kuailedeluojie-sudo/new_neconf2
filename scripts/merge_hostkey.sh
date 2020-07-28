@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#"set -e"之后出现的代码，一旦出现了返回值非零，整个脚本就会立即退出，那么就可以避免一些脚本的危险操作
 set -e
 
 # avoid problems with sudo PATH
@@ -13,6 +14,7 @@ fi
 export  SYSREPOCFG=/opt/all/sysrepo/bin/sysrepocfg
 export  OPENSSL=/opt/all/openssl/bin/openssl
 # check that there is no SSH key with this name yet
+echo wr $SYSREPOCFG -X -x "/ietf-keystore:keystore/asymmetric-keys/asymmetric-key[name='genkey']/name"
 KEYSTORE_KEY=`wr $SYSREPOCFG -X -x "/ietf-keystore:keystore/asymmetric-keys/asymmetric-key[name='genkey']/name"`
 echo  $KEYSTORE_KEY
 if [ -z "$KEYSTORE_KEY" ]; then

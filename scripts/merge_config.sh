@@ -11,6 +11,7 @@ fi
 KS_KEY_NAME=genkey
 export  SYSREPOCFG=/opt/all/sysrepo/bin/sysrepocfg
 # check that there is no listen/Call Home configuration yet
+echo wr $SYSREPOCFG -X -x "/ietf-netconf-server:netconf-server/listen/endpoint[1]/name | /ietf-netconf-server:netconf-server/call-home/netconf-client[1]/name"
 SERVER_CONFIG= `wr $SYSREPOCFG -X -x "/ietf-netconf-server:netconf-server/listen/endpoint[1]/name | /ietf-netconf-server:netconf-server/call-home/netconf-client[1]/name"`
 echo "$SERVER_CONFIG"
 if [ -z "$SERVER_CONFIG" ]; then
