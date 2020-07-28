@@ -1,25 +1,25 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c5068/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5068.dir/build.make CMakeFiles/cmTC_c5068.dir/build
+Run Build Command(s):/usr/bin/make cmTC_5c8ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_5c8ae.dir/build.make CMakeFiles/cmTC_5c8ae.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c5068.dir/src.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c5068.dir/src.c.o   -c /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_c5068
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5068.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_c5068.dir/src.c.o  -o cmTC_c5068 
-CMakeFiles/cmTC_c5068.dir/src.c.o: In function `main':
+Building C object CMakeFiles/cmTC_5c8ae.dir/src.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5c8ae.dir/src.c.o   -c /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5c8ae
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c8ae.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_5c8ae.dir/src.c.o  -o cmTC_5c8ae 
+CMakeFiles/cmTC_5c8ae.dir/src.c.o: In function `main':
 src.c:(.text+0x44): undefined reference to `pthread_create'
 src.c:(.text+0x50): undefined reference to `pthread_detach'
 src.c:(.text+0x5c): undefined reference to `pthread_cancel'
 src.c:(.text+0x6c): undefined reference to `pthread_join'
 src.c:(.text+0x7c): undefined reference to `pthread_atfork'
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_c5068.dir/build.make:106: recipe for target 'cmTC_c5068' failed
-make[1]: *** [cmTC_c5068] Error 1
+CMakeFiles/cmTC_5c8ae.dir/build.make:106: recipe for target 'cmTC_5c8ae' failed
+make[1]: *** [cmTC_5c8ae] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_c5068/fast' failed
-make: *** [cmTC_c5068/fast] Error 2
+Makefile:141: recipe for target 'cmTC_5c8ae/fast' failed
+make: *** [cmTC_5c8ae/fast] Error 2
 
 
 Source file was:
@@ -46,36 +46,36 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_82d95/fast && /usr/bin/make  -f CMakeFiles/cmTC_82d95.dir/build.make CMakeFiles/cmTC_82d95.dir/build
+Run Build Command(s):/usr/bin/make cmTC_9ee7c/fast && /usr/bin/make  -f CMakeFiles/cmTC_9ee7c.dir/build.make CMakeFiles/cmTC_9ee7c.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_82d95.dir/CheckFunctionExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_82d95.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
-Linking C executable cmTC_82d95
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82d95.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_82d95.dir/CheckFunctionExists.c.o  -o cmTC_82d95  -lpthreads 
+Building C object CMakeFiles/cmTC_9ee7c.dir/CheckFunctionExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9ee7c.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9ee7c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ee7c.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9ee7c.dir/CheckFunctionExists.c.o  -o cmTC_9ee7c  -lpthreads 
 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/ld: cannot find -lpthreads
 collect2: ld returned 1 exit status
-CMakeFiles/cmTC_82d95.dir/build.make:106: recipe for target 'cmTC_82d95' failed
-make[1]: *** [cmTC_82d95] Error 1
+CMakeFiles/cmTC_9ee7c.dir/build.make:106: recipe for target 'cmTC_9ee7c' failed
+make[1]: *** [cmTC_9ee7c] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_82d95/fast' failed
-make: *** [cmTC_82d95/fast] Error 2
+Makefile:141: recipe for target 'cmTC_9ee7c/fast' failed
+make: *** [cmTC_9ee7c/fast] Error 2
 
 
 
 Determining if the include file stdatomic.h exists failed with the following output:
 Change Dir: /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_38ac2/fast && /usr/bin/make  -f CMakeFiles/cmTC_38ac2.dir/build.make CMakeFiles/cmTC_38ac2.dir/build
+Run Build Command(s):/usr/bin/make cmTC_4fb9a/fast && /usr/bin/make  -f CMakeFiles/cmTC_4fb9a.dir/build.make CMakeFiles/cmTC_4fb9a.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_38ac2.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -lpthread   -o CMakeFiles/cmTC_38ac2.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_4fb9a.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -lpthread   -o CMakeFiles/cmTC_4fb9a.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: error: stdatomic.h: No such file or directory
-CMakeFiles/cmTC_38ac2.dir/build.make:85: recipe for target 'CMakeFiles/cmTC_38ac2.dir/CheckIncludeFile.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_38ac2.dir/CheckIncludeFile.c.o] Error 1
+CMakeFiles/cmTC_4fb9a.dir/build.make:85: recipe for target 'CMakeFiles/cmTC_4fb9a.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4fb9a.dir/CheckIncludeFile.c.o] Error 1
 make[1]: Leaving directory '/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_38ac2/fast' failed
-make: *** [cmTC_38ac2/fast] Error 2
+Makefile:141: recipe for target 'cmTC_4fb9a/fast' failed
+make: *** [cmTC_4fb9a/fast] Error 2
 
 
 
