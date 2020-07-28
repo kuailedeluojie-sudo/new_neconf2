@@ -4043,8 +4043,10 @@ retry_open:
             path = NULL;
             goto retry_open;
         }
-    EINT;
-        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s).", path, strerror(errno));
+   
+       // printf("debug (%s:%d)", __FILE__, __LINE__);
+        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
+        
         goto error;
     }
 
@@ -4121,7 +4123,7 @@ sr_module_file_data_set(const char *mod_name, sr_datastore_t ds, struct lyd_node
     }
     umask(um);
     if (fd == -1) {
-         EINT;
+        printf("debug (%s:%d)", __FILE__, __LINE__);
         sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s).", path, strerror(errno));
         goto cleanup;
     }

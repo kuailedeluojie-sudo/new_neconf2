@@ -22,3 +22,5 @@ echo mkdir all
 mkdir all
 echo cp /opt/* ./all -rf
 cp /opt/* ./all -rf
+echo  cp /opt/libnetconf2/lib/libnetconf2.so /opt/libnetconf2/lib/libnetconf2.so.1 /opt/libnetconf2/lib/libnetconf2.so.1.3.5 /opt/libnetconf2/lib/pkgconfig /opt/libyang/lib/libyang1 /opt/libyang/lib/libyang.so /opt/libyang/lib/libyang.so.1 /opt/libyang/lib/libyang.so.1.8.4 /opt/libyang/lib/pkgconfig /opt/sysrepo/lib/libsysrepo.so /opt/sysrepo/lib/libsysrepo.so.5 /opt/sysrepo/lib/libsysrepo.so.5.5.8 /opt/sysrepo/lib/pkgconfig ./lib/ -rf
+cp /opt/libnetconf2/lib/libnetconf2.so /opt/libnetconf2/lib/libnetconf2.so.1 /opt/libnetconf2/lib/libnetconf2.so.1.3.5 /opt/libnetconf2/lib/pkgconfig /opt/libyang/lib/libyang1 /opt/libyang/lib/libyang.so /opt/libyang/lib/libyang.so.1 /opt/libyang/lib/libyang.so.1.8.4 /opt/libyang/lib/pkgconfig /opt/sysrepo/lib/libsysrepo.so /opt/sysrepo/lib/libsysrepo.so.5 /opt/sysrepo/lib/libsysrepo.so.5.5.8 /opt/sysrepo/lib/pkgconfig ./lib/ -rf
