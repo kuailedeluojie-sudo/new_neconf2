@@ -204,10 +204,11 @@ include_directories(${PROJECT_BINARY_DIR})
 
 # dependencies
 # librt (shm_open, shm_unlink, not required on OSX or QNX)
-find_library(LIBRT rt)
-if(LIBRT)
-    target_link_libraries(sysrepo ${LIBRT})
-endif()
+# 2020.7.28屏蔽
+# find_library(LIBRT rt)
+# if(LIBRT)
+#    target_link_libraries(sysrepo ${LIBRT})
+# endif()
 
 # atomic
 check_library_exists(atomic __atomic_fetch_add_4 "" HAVE_ATOMIC)

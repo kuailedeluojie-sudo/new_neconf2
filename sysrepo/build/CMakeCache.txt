@@ -302,9 +302,6 @@ GEN_LANGUAGE_BINDINGS:BOOL=OFF
 //Enable Python bindings.
 GEN_PYTHON_BINDINGS:BOOL=ON
 
-//Path to a library.
-LIBRT:FILEPATH=LIBRT-NOTFOUND
-
 //No help, variable specified on the command line.
 LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/include
 

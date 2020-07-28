@@ -4035,7 +4035,7 @@ retry_open:
         fd = open(path, O_RDONLY);
     } else {
         sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
-        fd = shm_open(path, O_RDONLY, 0);
+        fd = shm_open(path, O_RDONLY, 0); //以只读方式打开共享内存
     }
     if (fd == -1) {
         if ((errno == ENOENT) && (ds == SR_DS_CANDIDATE)) {
