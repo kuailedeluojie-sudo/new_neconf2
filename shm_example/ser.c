@@ -11,7 +11,7 @@ int main()
 {
 	//sr_yang.operational
 	//int fd = shm_open("region",O_CREAT|O_RDWR,S_IRUSR | S_IWUSR);
-	int fd = shm_open("sr_yang.operational",O_CREAT|O_RDWR,S_IRUSR | S_IWUSR);
+	int fd = shm_open("sy_yang.operational",O_CREAT|O_RDWR,S_IRUSR | S_IWUSR);
 	if(fd < 0)
 	{
 		printf("error open region\n");
@@ -24,6 +24,7 @@ int main()
 		printf("error map\n");
 		return -1;
 	}
-	*ptr = 0x12;
+	while(*ptr != 0x12);
+	printf("ptr : %d\n",*ptr);
 	return 0;
 }
