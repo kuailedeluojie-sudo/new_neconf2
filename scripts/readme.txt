@@ -3,4 +3,4 @@
 setup.sh 
 merge_hostkey.sh 
 merge_config.sh
-安装完成后在/dev/shm 目录下面创建了很多共享文件
+安装完成后在/dev/shm 目录下面创建了很多共享内存文件
