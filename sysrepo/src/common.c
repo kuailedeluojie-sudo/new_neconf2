@@ -4015,7 +4015,7 @@ sr_module_file_data_append(const struct lys_module *ly_mod, sr_datastore_t ds, s
 {
     sr_error_info_t *err_info = NULL;
     struct lyd_node *mod_data = NULL;
-    char *path = NULL;
+    char *path = NULL; 
     int fd = -1, flags;
 
 retry_open:
@@ -4028,11 +4028,13 @@ retry_open:
     if (err_info) {
         goto error;
     }
-
+ 
     /* open fd */
     if (ds == SR_DS_STARTUP) {
+        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
         fd = open(path, O_RDONLY);
     } else {
+        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
         fd = shm_open(path, O_RDONLY, 0);
     }
     if (fd == -1) {
@@ -4044,7 +4046,7 @@ retry_open:
             goto retry_open;
         }
    
-       // printf("debug (%s:%d)", __FILE__, __LINE__);
+       
         sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
         
         goto error;
@@ -4123,8 +4125,10 @@ sr_module_file_data_set(const char *mod_name, sr_datastore_t ds, struct lyd_node
     }
     umask(um);
     if (fd == -1) {
-        printf("debug (%s:%d)", __FILE__, __LINE__);
-        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s).", path, strerror(errno));
+        
+       
+        sr_errinfo_new(&err_info, SR_ERR_SYS, NULL, "Failed to open \"%s\" (%s) (%s:%d).", path, strerror(errno), __FILE__, __LINE__);
+
         goto cleanup;
     }
 
