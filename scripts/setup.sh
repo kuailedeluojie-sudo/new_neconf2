@@ -72,7 +72,9 @@ ENABLE_FEATURE() {
 # get current modules
 SCTL_MODULES=`wr  $SYSREPOCTL -l`
 
-for i in "${MODULES[@]}"; do
+# 把MODULES这个字符串数组赋值给变量i
+for i in "${MODULES[@]}"; do 
+# 取字符串中@号前面的字符串赋值给变量name
     name=`echo "$i" | sed 's/\([^@]*\).*/\1/'`
 
     SCTL_MODULE=`echo "$SCTL_MODULES" | grep "^$name \+|[^|]*| I"`
