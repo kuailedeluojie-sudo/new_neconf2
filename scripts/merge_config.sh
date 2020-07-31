@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 # avoid problems with sudo PATH
 if [ `id -u` -eq 0 ]; then
@@ -10,12 +10,15 @@ else
 fi
 KS_KEY_NAME=genkey
 export  SYSREPOCFG=/opt/all/sysrepo/bin/sysrepocfg
+echo -------------------------------------------------------------
 # check that there is no listen/Call Home configuration yet
 echo wr $SYSREPOCFG -X -x "/ietf-netconf-server:netconf-server/listen/endpoint[1]/name | /ietf-netconf-server:netconf-server/call-home/netconf-client[1]/name"
 SERVER_CONFIG= `wr $SYSREPOCFG -X -x "/ietf-netconf-server:netconf-server/listen/endpoint[1]/name | /ietf-netconf-server:netconf-server/call-home/netconf-client[1]/name"`
 echo "$SERVER_CONFIG"
+echo -------------------------------------------------------------
 if [ -z "$SERVER_CONFIG" ]; then
 
+echo **************************************
 # import default config
 CONFIG="<netconf-server xmlns=\"urn:ietf:params:xml:ns:yang:ietf-netconf-server\">
     <listen>
@@ -52,14 +55,20 @@ CONFIG="<netconf-server xmlns=\"urn:ietf:params:xml:ns:yang:ietf-netconf-server\
         </endpoint>
     </listen>
 </netconf-server>"
-TMPFILE=`mktemp -u`
+echo **************************************
+echo "$CONFIG"
+TMPFILE=`mktemp`
 printf -- "$CONFIG" > $TMPFILE
+
 # apply it to startup and running
+echo \# apply it to startup and running
+
 echo "wr $SYSREPOCFG --edit=$TMPFILE -d startup -f xml -m ietf-netconf-server -v2"
 wr $SYSREPOCFG --edit=$TMPFILE -d startup -f xml -m ietf-netconf-server -v2
 echo "wr $SYSREPOCFG -C startup -m ietf-netconf-server -v2"
 wr $SYSREPOCFG -C startup -m ietf-netconf-server -v2
 # remove the tmp file
+echo \# remove the tmp file
 rm $TMPFILE
 
 fi
