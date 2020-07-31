@@ -45,17 +45,25 @@ MODULES=(
 
 # functions
 INSTALL_MODULE() {
-	echo "wr "$SYSREPOCTL" -a -i $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2  "
+    echo ---------------------------------------------
+	echo wr "$SYSREPOCTL" -a -i $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2  
      wr "$SYSREPOCTL" -a -i $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
     local rc=$?
+    echo $rc
+    echo ---------------------------------------------
     if [ $rc -ne 0 ]; then
         exit $rc
     fi
 }
 
 UPDATE_MODULE() {
+    echo ---------------------------------------------------------
     wr "$SYSREPOCTL" -a -U $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
     local rc=$?
+    echo wr "$SYSREPOCTL" -a -U $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
+    echo $rc
+    echo ---------------------------------------------------------
+   
     if [ $rc -ne 0 ]; then
         exit $rc
     fi
@@ -75,41 +83,83 @@ SCTL_MODULES=`wr  $SYSREPOCTL -l`
 # 把MODULES这个字符串数组赋值给变量i
 for i in "${MODULES[@]}"; do 
 # 取字符串中@号前面的字符串赋值给变量name
-    name=`echo "$i" | sed 's/\([^@]*\).*/\1/'`
 
+    name=`echo "$i" | sed 's/\([^@]*\).*/\1/'`
+    echo ------------------------------------
+    echo $name
+    echo ------------------------------------
+    echo ************************************
+    echo "$SCTL_MODULES"
+    echo ************************************
+    echo ++++++++++++++++++++++++++++++++++++
+    
+    echo ++++++++++++++++++++++++++++++++++++
     SCTL_MODULE=`echo "$SCTL_MODULES" | grep "^$name \+|[^|]*| I"`
+    echo $SCTL_MODULE
+    echo ++++++++++++++++++++++++++++++++++++
     if [ -z "$SCTL_MODULE" ]; then
         # install module with all its features
+    echo ************************************
+        echo  INSTALL_MODULE "$i"
         INSTALL_MODULE "$i"
+        
+    echo ************************************
         continue
     fi
 
+    echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    
+    
     sctl_revision=`echo "$SCTL_MODULE" | sed 's/[^|]*| \([^ ]*\).*/\1/'`
     revision=`echo "$i" | sed 's/[^@]*@\([^\.]*\).*/\1/'`
+    echo $sctl_revision
+    echo $revision
+    echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     if [ "$sctl_revision" \< "$revision" ]; then
         # update module without any features
+        echo -----------------------------------
         file=`echo "$i" | cut -d' ' -f 1`
+        echo UPDATE_MODULE "$file"
         UPDATE_MODULE "$file"
+        echo -----------------------------------
+
     fi
 
     # parse sysrepoctl features and add extra space at the end for easier matching
     sctl_features="`echo "$SCTL_MODULE" | sed 's/\([^|]*|\)\{6\}\(.*\)/\2/'` "
     # parse features we want to enable
     features=`echo "$i" | sed 's/[^ ]* \(.*\)/\1/'`
+    echo ==========================================
+    echo $sctl_features
+    echo $features
+    echo ==========================================
+
     while [ "${features:0:3}" = "-e " ]; do
         # skip "-e "
         features=${features:3}
+        echo =========================================================
         # parse feature
         feature=`echo "$features" | sed 's/\([^[:space:]]*\).*/\1/'`
-
+        echo $features
         # enable feature if not already
         sctl_feature=`echo "$sctl_features" | grep " ${feature} "`
+
+        echo $sctl_feature
+       echo =========================================================
+
         if [ -z "$sctl_feature" ]; then
             # enable feature
+            echo ******************************
             ENABLE_FEATURE $name $feature
+            echo   ENABLE_FEATURE $name $feature 
+            echo ******************************
         fi
 
         # next iteration, skip this feature
+        echo    next iteration, skip this feature
+        echo =======================================
         features=`echo "$features" | sed 's/[^[:space:]]* \(.*\)/\1/'`
+        echo $features
+        echo =======================================
     done
 done
