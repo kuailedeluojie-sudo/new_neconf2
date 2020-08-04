@@ -195,6 +195,7 @@ np2srv_endpt_tcp_params_cb(sr_session_ctx_t *session, const char *UNUSED(module_
                 }
             }
         } else if (!strcmp(node->schema->name, "local-port")) {
+            //绑定端口和服务器
             if ((op == SR_OP_CREATED) || (op == SR_OP_MODIFIED)) {
                 if (nc_server_endpt_set_port(endpt_name, ((struct lyd_node_leaf_list *)node)->value.uint16)) {
                     failed = 1;

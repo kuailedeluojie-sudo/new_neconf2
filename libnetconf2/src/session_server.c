@@ -207,7 +207,7 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
     } else {
         is_ipv4 = 0;
     }
-
+    //根据是否为IPV4来创建TCP套接字
     sock = socket((is_ipv4 ? AF_INET : AF_INET6), SOCK_STREAM, 0);
     if (sock == -1) {
         ERR("Failed to create socket (%s).", strerror(errno));
@@ -230,12 +230,13 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
     }
 
     memset(&saddr, 0, sizeof(struct sockaddr_storage));
+    //如果是IPV4
     if (is_ipv4) {
         saddr4 = (struct sockaddr_in *)&saddr;
 
         saddr4->sin_family = AF_INET;
         saddr4->sin_port = htons(port);
-
+        //则把当前地址和端口号绑定当前的服务器
         if (inet_pton(AF_INET, address, &saddr4->sin_addr) != 1) {
             ERR("Failed to convert IPv4 address \"%s\".", address);
             goto fail;
@@ -245,7 +246,7 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
             ERR("Could not bind \"%s\" port %d (%s).", address, port, strerror(errno));
             goto fail;
         }
-
+        VRB("IPV4 bind \"%s\" port %d OK!!!!!!!!",address,port);
     } else {
         saddr6 = (struct sockaddr_in6 *)&saddr;
 
@@ -261,8 +262,9 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
             ERR("Could not bind \"%s\" port %d (%s).", address, port, strerror(errno));
             goto fail;
         }
+        VRB("IPV6 bind \"%s\" port %d OK!!!!!!!!",address,port);    
     }
-
+    //监听这个套接字
     if (listen(sock, NC_REVERSE_QUEUE) == -1) {
         ERR("Unable to start listening on \"%s\" port %d (%s).", address, port, strerror(errno));
         goto fail;
@@ -283,7 +285,7 @@ nc_sock_listen_unix(const char *address, const struct nc_server_unix_opts *opts)
 {
     struct sockaddr_un sun;
     int sock = -1;
-
+    //创建一个tcp套接字
     sock = socket(AF_UNIX, SOCK_STREAM, 0);
     if (sock == -1) {
         ERR("Failed to create socket (%s).", strerror(errno));
@@ -293,7 +295,7 @@ nc_sock_listen_unix(const char *address, const struct nc_server_unix_opts *opts)
     memset(&sun, 0, sizeof(sun));
     sun.sun_family = AF_UNIX;
     snprintf(sun.sun_path, sizeof(sun.sun_path), "%s", address);
-
+    //绑定套接字
     unlink(sun.sun_path);
     if (bind(sock, (struct sockaddr *)&sun, sizeof(sun)) == -1) {
         ERR("Could not bind \"%s\" (%s).", address, strerror(errno));
@@ -313,12 +315,12 @@ nc_sock_listen_unix(const char *address, const struct nc_server_unix_opts *opts)
             goto fail;
         }
     }
-
+    //监听套接字
     if (listen(sock, NC_REVERSE_QUEUE) == -1) {
         ERR("Unable to start listening on \"%s\" (%s).", address, strerror(errno));
         goto fail;
     }
-
+     VRB(" socket uid/gid \"%s\"  OK!!!!!!!!",address);    
     return sock;
 
 fail:
@@ -2076,7 +2078,7 @@ nc_server_endpt_set_address_port(const char *endpt_name, const char *address, ui
         ret = -1;
         goto cleanup;
     }
-
+    //服务器创建一个监听套接字
     /* we have all the information we need to create a listening socket */
     if (address && (port || endpt->ti == NC_TI_UNIX)) {
         /* create new socket, close the old one */
@@ -2106,6 +2108,7 @@ nc_server_endpt_set_address_port(const char *endpt_name, const char *address, ui
 #if defined(NC_ENABLED_SSH) && defined(NC_ENABLED_TLS)
         VRB("Listening on %s:%u for %s connections.", address, port, (endpt->ti == NC_TI_LIBSSH ? "SSH" : "TLS"));
 #elif defined(NC_ENABLED_SSH)
+        //监听830端口提供给SSH服务连接
         VRB("Listening on %s:%u for SSH connections.", address, port);
 #else
         VRB("Listening on %s:%u for TLS connections.", address, port);
@@ -2121,13 +2124,13 @@ cleanup:
 
     return ret;
 }
-
+//
 API int
 nc_server_endpt_set_address(const char *endpt_name, const char *address)
 {
     return nc_server_endpt_set_address_port(endpt_name, address, 0);
 }
-
+// 服务器，端口
 API int
 nc_server_endpt_set_port(const char *endpt_name, uint16_t port)
 {
