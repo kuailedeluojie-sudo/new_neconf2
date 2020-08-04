@@ -244,8 +244,11 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
             goto fail;
         }
         #endif
-        saddr4->sin_addr.s_addr	= inet_addr("192.168.1.136");
+        //确定把IP地址固定下来
         
+        #if 1
+        saddr4->sin_addr.s_addr	= inet_addr("192.168.1.136");
+        #endif
         if (bind(sock, (struct sockaddr *)saddr4, sizeof(struct sockaddr_in)) == -1) {
             ERR("Could not bind \"%s\" port %d (%s).", address, port, strerror(errno));
             goto fail;
