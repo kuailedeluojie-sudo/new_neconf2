@@ -165,8 +165,8 @@ CMakeFiles/serverobj.dir/clean:
 # Target rules for target CMakeFiles/netopeer2-server.dir
 
 # All Build rule for target.
-CMakeFiles/netopeer2-server.dir/all: CMakeFiles/serverobj.dir/all
 CMakeFiles/netopeer2-server.dir/all: CMakeFiles/compat.dir/all
+CMakeFiles/netopeer2-server.dir/all: CMakeFiles/serverobj.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/netopeer2-server.dir/build.make CMakeFiles/netopeer2-server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/netopeer2-server.dir/build.make CMakeFiles/netopeer2-server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/netopeer2/build/CMakeFiles --progress-num=8,9 "Built target netopeer2-server"

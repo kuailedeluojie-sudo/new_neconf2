@@ -232,21 +232,25 @@ nc_sock_listen_inet(const char *address, uint16_t port, struct nc_keepalives *ka
     memset(&saddr, 0, sizeof(struct sockaddr_storage));
     //如果是IPV4
     if (is_ipv4) {
+        //按照主控板绑定TCP服务器的方式来绑定当前的服务器IP地址，现在固定为192.168.1.136
         saddr4 = (struct sockaddr_in *)&saddr;
 
         saddr4->sin_family = AF_INET;
         saddr4->sin_port = htons(port);
         //则把当前地址和端口号绑定当前的服务器
+        #if 0 //这里是绑定的0.0.0.0
         if (inet_pton(AF_INET, address, &saddr4->sin_addr) != 1) {
             ERR("Failed to convert IPv4 address \"%s\".", address);
             goto fail;
         }
-
+        #endif
+        saddr4->sin_addr.s_addr	= inet_addr("192.168.1.136");
+        
         if (bind(sock, (struct sockaddr *)saddr4, sizeof(struct sockaddr_in)) == -1) {
             ERR("Could not bind \"%s\" port %d (%s).", address, port, strerror(errno));
             goto fail;
         }
-        VRB("IPV4 bind \"%s\" port %d OK!!!!!!!!",address,port);
+        VRB("IPV4 bind \"%s\" port %d OK!!!!!!!!","192.168.1.136",port);
     } else {
         saddr6 = (struct sockaddr_in6 *)&saddr;
 
@@ -320,7 +324,7 @@ nc_sock_listen_unix(const char *address, const struct nc_server_unix_opts *opts)
         ERR("Unable to start listening on \"%s\" (%s).", address, strerror(errno));
         goto fail;
     }
-     VRB(" socket uid/gid \"%s\"  OK!!!!!!!!",address);    
+     VRB(" socket uid/gid \"%s\" port %d OK!!!!!!!!",address);    
     return sock;
 
 fail:
