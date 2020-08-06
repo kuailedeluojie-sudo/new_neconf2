@@ -280,10 +280,10 @@ LIBNETCONF2_INCLUDE_DIRS:UNINITIALIZED=/opt/libnetconf2/include
 LIBNETCONF2_LIBRARIES:UNINITIALIZED=/opt/libnetconf2/lib/libnetconf2.so.1.3.5
 
 //No help, variable specified on the command line.
-LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/include
+LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/opt/libssh/include
 
 //No help, variable specified on the command line.
-LIBSSH_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
+LIBSSH_LIBRARIES:UNINITIALIZED=/opt/libssh/lib/libssh.so.4.8.3
 
 //No help, variable specified on the command line.
 LIBYANG_INCLUDE_DIRS:UNINITIALIZED=/opt/libyang/include

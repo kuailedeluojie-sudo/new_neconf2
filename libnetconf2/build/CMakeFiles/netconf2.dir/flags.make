@@ -6,5 +6,5 @@ C_FLAGS =  -DNC_ENABLED_TLS -DNC_ENABLED_SSH -g -fPIC   -Wall -Wextra -fvisibili
 
 C_DEFINES = -Dnetconf2_EXPORTS
 
-C_INCLUDES = -I/home/mo/share/netconf2_new/libnetconf2/build/src -I/home/mo/share/netconf2_new/libnetconf2/build -I/home/mo/share/netconf2/lib/openssl/debug/output/include -I/home/mo/share/netconf2/lib/libssh/_install/include -I/opt/libyang/include 
+C_INCLUDES = -I/home/mo/share/netconf2_new/libnetconf2/build/src -I/home/mo/share/netconf2_new/libnetconf2/build -I/home/mo/share/netconf2/lib/openssl/debug/output/include -I/opt/libssh/include -I/opt/libyang/include 
 

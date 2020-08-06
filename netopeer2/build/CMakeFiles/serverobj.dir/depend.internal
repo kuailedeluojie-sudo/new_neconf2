@@ -9,11 +9,6 @@ CMakeFiles/serverobj.dir/src/common.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -44,6 +39,10 @@ CMakeFiles/serverobj.dir/src/common.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_acm.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_monitoring.h
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -60,11 +59,6 @@ CMakeFiles/serverobj.dir/src/log.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -93,6 +87,10 @@ CMakeFiles/serverobj.dir/src/log.c.o
  /home/mo/share/netconf2_new/netopeer2/src/common.h
  /home/mo/share/netconf2_new/netopeer2/src/log.c
  /home/mo/share/netconf2_new/netopeer2/src/log.h
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -109,11 +107,6 @@ CMakeFiles/serverobj.dir/src/netconf.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -143,6 +136,10 @@ CMakeFiles/serverobj.dir/src/netconf.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf.c
  /home/mo/share/netconf2_new/netopeer2/src/netconf_acm.h
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -159,11 +156,6 @@ CMakeFiles/serverobj.dir/src/netconf_acm.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -193,6 +185,10 @@ CMakeFiles/serverobj.dir/src/netconf_acm.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_acm.c
  /home/mo/share/netconf2_new/netopeer2/src/netconf_acm.h
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -209,11 +205,6 @@ CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -243,6 +234,10 @@ CMakeFiles/serverobj.dir/src/netconf_monitoring.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_monitoring.c
  /home/mo/share/netconf2_new/netopeer2/src/netconf_monitoring.h
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -259,11 +254,6 @@ CMakeFiles/serverobj.dir/src/netconf_nmda.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -293,6 +283,10 @@ CMakeFiles/serverobj.dir/src/netconf_nmda.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_acm.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_nmda.c
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -309,11 +303,6 @@ CMakeFiles/serverobj.dir/src/netconf_server.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -342,6 +331,10 @@ CMakeFiles/serverobj.dir/src/netconf_server.c.o
  /home/mo/share/netconf2_new/netopeer2/src/common.h
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_server.c
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -358,11 +351,6 @@ CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -392,6 +380,10 @@ CMakeFiles/serverobj.dir/src/netconf_server_ssh.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_server.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_server_ssh.c
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h
@@ -408,11 +400,6 @@ CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
  /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
- /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
  /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -442,6 +429,10 @@ CMakeFiles/serverobj.dir/src/netconf_server_tls.c.o
  /home/mo/share/netconf2_new/netopeer2/src/log.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_server.h
  /home/mo/share/netconf2_new/netopeer2/src/netconf_server_tls.c
+ /opt/libssh/include/libssh/callbacks.h
+ /opt/libssh/include/libssh/legacy.h
+ /opt/libssh/include/libssh/libssh.h
+ /opt/libssh/include/libssh/server.h
  /opt/libyang/include/libyang/dict.h
  /opt/libyang/include/libyang/libyang.h
  /opt/libyang/include/libyang/tree_data.h

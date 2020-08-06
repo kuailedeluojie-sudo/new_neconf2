@@ -266,10 +266,10 @@ ENABLE_TLS:BOOL=ON
 ENABLE_VALGRIND_TESTS:BOOL=ON
 
 //No help, variable specified on the command line.
-LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/include
+LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/opt/libssh/include
 
 //No help, variable specified on the command line.
-LIBSSH_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
+LIBSSH_LIBRARIES:UNINITIALIZED=/opt/libssh/lib/libssh.so.4.8.3
 
 //Path to a file.
 LIBYANG_CPP_INCLUDE_DIR:PATH=LIBYANG_CPP_INCLUDE_DIR-NOTFOUND
@@ -328,7 +328,7 @@ libnetconf2_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/libnetconf2/build
 libnetconf2_SOURCE_DIR:STATIC=/home/mo/share/netconf2_new/libnetconf2
 
 //Dependencies for the target
-netconf2_LIB_DEPENDS:STATIC=general;-lpthread;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libssl.so;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so;general;/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1;general;-lcrypt;general;/opt/libyang/lib/libyang.so.1.8.4;
+netconf2_LIB_DEPENDS:STATIC=general;-lpthread;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libssl.so;general;/home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so;general;/opt/libssh/lib/libssh.so.4.8.3;general;-lcrypt;general;/opt/libyang/lib/libyang.so.1.8.4;
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=pkgcfg_lib__OPENSSL_crypto-NOTFOUND

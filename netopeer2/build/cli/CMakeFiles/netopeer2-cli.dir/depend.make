@@ -8,9 +8,6 @@ cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libne
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client_ch.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_client.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
-cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/async.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
@@ -55,6 +52,8 @@ cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/completion.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libssh/include/libssh/legacy.h
+cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libssh/include/libssh/libssh.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/dict.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/libyang.h
 cli/CMakeFiles/netopeer2-cli.dir/commands.c.o: /opt/libyang/include/libyang/tree_data.h
@@ -70,9 +69,6 @@ cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/lib
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client_ch.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_client.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
-cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/async.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
@@ -113,6 +109,8 @@ cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /home/mo/share/netconf2/lib/ope
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/completion.c
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libssh/include/libssh/legacy.h
+cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libssh/include/libssh/libssh.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/dict.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/libyang.h
 cli/CMakeFiles/netopeer2-cli.dir/completion.c.o: /opt/libyang/include/libyang/tree_data.h
@@ -128,9 +126,6 @@ cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client_ch.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_client.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
-cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/async.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
@@ -172,6 +167,8 @@ cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/commands.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/configuration.c
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: ../cli/linenoise/linenoise.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libssh/include/libssh/legacy.h
+cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libssh/include/libssh/libssh.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/dict.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/libyang.h
 cli/CMakeFiles/netopeer2-cli.dir/configuration.c.o: /opt/libyang/include/libyang/tree_data.h
@@ -190,9 +187,6 @@ cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libnetcon
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_client_ch.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_client.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
-cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/async.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
@@ -235,6 +229,8 @@ cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/completion.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/configuration.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/linenoise/linenoise.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: ../cli/main.c
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libssh/include/libssh/legacy.h
+cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libssh/include/libssh/libssh.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/dict.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/libyang.h
 cli/CMakeFiles/netopeer2-cli.dir/main.c.o: /opt/libyang/include/libyang/tree_data.h

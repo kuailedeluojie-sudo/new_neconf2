@@ -268,7 +268,7 @@ libnetconf2.so.1.3.5: CMakeFiles/compat.dir/compat/compat.c.o
 libnetconf2.so.1.3.5: CMakeFiles/netconf2.dir/build.make
 libnetconf2.so.1.3.5: /home/mo/share/netconf2/lib/openssl/debug/output/lib/libssl.so
 libnetconf2.so.1.3.5: /home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so
-libnetconf2.so.1.3.5: /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
+libnetconf2.so.1.3.5: /opt/libssh/lib/libssh.so.4.8.3
 libnetconf2.so.1.3.5: /opt/libyang/lib/libyang.so.1.8.4
 libnetconf2.so.1.3.5: CMakeFiles/netconf2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/libnetconf2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C shared library libnetconf2.so"

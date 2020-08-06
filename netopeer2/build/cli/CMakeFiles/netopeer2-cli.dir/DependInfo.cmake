@@ -15,7 +15,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
-  "/home/mo/share/netconf2/lib/libssh/_install/include"
+  "/opt/libssh/include"
   "/home/mo/share/netconf2/lib/libnetconf2/_install/include"
   "/home/mo/share/netconf2/lib/openssl/debug/output/include"
   "/opt/libyang/include"

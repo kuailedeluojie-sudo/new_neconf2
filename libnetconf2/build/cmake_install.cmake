@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
        NOT IS_SYMLINK "${file}")
       file(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/home/mo/share/netconf2/lib/openssl/debug/output/lib:/home/mo/share/netconf2/lib/libssh/_install/lib:/opt/libyang/lib:"
+           OLD_RPATH "/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libssh/lib:/opt/libyang/lib:"
            NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "${file}")
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnetconf2.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnetconf2.so"
-         OLD_RPATH "/home/mo/share/netconf2/lib/openssl/debug/output/lib:/home/mo/share/netconf2/lib/libssh/_install/lib:/opt/libyang/lib:"
+         OLD_RPATH "/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libssh/lib:/opt/libyang/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libnetconf2.so")

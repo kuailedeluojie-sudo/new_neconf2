@@ -13,7 +13,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "src"
   "."
   "/home/mo/share/netconf2/lib/openssl/debug/output/include"
-  "/home/mo/share/netconf2/lib/libssh/_install/include"
+  "/opt/libssh/include"
   "/opt/libyang/include"
   )
 

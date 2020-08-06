@@ -119,7 +119,7 @@ netopeer2-server: CMakeFiles/serverobj.dir/src/netconf_nmda.c.o
 netopeer2-server: CMakeFiles/serverobj.dir/src/log.c.o
 netopeer2-server: CMakeFiles/compat.dir/compat/compat.c.o
 netopeer2-server: CMakeFiles/netopeer2-server.dir/build.make
-netopeer2-server: /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
+netopeer2-server: /opt/libssh/lib/libssh.so.4.8.3
 netopeer2-server: /home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so.1.1
 netopeer2-server: /opt/libyang/lib/libyang.so.1.8.4
 netopeer2-server: /opt/libnetconf2/lib/libnetconf2.so.1.3.5

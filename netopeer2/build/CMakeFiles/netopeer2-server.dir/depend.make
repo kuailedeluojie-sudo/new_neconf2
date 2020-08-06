@@ -8,11 +8,6 @@ CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libnet
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/libnetconf2/session_server_ch.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libnetconf2/_install/include/nc_server.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/callbacks.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/legacy.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/libssh_version.h
-CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/libssh/_install/include/libssh/server.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/asn1.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bio.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /home/mo/share/netconf2/lib/openssl/debug/output/include/openssl/bn.h
@@ -48,6 +43,10 @@ CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_nmda.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server_ssh.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: ../src/netconf_server_tls.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libssh/include/libssh/callbacks.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libssh/include/libssh/legacy.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libssh/include/libssh/libssh.h
+CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libssh/include/libssh/server.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/dict.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/libyang.h
 CMakeFiles/netopeer2-server.dir/src/main.c.o: /opt/libyang/include/libyang/tree_data.h

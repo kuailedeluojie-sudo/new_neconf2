@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server"
-         OLD_RPATH "/home/mo/share/netconf2/lib/libssh/_install/lib:/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libyang/lib:/opt/libnetconf2/lib:/opt/sysrepo/lib:"
+         OLD_RPATH "/opt/libssh/lib:/home/mo/share/netconf2/lib/openssl/debug/output/lib:/opt/libyang/lib:/opt/libnetconf2/lib:/opt/sysrepo/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netopeer2-server")

@@ -303,10 +303,10 @@ GEN_LANGUAGE_BINDINGS:BOOL=OFF
 GEN_PYTHON_BINDINGS:BOOL=ON
 
 //No help, variable specified on the command line.
-LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/include
+LIBSSH_INCLUDE_DIRS:UNINITIALIZED=/opt/libssh/include
 
 //No help, variable specified on the command line.
-LIBSSH_LIBRARIES:UNINITIALIZED=/home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
+LIBSSH_LIBRARIES:UNINITIALIZED=/opt/libssh/lib/libssh.so.4.8.3
 
 //Path to a file.
 LIBYANG_CPP_INCLUDE_DIR:PATH=LIBYANG_CPP_INCLUDE_DIR-NOTFOUND
