@@ -1,0 +1,14 @@
+/opt/libssh/lib/pkgconfig/libssh.pc
+/opt/libssh/lib/cmake/libssh/libssh-config-version.cmake
+/opt/libssh/include/libssh/callbacks.h
+/opt/libssh/include/libssh/libssh.h
+/opt/libssh/include/libssh/ssh2.h
+/opt/libssh/include/libssh/legacy.h
+/opt/libssh/include/libssh/libsshpp.hpp
+/opt/libssh/include/libssh/sftp.h
+/opt/libssh/include/libssh/server.h
+/opt/libssh/lib/libssh.so.4.8.3
+/opt/libssh/lib/libssh.so.4
+/opt/libssh/lib/libssh.so
+/opt/libssh/lib/cmake/libssh/libssh-config.cmake
+/opt/libssh/lib/cmake/libssh/libssh-config-noconfig.cmake

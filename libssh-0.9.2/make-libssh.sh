@@ -8,5 +8,5 @@ mkdir -p debug
 cd debug
 rm -rf *
 cmake .. -DZLIB_INCLUDE_DIR=/home/mo/share/zlib-1.2.11/_install/include  -DCMAKE_INSTALL_PREFIX=/opt/libssh
-make
+make -j
 make install
