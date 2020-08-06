@@ -27,4 +27,4 @@ rm lib -rf
 echo mkdir lib
 mkdir lib
 echo cp /opt/*/lib ./lib -rf
-cp /opt/*/lib/ ./lib -rf
+cp /opt/*/lib/* ./lib -rf
