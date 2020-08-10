@@ -521,7 +521,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound componen
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/home/mo/share/netconf2/lib/openssl/debug/output/lib/libcrypto.so][/home/mo/share/netconf2/lib/openssl/debug/output/include][c ][v1.1.0l()]
 //Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.28()]
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Have symbol asprintf
@@ -589,10 +589,10 @@ _OPENSSL_STATIC_CFLAGS:INTERNAL=
 _OPENSSL_STATIC_CFLAGS_I:INTERNAL=
 _OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
 _OPENSSL_STATIC_INCLUDE_DIRS:INTERNAL=
-_OPENSSL_STATIC_LDFLAGS:INTERNAL=-lssl;-ldl;-pthread;-lcrypto;-ldl;-pthread
-_OPENSSL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+_OPENSSL_STATIC_LDFLAGS:INTERNAL=-lssl;-lcrypto;-ldl;-pthread
+_OPENSSL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
 _OPENSSL_STATIC_LIBDIR:INTERNAL=
-_OPENSSL_STATIC_LIBRARIES:INTERNAL=ssl;dl;crypto;dl
+_OPENSSL_STATIC_LIBRARIES:INTERNAL=ssl;crypto;dl
 _OPENSSL_STATIC_LIBRARY_DIRS:INTERNAL=
 _OPENSSL_STATIC_LIBS:INTERNAL=
 _OPENSSL_STATIC_LIBS_L:INTERNAL=

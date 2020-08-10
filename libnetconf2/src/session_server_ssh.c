@@ -762,7 +762,7 @@ auth_password_compare_pwd(const char *pass_hash, const char *pass_clear)
 
     return strcmp(new_pass_hash, pass_hash);
 }
-
+//在这个函数中验证账号密码
 static void
 nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
 {
@@ -778,8 +778,9 @@ nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
             free(pass_hash);
         }
     }
-
-    if (!auth_ret) {
+//2020.8.10 修改成不需要验证密码就可以直接连上
+//    if (!auth_ret) {
+     if (auth_ret) {
         session->flags |= NC_SESSION_SSH_AUTHENTICATED;
         VRB("User \"%s\" authenticated.", session->username);
         ssh_message_auth_reply_success(msg, 0);
@@ -1128,7 +1129,7 @@ nc_sshcb_msg(ssh_session UNUSED(sshsession), ssh_message msg, void *data)
         str_subtype = "unknown";
         break;
     }
-
+    //接收到ssh连接的时候
     VRB("Received an SSH message \"%s\" of subtype \"%s\".", str_type, str_subtype);
     if ((session->status == NC_STATUS_CLOSING) || (session->status == NC_STATUS_INVALID)) {
         /* "valid" situation if, for example, receiving some auth or channel request timeouted,

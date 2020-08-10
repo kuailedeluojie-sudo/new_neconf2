@@ -15,7 +15,7 @@
 ########################
 
 //path to the bison executable
-BISON_EXECUTABLE:FILEPATH=BISON_EXECUTABLE-NOTFOUND
+BISON_EXECUTABLE:FILEPATH=/usr/bin/bison
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -279,10 +279,10 @@ ENABLE_STATIC:BOOL=OFF
 ENABLE_VALGRIND_TESTS:BOOL=ON
 
 //path to the flex executable
-FLEX_EXECUTABLE:FILEPATH=FLEX_EXECUTABLE-NOTFOUND
+FLEX_EXECUTABLE:FILEPATH=/usr/bin/flex
 
 //Path to the flex headers
-FLEX_INCLUDE_DIR:PATH=FLEX_INCLUDE_DIR-NOTFOUND
+FLEX_INCLUDE_DIR:PATH=/usr/include
 
 //Path to the fl library
 FL_LIBRARY:FILEPATH=FL_LIBRARY-NOTFOUND
@@ -533,10 +533,14 @@ CMOCKA_INCLUDE_DIR-ADVANCED:INTERNAL=1
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding BISON
+FIND_PACKAGE_MESSAGE_DETAILS_BISON:INTERNAL=[/usr/bin/bison][v3.0.4()]
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen missing components: dot][v1.8.13()]
+//Details about finding FLEX
+FIND_PACKAGE_MESSAGE_DETAILS_FLEX:INTERNAL=[/usr/bin/flex][v2.6.4()]
 //Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.28()]
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: FLEX_EXECUTABLE

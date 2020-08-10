@@ -1,0 +1,7 @@
+CMake Error at /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+  Could NOT find LibSSH: Found unsuitable version "0.7.0", but required is at
+  least "0.7.1" (found /usr/include)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake:376 (_FPHSA_FAILURE_MESSAGE)
+  CMakeModules/FindLibSSH.cmake:113 (find_package_handle_standard_args)
+  CMakeLists.txt:153 (find_package)
