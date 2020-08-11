@@ -12,3 +12,4 @@ cmake .. -DPCRE_LIBRARIES=/home/mo/share/netconf2/lib_src/pcre-8.44/_install/lib
 
 make -j8
 make install
+make clean

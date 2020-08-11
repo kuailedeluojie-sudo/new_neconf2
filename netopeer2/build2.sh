@@ -10,3 +10,4 @@ cmake ..  -DCMAKE_INSTALL_PREFIX=/opt/netopeer2/ -DLIBYANG_INCLUDE_DIRS=/opt/lib
 #/home/mo/share/netconf2/lib/libnetconf2/_install/lib/libnetconf2.so.1.3.5 /home/mo/share/netconf2/lib/libssh/_install/lib/libssh.so.4.8.1
 make -j8
 make install
+make clean
