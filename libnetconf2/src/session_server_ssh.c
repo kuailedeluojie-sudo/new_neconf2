@@ -15,7 +15,9 @@
 #define _GNU_SOURCE
 
 #include "config.h" /* Expose HAVE_SHADOW and HAVE_CRYPT */
-
+//添加这两个宏定义
+#define   HAVE_SHADOW  1
+#define   HAVE_CRYPT   1
 #ifdef HAVE_SHADOW
     #include <shadow.h>
 #endif
@@ -676,7 +678,7 @@ nc_server_ssh_clear_opts(struct nc_server_ssh_opts *opts)
 {
     nc_server_ssh_del_hostkey(NULL, -1, opts);
 }
-
+//在这个函数中获取用户名的哈希值
 static char *
 auth_password_get_pwd_hash(const char *username)
 {
@@ -684,13 +686,13 @@ auth_password_get_pwd_hash(const char *username)
     struct passwd *pwd, pwd_buf;
     struct spwd *spwd, spwd_buf;
     char *pass_hash = NULL, buf[256];
-
+//获取用户名的信息存入到pwd指针中
     getpwnam_r(username, &pwd_buf, buf, 256, &pwd);
     if (!pwd) {
         VRB("User \"%s\" not found locally.", username);
         return NULL;
     }
-
+    VRB("User \"%s\" pw_passwd %s %s %d.", username,pwd->pw_passwd,__FILE__,__LINE__);
     if (!strcmp(pwd->pw_passwd, "x")) {
         #ifndef __QNXNTO__
             getspnam_r(username, &spwd_buf, buf, 256, &spwd);
@@ -706,12 +708,12 @@ auth_password_get_pwd_hash(const char *username)
     } else {
         pass_hash = pwd->pw_passwd;
     }
-
+       VRB("User \"%s\" pass_hash %s %s %d.", username,pass_hash,__FILE__,__LINE__);
     if (!pass_hash) {
         ERR("No password could be retrieved for \"%s\".", username);
         return NULL;
     }
-
+ 
     /* check the hash structure for special meaning */
     if (!strcmp(pass_hash, "*") || !strcmp(pass_hash, "!")) {
         VRB("User \"%s\" is not allowed to authenticate using a password.", username);
@@ -721,7 +723,7 @@ auth_password_get_pwd_hash(const char *username)
         VRB("Retrieving password for \"%s\" from a NIS+ server not supported.", username);
         return NULL;
     }
-
+     //返回一个指针，指向为复制字符串分配的空间，如果分配空间失败，则返回NULL值
     return strdup(pass_hash);
 #else
     return strdup("");
@@ -755,8 +757,9 @@ auth_password_compare_pwd(const char *pass_hash, const char *pass_clear)
     new_pass_hash = crypt(pass_clear, pass_hash);
     pthread_mutex_unlock(&crypt_lock);
 #endif
-
+      VRB("%s   %d,new_pass_hash=%s,pass_hash = %s\n,strcmp(new_pass_hash, pass_hash) = %d\n",__FILE__,__LINE__ ,new_pass_hash,pass_hash,strcmp(new_pass_hash, pass_hash));
     if (!new_pass_hash) {
+        VRB("%s   %d new_pass_hash == NULL \n",__FILE__,__LINE__); 
         return 1;
     }
 
@@ -770,17 +773,21 @@ nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
     int auth_ret = 1;
 
     if (server_opts.passwd_auth_clb) {
+        VRB("%s   %d\n",__FILE__,__LINE__);
         auth_ret = server_opts.passwd_auth_clb(session, ssh_message_auth_password(msg), server_opts.passwd_auth_data);
     } else {
+        VRB("%s   %d\n",__FILE__,__LINE__);
         pass_hash = auth_password_get_pwd_hash(session->username);
         if (pass_hash) {
+            VRB("%s   %d pass_hash = %s  ssh_message_auth_password(msg) = %s   \n",__FILE__,__LINE__,pass_hash,ssh_message_auth_password(msg));
             auth_ret = auth_password_compare_pwd(pass_hash, ssh_message_auth_password(msg));
+             VRB("%s   %d  auth_ret = %d\n",__FILE__,__LINE__,auth_ret);
             free(pass_hash);
         }
     }
 //2020.8.10 修改成不需要验证密码就可以直接连上
-//    if (!auth_ret) {
-     if (auth_ret) {
+   if (!auth_ret) {
+   //  if (auth_ret) {
         session->flags |= NC_SESSION_SSH_AUTHENTICATED;
         VRB("User \"%s\" authenticated.", session->username);
         ssh_message_auth_reply_success(msg, 0);
@@ -788,7 +795,7 @@ nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
         ++session->opts.server.ssh_auth_attempts;
         VRB("Failed user \"%s\" authentication attempt (#%d).", session->username, session->opts.server.ssh_auth_attempts);
         ssh_message_reply_default(msg);
-    }
+    }n
 }
 
 static void

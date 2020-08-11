@@ -1,3 +1,4 @@
+#主要是使用ssh 0.9.2版本
 echo  cd ./libyang
 cd ./libyang
 echo ./build2.sh
