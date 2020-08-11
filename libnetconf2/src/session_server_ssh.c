@@ -786,7 +786,7 @@ nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
         }
     }
 //2020.8.10 修改成不需要验证密码就可以直接连上
-   if (!auth_ret) {
+   if (auth_ret == 0) {
    //  if (auth_ret) {
         session->flags |= NC_SESSION_SSH_AUTHENTICATED;
         VRB("User \"%s\" authenticated.", session->username);
@@ -795,7 +795,7 @@ nc_sshcb_auth_password(struct nc_session *session, ssh_message msg)
         ++session->opts.server.ssh_auth_attempts;
         VRB("Failed user \"%s\" authentication attempt (#%d).", session->username, session->opts.server.ssh_auth_attempts);
         ssh_message_reply_default(msg);
-    }n
+    }
 }
 
 static void

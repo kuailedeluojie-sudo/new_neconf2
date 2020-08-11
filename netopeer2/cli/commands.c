@@ -273,7 +273,7 @@ cli_difftimespec(const struct timespec *ts1, const struct timespec *ts2)
 
     return (nsec_diff ? nsec_diff / 1000000L : 0);
 }
-
+//在这个函数中接收指令并做出相应的处理
 static int
 cli_send_recv(struct nc_rpc *rpc, FILE *output, NC_WD_MODE wd_mode, int timeout_s)
 {
