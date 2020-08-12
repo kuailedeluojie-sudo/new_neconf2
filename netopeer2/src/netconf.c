@@ -41,7 +41,7 @@ np2srv_rpc_get_cb(sr_session_ctx_t *session, const char *op_path, const struct l
     struct ly_set *nodeset;
     sr_datastore_t ds = 0;
     sr_get_oper_options_t get_opts = 0;
-
+//客户端过来的指令处理
     /* get know which datastore is being affected */
     if (!strcmp(op_path, "/ietf-netconf:get")) {
         /* get running data first */

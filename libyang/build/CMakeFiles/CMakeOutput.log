@@ -15,13 +15,13 @@ The C compiler identification is GNU, found in "/home/mo/share/netconf2_new/liby
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d0148/fast && /usr/bin/make  -f CMakeFiles/cmTC_d0148.dir/build.make CMakeFiles/cmTC_d0148.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d82cf/fast && /usr/bin/make  -f CMakeFiles/cmTC_d82cf.dir/build.make CMakeFiles/cmTC_d82cf.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d0148.dir/testCCompiler.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc    -o CMakeFiles/cmTC_d0148.dir/testCCompiler.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_d0148
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0148.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc      -rdynamic CMakeFiles/cmTC_d0148.dir/testCCompiler.c.o  -o cmTC_d0148 
+Building C object CMakeFiles/cmTC_d82cf.dir/testCCompiler.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc    -o CMakeFiles/cmTC_d82cf.dir/testCCompiler.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d82cf
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d82cf.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc      -rdynamic CMakeFiles/cmTC_d82cf.dir/testCCompiler.c.o  -o cmTC_d82cf 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -29,17 +29,17 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_26bc0/fast && /usr/bin/make  -f CMakeFiles/cmTC_26bc0.dir/build.make CMakeFiles/cmTC_26bc0.dir/build
+Run Build Command(s):/usr/bin/make cmTC_e6766/fast && /usr/bin/make  -f CMakeFiles/cmTC_e6766.dir/build.make CMakeFiles/cmTC_e6766.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 Target: arm-fsl-linux-gnueabi
 Configured with: /work/arm-toolchains/tmp/src/gcc-4.4.4/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-fsl-linux-gnueabi --prefix=/work/arm_fsl_gcc_4.4.4_multilib --with-sysroot=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --enable-languages=c,c++ --with-pkgversion=4.4.4_09.06.2010 --enable-__cxa_atexit --disable-libmudflap --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-gmp=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-mpfr=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-ppl=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-cloog=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --enable-threads=posix --enable-target-optspace --with-local-prefix=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --disable-nls --enable-symvers=gnu --enable-c99 --enable-long-long --enable-multilib --with-system-zlib --enable-lto
 Thread model: posix
 gcc version 4.4.4 (4.4.4_09.06.2010) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c'
- /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/cc1 -quiet -v -iprefix /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/ -isysroot /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLdR1q5.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c'
+ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/cc1 -quiet -v -iprefix /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/ -isysroot /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccPzLy7L.s
 ignoring nonexistent directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs/include"
 ignoring duplicate directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/../../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/include"
 ignoring duplicate directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/../../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/include-fixed"
@@ -55,14 +55,14 @@ GNU C (4.4.4_09.06.2010) version 4.4.4 (arm-fsl-linux-gnueabi)
 	compiled by GNU C version 4.1.2, GMP version 4.3.2, MPFR version 2.4.2-p2.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 787c3c897e17f3d41759590be58dd346
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c'
- /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/as -meabi=5 -o CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o /tmp/ccLdR1q5.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c'
+ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/as -meabi=5 -o CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o /tmp/ccPzLy7L.s
 COMPILER_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/
 LIBRARY_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c'
-Linking C executable cmTC_26bc0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26bc0.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc     -v -rdynamic CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o  -o cmTC_26bc0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_e6766
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6766.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc     -v -rdynamic CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o  -o cmTC_e6766 
 Using built-in specs.
 Target: arm-fsl-linux-gnueabi
 Configured with: /work/arm-toolchains/tmp/src/gcc-4.4.4/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-fsl-linux-gnueabi --prefix=/work/arm_fsl_gcc_4.4.4_multilib --with-sysroot=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --enable-languages=c,c++ --with-pkgversion=4.4.4_09.06.2010 --enable-__cxa_atexit --disable-libmudflap --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-gmp=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-mpfr=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-ppl=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-cloog=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --enable-threads=posix --enable-target-optspace --with-local-prefix=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --disable-nls --enable-symvers=gnu --enable-c99 --enable-long-long --enable-multilib --with-system-zlib --enable-lto
@@ -70,8 +70,8 @@ Thread model: posix
 gcc version 4.4.4 (4.4.4_09.06.2010) 
 COMPILER_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/
 LIBRARY_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_26bc0'
- /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/collect2 --sysroot=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_26bc0 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crt1.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crti.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtbegin.o -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4 -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtend.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e6766'
+ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/collect2 --sysroot=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6766 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crt1.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crti.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtbegin.o -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4 -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtend.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crtn.o
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -93,17 +93,17 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_26bc0/fast && /usr/bin/make  -f CMakeFiles/cmTC_26bc0.dir/build.make CMakeFiles/cmTC_26bc0.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_e6766/fast && /usr/bin/make  -f CMakeFiles/cmTC_e6766.dir/build.make CMakeFiles/cmTC_e6766.dir/build]
   ignore line: [make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [Target: arm-fsl-linux-gnueabi]
   ignore line: [Configured with: /work/arm-toolchains/tmp/src/gcc-4.4.4/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-fsl-linux-gnueabi --prefix=/work/arm_fsl_gcc_4.4.4_multilib --with-sysroot=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --enable-languages=c c++ --with-pkgversion=4.4.4_09.06.2010 --enable-__cxa_atexit --disable-libmudflap --with-host-libstdcxx='-static-libgcc -Wl -Bstatic -lstdc++ -Bdynamic -lm' --with-gmp=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-mpfr=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-ppl=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-cloog=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --enable-threads=posix --enable-target-optspace --with-local-prefix=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --disable-nls --enable-symvers=gnu --enable-c99 --enable-long-long --enable-multilib --with-system-zlib --enable-lto]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.4.4 (4.4.4_09.06.2010) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c']
-  ignore line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/cc1 -quiet -v -iprefix /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/ -isysroot /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLdR1q5.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/cc1 -quiet -v -iprefix /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/ -isysroot /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs /usr/local/share/cmake-3.17/Modules/CMakeCCompilerABI.c -D_FORTIFY_SOURCE=2 -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccPzLy7L.s]
   ignore line: [ignoring nonexistent directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs/include"]
   ignore line: [ignoring duplicate directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/../../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/include"]
   ignore line: [ignoring duplicate directory "/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/../../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/include-fixed"]
@@ -119,14 +119,14 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.1.2  GMP version 4.3.2  MPFR version 2.4.2-p2.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 787c3c897e17f3d41759590be58dd346]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c']
-  ignore line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/as -meabi=5 -o CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o /tmp/ccLdR1q5.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/as -meabi=5 -o CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o /tmp/ccPzLy7L.s]
   ignore line: [COMPILER_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/]
   ignore line: [LIBRARY_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o' '-c']
-  ignore line: [Linking C executable cmTC_26bc0]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26bc0.dir/link.txt --verbose=1]
-  ignore line: [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc     -v -rdynamic CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o  -o cmTC_26bc0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_e6766]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6766.dir/link.txt --verbose=1]
+  ignore line: [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc     -v -rdynamic CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o  -o cmTC_e6766 ]
   ignore line: [Using built-in specs.]
   ignore line: [Target: arm-fsl-linux-gnueabi]
   ignore line: [Configured with: /work/arm-toolchains/tmp/src/gcc-4.4.4/configure --build=i686-build_pc-linux-gnu --host=i686-build_pc-linux-gnu --target=arm-fsl-linux-gnueabi --prefix=/work/arm_fsl_gcc_4.4.4_multilib --with-sysroot=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --enable-languages=c c++ --with-pkgversion=4.4.4_09.06.2010 --enable-__cxa_atexit --disable-libmudflap --with-host-libstdcxx='-static-libgcc -Wl -Bstatic -lstdc++ -Bdynamic -lm' --with-gmp=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-mpfr=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-ppl=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --with-cloog=/work/arm-toolchains/tmp/arm-fsl-linux-gnueabi/build/static --enable-threads=posix --enable-target-optspace --with-local-prefix=/work/arm_fsl_gcc_4.4.4_multilib/arm-fsl-linux-gnueabi/multi-libs --disable-nls --enable-symvers=gnu --enable-c99 --enable-long-long --enable-multilib --with-system-zlib --enable-lto]
@@ -134,8 +134,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.4.4 (4.4.4_09.06.2010) ]
   ignore line: [COMPILER_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/../../../../arm-fsl-linux-gnueabi/bin/]
   ignore line: [LIBRARY_PATH=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib/:/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_26bc0']
-  link line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/collect2 --sysroot=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_26bc0 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crt1.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crti.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtbegin.o -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4 -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtend.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e6766']
+  link line: [ /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/collect2 --sysroot=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6766 /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crt1.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crti.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtbegin.o -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4 -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib -L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtend.o /home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crtn.o]
     arg [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../libexec/gcc/arm-fsl-linux-gnueabi/4.4.4/collect2] ==> ignore
     arg [--sysroot=/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -146,7 +146,7 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_26bc0] ==> ignore
+    arg [cmTC_e6766] ==> ignore
     arg [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crt1.o] ==> ignore
     arg [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib/crti.o] ==> ignore
     arg [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc/arm-fsl-linux-gnueabi/4.4.4/crtbegin.o] ==> ignore
@@ -154,7 +154,7 @@ Parsed C implicit link information from above output:
     arg [-L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc] ==> dir [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../lib/gcc]
     arg [-L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib] ==> dir [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/lib]
     arg [-L/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib] ==> dir [/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/../arm-fsl-linux-gnueabi/multi-libs/usr/lib]
-    arg [CMakeFiles/cmTC_26bc0.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_e6766.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -178,13 +178,13 @@ Parsed C implicit link information from above output:
 Determining if the vdprintf exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a3ece/fast && /usr/bin/make  -f CMakeFiles/cmTC_a3ece.dir/build.make CMakeFiles/cmTC_a3ece.dir/build
+Run Build Command(s):/usr/bin/make cmTC_30d96/fast && /usr/bin/make  -f CMakeFiles/cmTC_30d96.dir/build.make CMakeFiles/cmTC_30d96.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a3ece.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_a3ece.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_a3ece
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3ece.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_a3ece.dir/CheckSymbolExists.c.o  -o cmTC_a3ece 
+Building C object CMakeFiles/cmTC_30d96.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_30d96.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_30d96
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30d96.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_30d96.dir/CheckSymbolExists.c.o  -o cmTC_30d96 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -206,13 +206,13 @@ int main(int argc, char** argv)
 Determining if the asprintf exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e9bfd/fast && /usr/bin/make  -f CMakeFiles/cmTC_e9bfd.dir/build.make CMakeFiles/cmTC_e9bfd.dir/build
+Run Build Command(s):/usr/bin/make cmTC_dd551/fast && /usr/bin/make  -f CMakeFiles/cmTC_dd551.dir/build.make CMakeFiles/cmTC_dd551.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e9bfd.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_e9bfd.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e9bfd
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9bfd.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_e9bfd.dir/CheckSymbolExists.c.o  -o cmTC_e9bfd 
+Building C object CMakeFiles/cmTC_dd551.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_dd551.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dd551
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd551.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_dd551.dir/CheckSymbolExists.c.o  -o cmTC_dd551 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -233,13 +233,13 @@ int main(int argc, char** argv)
 Determining if the vasprintf exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a5bff/fast && /usr/bin/make  -f CMakeFiles/cmTC_a5bff.dir/build.make CMakeFiles/cmTC_a5bff.dir/build
+Run Build Command(s):/usr/bin/make cmTC_89296/fast && /usr/bin/make  -f CMakeFiles/cmTC_89296.dir/build.make CMakeFiles/cmTC_89296.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a5bff.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_a5bff.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_a5bff
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5bff.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_a5bff.dir/CheckSymbolExists.c.o  -o cmTC_a5bff 
+Building C object CMakeFiles/cmTC_89296.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_89296.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_89296
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89296.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_89296.dir/CheckSymbolExists.c.o  -o cmTC_89296 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -260,13 +260,13 @@ int main(int argc, char** argv)
 Determining if the get_current_dir_name exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_23dcc/fast && /usr/bin/make  -f CMakeFiles/cmTC_23dcc.dir/build.make CMakeFiles/cmTC_23dcc.dir/build
+Run Build Command(s):/usr/bin/make cmTC_cecf5/fast && /usr/bin/make  -f CMakeFiles/cmTC_cecf5.dir/build.make CMakeFiles/cmTC_cecf5.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_23dcc.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_23dcc.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_23dcc
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23dcc.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_23dcc.dir/CheckSymbolExists.c.o  -o cmTC_23dcc 
+Building C object CMakeFiles/cmTC_cecf5.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_cecf5.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cecf5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cecf5.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_cecf5.dir/CheckSymbolExists.c.o  -o cmTC_cecf5 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -287,13 +287,13 @@ int main(int argc, char** argv)
 Determining if the strndup exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ce89d/fast && /usr/bin/make  -f CMakeFiles/cmTC_ce89d.dir/build.make CMakeFiles/cmTC_ce89d.dir/build
+Run Build Command(s):/usr/bin/make cmTC_5a199/fast && /usr/bin/make  -f CMakeFiles/cmTC_5a199.dir/build.make CMakeFiles/cmTC_5a199.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ce89d.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_ce89d.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ce89d
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce89d.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_ce89d.dir/CheckSymbolExists.c.o  -o cmTC_ce89d 
+Building C object CMakeFiles/cmTC_5a199.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_5a199.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5a199
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a199.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_5a199.dir/CheckSymbolExists.c.o  -o cmTC_5a199 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -314,13 +314,13 @@ int main(int argc, char** argv)
 Determining if the getline exist passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c6777/fast && /usr/bin/make  -f CMakeFiles/cmTC_c6777.dir/build.make CMakeFiles/cmTC_c6777.dir/build
+Run Build Command(s):/usr/bin/make cmTC_e70d4/fast && /usr/bin/make  -f CMakeFiles/cmTC_e70d4.dir/build.make CMakeFiles/cmTC_e70d4.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c6777.dir/CheckSymbolExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_c6777.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_c6777
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6777.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_c6777.dir/CheckSymbolExists.c.o  -o cmTC_c6777 
+Building C object CMakeFiles/cmTC_e70d4.dir/CheckSymbolExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_e70d4.dir/CheckSymbolExists.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e70d4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e70d4.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_e70d4.dir/CheckSymbolExists.c.o  -o cmTC_e70d4 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -341,13 +341,13 @@ int main(int argc, char** argv)
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a45c0/fast && /usr/bin/make  -f CMakeFiles/cmTC_a45c0.dir/build.make CMakeFiles/cmTC_a45c0.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c9621/fast && /usr/bin/make  -f CMakeFiles/cmTC_c9621.dir/build.make CMakeFiles/cmTC_c9621.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a45c0.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_a45c0.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a45c0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a45c0.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_a45c0.dir/CheckIncludeFile.c.o  -o cmTC_a45c0 
+Building C object CMakeFiles/cmTC_c9621.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_c9621.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c9621
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9621.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_c9621.dir/CheckIncludeFile.c.o  -o cmTC_c9621 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -355,13 +355,13 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_275cc/fast && /usr/bin/make  -f CMakeFiles/cmTC_275cc.dir/build.make CMakeFiles/cmTC_275cc.dir/build
+Run Build Command(s):/usr/bin/make cmTC_b9b29/fast && /usr/bin/make  -f CMakeFiles/cmTC_b9b29.dir/build.make CMakeFiles/cmTC_b9b29.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_275cc.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_275cc.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_275cc
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_275cc.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_275cc.dir/CheckIncludeFile.c.o  -o cmTC_275cc 
+Building C object CMakeFiles/cmTC_b9b29.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_b9b29.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b9b29
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9b29.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_b9b29.dir/CheckIncludeFile.c.o  -o cmTC_b9b29 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -369,13 +369,13 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_da2d8/fast && /usr/bin/make  -f CMakeFiles/cmTC_da2d8.dir/build.make CMakeFiles/cmTC_da2d8.dir/build
+Run Build Command(s):/usr/bin/make cmTC_18b90/fast && /usr/bin/make  -f CMakeFiles/cmTC_18b90.dir/build.make CMakeFiles/cmTC_18b90.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_da2d8.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_da2d8.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_da2d8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da2d8.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_da2d8.dir/CheckIncludeFile.c.o  -o cmTC_da2d8 
+Building C object CMakeFiles/cmTC_18b90.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_18b90.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_18b90
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18b90.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_18b90.dir/CheckIncludeFile.c.o  -o cmTC_18b90 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -383,13 +383,13 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Determining size of unsigned short passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c3a56/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3a56.dir/build.make CMakeFiles/cmTC_c3a56.dir/build
+Run Build Command(s):/usr/bin/make cmTC_ffba7/fast && /usr/bin/make  -f CMakeFiles/cmTC_ffba7.dir/build.make CMakeFiles/cmTC_ffba7.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c3a56.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_c3a56.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
-Linking C executable cmTC_c3a56
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3a56.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_c3a56.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_c3a56 
+Building C object CMakeFiles/cmTC_ffba7.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_ffba7.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_ffba7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffba7.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_ffba7.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_ffba7 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -397,13 +397,13 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Determining if the system is big endian passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_18bf3/fast && /usr/bin/make  -f CMakeFiles/cmTC_18bf3.dir/build.make CMakeFiles/cmTC_18bf3.dir/build
+Run Build Command(s):/usr/bin/make cmTC_08477/fast && /usr/bin/make  -f CMakeFiles/cmTC_08477.dir/build.make CMakeFiles/cmTC_08477.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_18bf3.dir/TestEndianess.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_18bf3.dir/TestEndianess.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/TestEndianess.c
-Linking C executable cmTC_18bf3
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18bf3.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_18bf3.dir/TestEndianess.c.o  -o cmTC_18bf3 
+Building C object CMakeFiles/cmTC_08477.dir/TestEndianess.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc   -Wall -Wextra -std=gnu99    -o CMakeFiles/cmTC_08477.dir/TestEndianess.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_08477
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08477.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_08477.dir/TestEndianess.c.o  -o cmTC_08477 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -436,13 +436,13 @@ int main(int argc, char *argv[])
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_62119/fast && /usr/bin/make  -f CMakeFiles/cmTC_62119.dir/build.make CMakeFiles/cmTC_62119.dir/build
+Run Build Command(s):/usr/bin/make cmTC_1230a/fast && /usr/bin/make  -f CMakeFiles/cmTC_1230a.dir/build.make CMakeFiles/cmTC_1230a.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_62119.dir/CheckIncludeFile.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99  -fPIE   -o CMakeFiles/cmTC_62119.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_62119
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62119.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_62119.dir/CheckIncludeFile.c.o  -o cmTC_62119 
+Building C object CMakeFiles/cmTC_1230a.dir/CheckIncludeFile.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99  -fPIE   -o CMakeFiles/cmTC_1230a.dir/CheckIncludeFile.c.o   -c /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1230a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1230a.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99     -rdynamic CMakeFiles/cmTC_1230a.dir/CheckIncludeFile.c.o  -o cmTC_1230a 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
@@ -450,13 +450,13 @@ make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1696a/fast && /usr/bin/make  -f CMakeFiles/cmTC_1696a.dir/build.make CMakeFiles/cmTC_1696a.dir/build
+Run Build Command(s):/usr/bin/make cmTC_7af21/fast && /usr/bin/make  -f CMakeFiles/cmTC_7af21.dir/build.make CMakeFiles/cmTC_7af21.dir/build
 make[1]: Entering directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1696a.dir/CheckFunctionExists.c.o
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_1696a.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1696a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1696a.dir/link.txt --verbose=1
-/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1696a.dir/CheckFunctionExists.c.o  -o cmTC_1696a  -lpthread 
+Building C object CMakeFiles/cmTC_7af21.dir/CheckFunctionExists.c.o
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -Wall -Wextra -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_7af21.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7af21
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7af21.dir/link.txt --verbose=1
+/home/mo/share/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-gcc  -Wall -Wextra -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_7af21.dir/CheckFunctionExists.c.o  -o cmTC_7af21  -lpthread 
 make[1]: Leaving directory '/home/mo/share/netconf2_new/libyang/build/CMakeFiles/CMakeTmp'
 
 
