@@ -263,7 +263,7 @@ load_plugins(struct srpd_plugin_s **plugins, int *plugin_count)
      *  而Centos系统的默认安装路径为/usr/lib/sysrepo/plugins，在开发plugind时，安装路径也需要 
      *  指定到该路径下，否则，*.so找不到，则load不成功。
      */
-
+//。
     plugins_dir = getenv("SRPD_PLUGINS_PATH");
     if (!plugins_dir) {
         plugins_dir = SRPD_PLUGINS_PATH;
