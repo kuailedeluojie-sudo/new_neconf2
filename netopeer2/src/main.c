@@ -624,7 +624,7 @@ np2srv_check_schemas(sr_session_ctx_t *sr_sess)
 
     return 0;
 }
-
+//南向接口服务器初始化
 static int
 server_init(void)
 {
@@ -632,18 +632,19 @@ server_init(void)
     int rc;
 
     /* connect to the sysrepo and set edit-config NACM diff check callback */
-    EINT;
+    //连接到sysrepo服务
     rc = sr_connect(SR_CONN_CACHE_RUNNING, &np2srv.sr_conn);
     if (rc != SR_ERR_OK) {
         ERR("Connecting to sysrepo failed (%s).", sr_strerror(rc));
         goto error;
     }
-    EINT;
+    //设置回调函数
     sr_set_diff_check_callback(np2srv.sr_conn, np2srv_diff_check_cb);
     EINT;
     ly_ctx = sr_get_context(np2srv.sr_conn);
 
     /* server session */
+    //功能：开始一个新的session
     rc = sr_session_start(np2srv.sr_conn, SR_DS_RUNNING, &np2srv.sr_sess);
     if (rc != SR_ERR_OK) {
         ERR("Creating sysrepo session failed (%s).", sr_strerror(rc));
@@ -657,38 +658,41 @@ server_init(void)
     }
     ;
     /* init monitoring */
+    //初始化启动时间和互斥锁
     ncm_init();
 
     /* init NACM */
+    //初始化互斥锁
     ncac_init();
 
     /* init libnetconf2 (it modifies only the dictionary) */
+    //初始化libnetconf2
     if (nc_server_init((struct ly_ctx *)ly_ctx)) {
         goto error;
     }
-    EINT;
+   
     /* prepare poll session structure for libnetconf2 */
     np2srv.nc_ps = nc_ps_new();
-    EINT;
+    
     /* set with-defaults capability basic-mode */
     nc_server_set_capab_withdefaults(NC_WD_EXPLICIT, NC_WD_ALL | NC_WD_ALL_TAG | NC_WD_TRIM | NC_WD_EXPLICIT);
-    EINT;
+   
     /* set capabilities for the NETCONF Notifications */
     nc_server_set_capability("urn:ietf:params:netconf:capability:notification:1.0");
     nc_server_set_capability("urn:ietf:params:netconf:capability:interleave:1.0");
-    EINT;
+
     /* set URL capability */
     if (np2srv_url_setcap()) {
         goto error;
     }
-    EINT;
+   
     /* set libnetconf2 global PRC callback */
     nc_set_global_rpc_clb(np2srv_rpc_cb);
-    EINT;
+  
     /* set libnetconf2 SSH callbacks */
     nc_server_ssh_set_hostkey_clb(np2srv_hostkey_cb, NULL, NULL);
     nc_server_ssh_set_pubkey_auth_clb(np2srv_pubkey_auth_cb, NULL, NULL);
-    EINT;
+   
     /* set libnetconf2 TLS callbacks */
     nc_server_tls_set_server_cert_clb(np2srv_cert_cb, NULL, NULL);
     nc_server_tls_set_trusted_cert_list_clb(np2srv_cert_list_cb, NULL, NULL);
@@ -1074,10 +1078,10 @@ main(int argc, char *argv[])
     while ((c = getopt(argc, argv, "dhVU::m:u:g:v:c:")) != -1) {
         switch (c) {
         case 'd':
-            daemonize = 0;
+            daemonize = 0; //开启守护进程保存日志
             break;
         case 'h':
-            print_usage(argv[0]);
+            print_usage(argv[0]); //打印帮助信息
             return EXIT_SUCCESS;
         case 'v':
             if (verb) {
@@ -1086,8 +1090,17 @@ main(int argc, char *argv[])
             }
             verb = 1;
 
-            c = atoi(optarg);
+            c = atoi(optarg); //字符串转成数字
             /* normalize verbose level */
+            //用三目运算符确定打印信息等级
+            //如果C大于0
+            /*
+             NC_VERB_ERROR = 0,   
+             NC_VERB_WARNING = 1, 
+             NC_VERB_VERBOSE = 2,
+            NC_VERB_DEBUG = 3,   
+            NC_VERB_DEBUG_LOWLVL = 4,
+            */
             np2_verbose_level = (c > NC_VERB_ERROR) ? ((c > NC_VERB_VERBOSE) ? NC_VERB_VERBOSE : c) : NC_VERB_ERROR;
             switch (np2_verbose_level) {
             case NC_VERB_ERROR:
@@ -1200,7 +1213,7 @@ main(int argc, char *argv[])
             return EXIT_SUCCESS;
         }
     }
-
+//后缀选项结束，创建守护进程，把所有信息记录到日志中
     /* daemonize */
     if (daemonize == 1) {
         if (daemon(0, 0) != 0) {
@@ -1211,13 +1224,14 @@ main(int argc, char *argv[])
         /* from now print only to syslog, not stderr */
         np2_stderr_log = 0;
     }
-
+//打开记录进程号的文件，返回文件描述符
     /* make sure we are the only instance - lock the PID file and write the PID */
     pidfd = open(NP2SRV_PID_FILE_PATH, O_RDWR | O_CREAT, 0640);
     if (pidfd < 0) {
         ERR("Unable to open the PID file \"%s\" (%s).", NP2SRV_PID_FILE_PATH, strerror(errno));
         return EXIT_FAILURE;
     }
+    //测试互斥锁定区域，，如果局域已被其他进程锁定，直接返回错误，锁定这个文件
     if (lockf(pidfd, F_TLOCK, 0) < 0) {
         close(pidfd);
         if (errno == EACCES || errno == EAGAIN) {
@@ -1227,24 +1241,31 @@ main(int argc, char *argv[])
         }
         return EXIT_FAILURE;
     }
+    //改变文件大小，把整个文件清空
     if (ftruncate(pidfd, 0)) {
         ERR("Failed to truncate PID file (%s).", strerror(errno));
         close(pidfd);
         return EXIT_FAILURE;
     }
+    //当前进程号组包到字符数组中
     c = snprintf(pid, sizeof(pid), "%d\n", getpid());
+    //将这个字符串数组写入文件中
     if (write(pidfd, pid, c) < c) {
         ERR("Failed to write into PID file.");
         close(pidfd);
         return EXIT_FAILURE;
     }
+    //关闭文件描述符号
     close(pidfd);
 
     /* set the signal handler */
+    //#define sigfillset(ptr) ( *(ptr) = ~(sigset_t)0, 0)
+    //初始化信号集
     sigfillset(&block_mask);
     action.sa_handler = signal_handler;
     action.sa_mask = block_mask;
     action.sa_flags = 0;
+    //sigaction 检查或修改与指定信号关联的处理动作
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGQUIT, &action, NULL);
     sigaction(SIGABRT, &action, NULL);
@@ -1256,10 +1277,12 @@ main(int argc, char *argv[])
     sigaction(SIGPIPE, &action, NULL);
 
     /* set printer callbacks for the used libraries and set proper log levels */
+    //设置打印信息的回调函数
     nc_set_print_clb(np2log_cb_nc2); /* libnetconf2 */
     ly_set_log_clb(np2log_cb_ly, 1); /* libyang */
     sr_log_set_cb(np2log_cb_sr); /* sysrepo, log level is checked by callback */
 
+//  初始化南向接口服务器
     /* initiate NETCONF server */
     if (server_init()) {
         ret = EXIT_FAILURE;

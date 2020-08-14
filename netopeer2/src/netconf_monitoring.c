@@ -32,6 +32,7 @@ void
 ncm_init(void)
 {
     stats.netconf_start_time = time(NULL);
+    //互斥锁的初始化
     pthread_mutex_init(&stats.lock, NULL);
 }
 

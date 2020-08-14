@@ -577,7 +577,7 @@ nc_server_init(struct ly_ctx *ctx)
     }
 
     nc_init();
-
+    //如果没有设定，则设置default <get-schema> 回调函数
     /* set default <get-schema> callback if not specified */
     rpc = ly_ctx_get_node(ctx, NULL, "/ietf-netconf-monitoring:get-schema", 0);
     if (rpc && !rpc->priv) {

@@ -515,7 +515,7 @@ sr_set_diff_check_callback(sr_conn_ctx_t *conn, sr_diff_check_cb callback)
     if (!conn) {
         return;
     }
-
+//如果不是root用户
     if (geteuid()) {
         /* not a root */
         sr_errinfo_new(&err_info, SR_ERR_UNAUTHORIZED, NULL, "Root access required.");
