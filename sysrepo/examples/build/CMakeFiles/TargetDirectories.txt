@@ -1,0 +1,11 @@
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/edit_cache.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/oven.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/rpc_send_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/rpc_subscribe_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/sr_set_item_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/rebuild_cache.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/application_changes_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/sr_get_items_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/oper_data_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/notif_send_example.dir
+/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles/notif_subscribe_example.dir
