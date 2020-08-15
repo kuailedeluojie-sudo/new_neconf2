@@ -163,8 +163,8 @@ packages/clean:
 # Target rules for target CMakeFiles/sysrepo-plugind.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/compat.dir/all
 CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/sysrepo.dir/all
+CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/compat.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo-plugind.dir/build.make CMakeFiles/sysrepo-plugind.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo-plugind.dir/build.make CMakeFiles/sysrepo-plugind.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=33,34 "Built target sysrepo-plugind"
@@ -191,8 +191,8 @@ CMakeFiles/sysrepo-plugind.dir/clean:
 # Target rules for target CMakeFiles/sysrepocfg.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepocfg.dir/all: CMakeFiles/compat.dir/all
 CMakeFiles/sysrepocfg.dir/all: CMakeFiles/sysrepo.dir/all
+CMakeFiles/sysrepocfg.dir/all: CMakeFiles/compat.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepocfg.dir/build.make CMakeFiles/sysrepocfg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepocfg.dir/build.make CMakeFiles/sysrepocfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=35,36 "Built target sysrepocfg"
@@ -219,8 +219,8 @@ CMakeFiles/sysrepocfg.dir/clean:
 # Target rules for target CMakeFiles/sysrepoctl.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepoctl.dir/all: CMakeFiles/compat.dir/all
 CMakeFiles/sysrepoctl.dir/all: CMakeFiles/sysrepo.dir/all
+CMakeFiles/sysrepoctl.dir/all: CMakeFiles/compat.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepoctl.dir/build.make CMakeFiles/sysrepoctl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepoctl.dir/build.make CMakeFiles/sysrepoctl.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=37,38 "Built target sysrepoctl"
@@ -464,7 +464,7 @@ CMakeFiles/uninstall_with_repo.dir/clean:
 # Target rules for target examples/CMakeFiles/oven.dir
 
 # All Build rule for target.
-examples/CMakeFiles/oven.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/oven.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/oven.dir/build.make examples/CMakeFiles/oven.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/oven.dir/build.make examples/CMakeFiles/oven.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=10,11 "Built target oven"
@@ -472,7 +472,7 @@ examples/CMakeFiles/oven.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/oven.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/oven.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/oven.dir/rule

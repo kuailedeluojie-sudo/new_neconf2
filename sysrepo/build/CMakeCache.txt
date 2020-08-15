@@ -352,7 +352,7 @@ YANGLIB_REVISION:STRING=2019-01-04
 YANG_MODULE_PATH:PATH=
 
 //Dependencies for the target
-oven_LIB_DEPENDS:STATIC=general;sysrepo;
+oven_LIB_DEPENDS:STATIC=general;/opt/libyang/lib/libyang.so.1.8.4;
 
 //Value Computed by CMake
 sysrepo_BINARY_DIR:STATIC=/home/mo/share/netconf2_new/sysrepo/build
