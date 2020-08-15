@@ -153,8 +153,9 @@ print_current_config(sr_session_ctx_t *session, const char *module_name)
     if (rc != SR_ERR_OK) {
         return;
     }
-
-    for (size_t i = 0; i < count; i++){
+    //2020.8.15 根据这个错误修改 error: 'for' loop initial declarations are only allowed in C99 mod
+    size_t i = 0;
+    for ( i = 0; i < count; i++){
         print_val(&values[i]);
     }
     sr_free_values(values, count);

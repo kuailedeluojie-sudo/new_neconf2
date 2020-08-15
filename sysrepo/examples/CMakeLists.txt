@@ -27,5 +27,14 @@ endforeach(app_name)
 
 # oven plugin
 add_library(oven MODULE plugin/oven.c)
+target_link_libraries(oven ${SYSREPO_LIBRARIES})
+include_directories(${SYSREPO_INCLUDE_DIRS})
+list(APPEND CMAKE_REQUIRED_INCLUDES ${SYSREPO_INCLUDE_DIRS})
+list(APPEND CMAKE_REQUIRED_LIBRARIES ${SYSREPO_LIBRARIES})
+	
+target_link_libraries(oven  ${LIBYANG_LIBRARIES})
+include_directories(${LIBYANG_INCLUDE_DIRS})
+list(APPEND CMAKE_REQUIRED_INCLUDES ${LIBYANG_INCLUDE_DIRS})
+list(APPEND CMAKE_REQUIRED_LIBRARIES ${LIBYANG_LIBRARIES})
 set_target_properties(oven PROPERTIES PREFIX "")
-target_link_libraries(oven sysrepo)
+#target_link_libraries(oven sysrepo)

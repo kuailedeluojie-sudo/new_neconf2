@@ -99,7 +99,6 @@ application_changes_example_EXTERNAL_OBJECTS =
 
 examples/application_changes_example: examples/CMakeFiles/application_changes_example.dir/application_changes_example.c.o
 examples/application_changes_example: examples/CMakeFiles/application_changes_example.dir/build.make
-examples/application_changes_example: libsysrepo.so.5.5.8
 examples/application_changes_example: /opt/libyang/lib/libyang.so.1.8.4
 examples/application_changes_example: examples/CMakeFiles/application_changes_example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable application_changes_example"

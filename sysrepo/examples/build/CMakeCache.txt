@@ -255,7 +255,7 @@ SYSREPO_INCLUDE_DIRS:UNINITIALIZED=/opt/sysrepo/include
 SYSREPO_LIBRARIES:UNINITIALIZED=/opt/sysrepo/lib/libsysrepo.so.5.5.8
 
 //Dependencies for the target
-oven_LIB_DEPENDS:STATIC=general;sysrepo;
+oven_LIB_DEPENDS:STATIC=general;/opt/sysrepo/lib/libsysrepo.so.5.5.8;general;/opt/libyang/lib/libyang.so.1.8.4;
 
 
 ########################

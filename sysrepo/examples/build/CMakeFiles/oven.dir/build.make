@@ -99,6 +99,8 @@ oven_EXTERNAL_OBJECTS =
 
 oven.so: CMakeFiles/oven.dir/plugin/oven.c.o
 oven.so: CMakeFiles/oven.dir/build.make
+oven.so: /opt/sysrepo/lib/libsysrepo.so.5.5.8
+oven.so: /opt/libyang/lib/libyang.so.1.8.4
 oven.so: CMakeFiles/oven.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mo/share/netconf2_new/sysrepo/examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module oven.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oven.dir/link.txt --verbose=$(VERBOSE)

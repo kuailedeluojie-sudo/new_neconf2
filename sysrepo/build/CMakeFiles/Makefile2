@@ -163,8 +163,8 @@ packages/clean:
 # Target rules for target CMakeFiles/sysrepo-plugind.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/sysrepo.dir/all
 CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/compat.dir/all
+CMakeFiles/sysrepo-plugind.dir/all: CMakeFiles/sysrepo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo-plugind.dir/build.make CMakeFiles/sysrepo-plugind.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo-plugind.dir/build.make CMakeFiles/sysrepo-plugind.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=33,34 "Built target sysrepo-plugind"
@@ -191,8 +191,8 @@ CMakeFiles/sysrepo-plugind.dir/clean:
 # Target rules for target CMakeFiles/sysrepocfg.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepocfg.dir/all: CMakeFiles/sysrepo.dir/all
 CMakeFiles/sysrepocfg.dir/all: CMakeFiles/compat.dir/all
+CMakeFiles/sysrepocfg.dir/all: CMakeFiles/sysrepo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepocfg.dir/build.make CMakeFiles/sysrepocfg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepocfg.dir/build.make CMakeFiles/sysrepocfg.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=35,36 "Built target sysrepocfg"
@@ -219,8 +219,8 @@ CMakeFiles/sysrepocfg.dir/clean:
 # Target rules for target CMakeFiles/sysrepoctl.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepoctl.dir/all: CMakeFiles/sysrepo.dir/all
 CMakeFiles/sysrepoctl.dir/all: CMakeFiles/compat.dir/all
+CMakeFiles/sysrepoctl.dir/all: CMakeFiles/sysrepo.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepoctl.dir/build.make CMakeFiles/sysrepoctl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepoctl.dir/build.make CMakeFiles/sysrepoctl.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=37,38 "Built target sysrepoctl"
@@ -247,8 +247,8 @@ CMakeFiles/sysrepoctl.dir/clean:
 # Target rules for target CMakeFiles/sysrepo.dir
 
 # All Build rule for target.
-CMakeFiles/sysrepo.dir/all: CMakeFiles/srobj.dir/all
 CMakeFiles/sysrepo.dir/all: CMakeFiles/compat.dir/all
+CMakeFiles/sysrepo.dir/all: CMakeFiles/srobj.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo.dir/build.make CMakeFiles/sysrepo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sysrepo.dir/build.make CMakeFiles/sysrepo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=32 "Built target sysrepo"
@@ -491,7 +491,7 @@ examples/CMakeFiles/oven.dir/clean:
 # Target rules for target examples/CMakeFiles/rpc_send_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/rpc_send_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/rpc_send_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/rpc_send_example.dir/build.make examples/CMakeFiles/rpc_send_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/rpc_send_example.dir/build.make examples/CMakeFiles/rpc_send_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=12,13 "Built target rpc_send_example"
@@ -499,7 +499,7 @@ examples/CMakeFiles/rpc_send_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/rpc_send_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/rpc_send_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/rpc_send_example.dir/rule
@@ -518,7 +518,7 @@ examples/CMakeFiles/rpc_send_example.dir/clean:
 # Target rules for target examples/CMakeFiles/rpc_subscribe_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/rpc_subscribe_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/rpc_subscribe_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/rpc_subscribe_example.dir/build.make examples/CMakeFiles/rpc_subscribe_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/rpc_subscribe_example.dir/build.make examples/CMakeFiles/rpc_subscribe_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=14,15 "Built target rpc_subscribe_example"
@@ -526,7 +526,7 @@ examples/CMakeFiles/rpc_subscribe_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/rpc_subscribe_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/rpc_subscribe_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/rpc_subscribe_example.dir/rule
@@ -545,7 +545,7 @@ examples/CMakeFiles/rpc_subscribe_example.dir/clean:
 # Target rules for target examples/CMakeFiles/sr_set_item_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/sr_set_item_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/sr_set_item_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/sr_set_item_example.dir/build.make examples/CMakeFiles/sr_set_item_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/sr_set_item_example.dir/build.make examples/CMakeFiles/sr_set_item_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=18,19 "Built target sr_set_item_example"
@@ -553,7 +553,7 @@ examples/CMakeFiles/sr_set_item_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/sr_set_item_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/sr_set_item_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/sr_set_item_example.dir/rule
@@ -572,7 +572,7 @@ examples/CMakeFiles/sr_set_item_example.dir/clean:
 # Target rules for target examples/CMakeFiles/application_changes_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/application_changes_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/application_changes_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/application_changes_example.dir/build.make examples/CMakeFiles/application_changes_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/application_changes_example.dir/build.make examples/CMakeFiles/application_changes_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=1,2 "Built target application_changes_example"
@@ -580,7 +580,7 @@ examples/CMakeFiles/application_changes_example.dir/all: CMakeFiles/sysrepo.dir/
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/application_changes_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/application_changes_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/application_changes_example.dir/rule
@@ -599,7 +599,7 @@ examples/CMakeFiles/application_changes_example.dir/clean:
 # Target rules for target examples/CMakeFiles/sr_get_items_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/sr_get_items_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/sr_get_items_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/sr_get_items_example.dir/build.make examples/CMakeFiles/sr_get_items_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/sr_get_items_example.dir/build.make examples/CMakeFiles/sr_get_items_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=16,17 "Built target sr_get_items_example"
@@ -607,7 +607,7 @@ examples/CMakeFiles/sr_get_items_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/sr_get_items_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/sr_get_items_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/sr_get_items_example.dir/rule
@@ -626,7 +626,7 @@ examples/CMakeFiles/sr_get_items_example.dir/clean:
 # Target rules for target examples/CMakeFiles/oper_data_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/oper_data_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/oper_data_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/oper_data_example.dir/build.make examples/CMakeFiles/oper_data_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/oper_data_example.dir/build.make examples/CMakeFiles/oper_data_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=8,9 "Built target oper_data_example"
@@ -634,7 +634,7 @@ examples/CMakeFiles/oper_data_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/oper_data_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/oper_data_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/oper_data_example.dir/rule
@@ -653,7 +653,7 @@ examples/CMakeFiles/oper_data_example.dir/clean:
 # Target rules for target examples/CMakeFiles/notif_send_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/notif_send_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/notif_send_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/notif_send_example.dir/build.make examples/CMakeFiles/notif_send_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/notif_send_example.dir/build.make examples/CMakeFiles/notif_send_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=4,5 "Built target notif_send_example"
@@ -661,7 +661,7 @@ examples/CMakeFiles/notif_send_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/notif_send_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/notif_send_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/notif_send_example.dir/rule
@@ -680,7 +680,7 @@ examples/CMakeFiles/notif_send_example.dir/clean:
 # Target rules for target examples/CMakeFiles/notif_subscribe_example.dir
 
 # All Build rule for target.
-examples/CMakeFiles/notif_subscribe_example.dir/all: CMakeFiles/sysrepo.dir/all
+examples/CMakeFiles/notif_subscribe_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/notif_subscribe_example.dir/build.make examples/CMakeFiles/notif_subscribe_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/notif_subscribe_example.dir/build.make examples/CMakeFiles/notif_subscribe_example.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mo/share/netconf2_new/sysrepo/build/CMakeFiles --progress-num=6,7 "Built target notif_subscribe_example"
@@ -688,7 +688,7 @@ examples/CMakeFiles/notif_subscribe_example.dir/all: CMakeFiles/sysrepo.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/notif_subscribe_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/notif_subscribe_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mo/share/netconf2_new/sysrepo/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/notif_subscribe_example.dir/rule
