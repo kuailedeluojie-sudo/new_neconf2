@@ -65,7 +65,7 @@
 /*
  * Location of installed basic YANG modules on the system
  */
-#define  "/opt/libnetconf2/share/yang/modules"
+#define NC_YANG_DIR  "/opt/libnetconf2/share/yang/modules"
 
 /*
  * Inactive read timeout

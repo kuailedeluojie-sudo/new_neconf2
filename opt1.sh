@@ -9,10 +9,22 @@ echo cd ../sysrepo
 cd ../sysrepo
 echo ./build2.sh
 ./build2.sh
+echo $PWD
+echo cd ./examples
+cd ./examples
+echo $PWD
+echo ./build2.sh
+./build2.sh
+echo $PWD
+echo cd ../
+cd ../
 echo cd ../libnetconf2
 cd ../libnetconf2
 echo ./build2.sh
 ./build2.sh
+echo $PWD
+
+
 echo cd ../netopeer2
 cd ../netopeer2
 echo ./build2.sh

@@ -38,6 +38,14 @@ compat.h
 sysrepo.h
 /home/mo/share/netconf2_new/sysrepo/examples/sysrepo.h
 
+/home/mo/share/netconf2_new/sysrepo/examples/compat.h
+sys/types.h
+-
+stdarg.h
+-
+stdio.h
+-
+
 /opt/libyang/include/libyang/dict.h
 stdint.h
 -
@@ -80,14 +88,6 @@ sys/types.h
 
 /opt/libyang/include/libyang/xml.h
 sys/types.h
--
-stdio.h
--
-
-compat.h
-sys/types.h
--
-stdarg.h
 -
 stdio.h
 -
