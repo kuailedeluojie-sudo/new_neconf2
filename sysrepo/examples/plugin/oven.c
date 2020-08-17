@@ -233,14 +233,15 @@ sr_plugin_init_cb(sr_session_ctx_t *session, void **private_data)
     insert_food_on_ready = 0;
     /* room temperature */
     oven_temperature = 25;
-
+    //整个系统的原理是通过C语言的API接口来读取YANG文件来完成系统的配置和输出
+    //我是这样理解的，利用生产的动态库加载到软件中，通过解析yang文件来获取系统配置，修改yang文件可以获得系统配置
     /* subscribe for oven module changes - also causes startup oven data to be copied into running and enabling the module */
     rc = sr_module_change_subscribe(session, "oven", NULL, oven_config_change_cb, NULL, 0,
             SR_SUBSCR_ENABLED | SR_SUBSCR_DONE_ONLY, &subscription);
     if (rc != SR_ERR_OK) {
         goto error;
     }
-
+    //xpath是获取yang文件的节点信息
     /* subscribe as state data provider for the oven state data */
     rc = sr_oper_get_items_subscribe(session, "oven", "/oven:oven-state", oven_state_cb, NULL, SR_SUBSCR_CTX_REUSE, &subscription);
     if (rc != SR_ERR_OK) {
