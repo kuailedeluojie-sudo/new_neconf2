@@ -651,7 +651,7 @@ server_init(void)
         goto error;
     }
 
-    ;
+    //校验libyang里面的内容
     /* check libyang context */
     if (np2srv_check_schemas(np2srv.sr_sess)) {
         goto error;
