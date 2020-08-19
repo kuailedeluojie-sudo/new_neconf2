@@ -715,7 +715,7 @@ server_init(void)
     return 0;
 
 error:
-    EINT;
+    //EINT;
     ERR("Server init failed.");
     return -1;
 }

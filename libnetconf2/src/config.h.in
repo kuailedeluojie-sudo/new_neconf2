@@ -65,7 +65,7 @@
 /*
  * Location of installed basic YANG modules on the system
  */
-#define NC_YANG_DIR  "@YANG_MODULE_DIR@"
+#define NC_YANG_DIR "@YANG_MODULE_DIR@"
 
 /*
  * Inactive read timeout
