@@ -7,6 +7,6 @@ cd lib/
 mkdir -p debug
 cd debug
 rm -rf *
-cmake .. -DZLIB_INCLUDE_DIR=/home/mo/share/zlib-1.2.11/_install/include  -DCMAKE_INSTALL_PREFIX=/opt/libssh
+cmake .. -DZLIB_INCLUDE_DIR=/home/mo/share/zlib-1.2.11/_install/include  -DCMAKE_INSTALL_PREFIX=/opt/libssh -DWITH_GCRYPT=OFF
 make -j
 make install
