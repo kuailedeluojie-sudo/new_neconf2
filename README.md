@@ -7,48 +7,48 @@ mkdir cesnet
 
 sudo apt-get install zlib1g-dev libssl-dev libgcrypt-dev
 
-cd ~/cesnet/
-git clone http://git.libssh.org/projects/libssh.git
-cd ~/cesnet/libssh
-git checkout libssh-0.9.2
-mkdir build; cd build
-#cmake -D CMAKE_BUILD_TYPE:String="Release" -D WITH_GCRYPT=yes -D WITH_PCAP=yes -D WITH_SFTP=yes -D WITH_ZLIB=yes ..
-cmake -D CMAKE_BUILD_TYPE:String="Release" ..
-make
-sudo make install
+cd ~/cesnet/ <br>
+git clone http://git.libssh.org/projects/libssh.git <br>
+cd ~/cesnet/libssh <br>
+git checkout libssh-0.9.2 <br>
+mkdir build; cd build <br>
+#cmake -D CMAKE_BUILD_TYPE:String="Release" -D WITH_GCRYPT=yes -D WITH_PCAP=yes -D WITH_SFTP=yes -D WITH_ZLIB=yes .. <br>
+cmake -D CMAKE_BUILD_TYPE:String="Release" .. <br>
+make <br>
+sudo make install <br>
 
 
-cd ~/cesnet/
-git clone https://github.com/CESNET/libyang.git
-cd ~/cesnet/libyang; mkdir build; cd build
-cmake -D CMAKE_BUILD_TYPE:String="Release" ..
-make
-sudo make install
+cd ~/cesnet/ <br>
+git clone https://github.com/CESNET/libyang.git <br>
+cd ~/cesnet/libyang; mkdir build; cd build <br>
+cmake -D CMAKE_BUILD_TYPE:String="Release" .. <br>
+make <br>
+sudo make install <br>
 
 
-cd ~/cesnet/
-git clone https://github.com/CESNET/libnetconf2.git
-cd ~/cesnet/libnetconf2; mkdir build; cd build
-cmake -D CMAKE_BUILD_TYPE:String="Release" ..
-make
-sudo make install
+cd ~/cesnet/ <br>
+git clone https://github.com/CESNET/libnetconf2.git <br>
+cd ~/cesnet/libnetconf2; mkdir build; cd build <br>
+cmake -D CMAKE_BUILD_TYPE:String="Release" .. <br>
+make <br>
+sudo make install <br>
 
 
-cd ~/cesnet/
-git clone https://github.com/sysrepo/sysrepo.git
-cd ~/cesnet/sysrepo; mkdir build; cd build
-cmake -D CMAKE_BUILD_TYPE:String="Release" ..
-make
-sudo make install
+cd ~/cesnet/<br>
+git clone https://github.com/sysrepo/sysrepo.git <br>
+cd ~/cesnet/sysrepo; mkdir build; cd build <br>
+cmake -D CMAKE_BUILD_TYPE:String="Release" .. <br>
+make <br>
+sudo make install <br>
 
 
-cd ~/cesnet/
-git clone https://github.com/CESNET/Netopeer2.git
-cd ~/cesnet/Netopeer2; mkdir build; cd build
-cmake -D CMAKE_BUILD_TYPE:String="Release" ..
-make
-sudo ldconfig
-sudo make install
+cd ~/cesnet/ <br>
+git clone https://github.com/CESNET/Netopeer2.git <br>
+cd ~/cesnet/Netopeer2; mkdir build; cd build <br>
+cmake -D CMAKE_BUILD_TYPE:String="Release" .. <br>
+make <br>
+sudo ldconfig <br>
+sudo make install <br>
 ## NETCONF的好处
 NETCONF协议由XML编码，以SSH加密，采用TCP连接，体现出更好的安全性和可靠性。<br>
 NETCONF认为网络的模型数据可以分为两大类，即状态数据和配置数据。<br>
