@@ -38,6 +38,7 @@ MODULES=(
 # functions
 INSTALL_MODULE() {
     "$SYSREPOCTL" -a -i $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
+   echo  "$SYSREPOCTL" -a -i $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
     local rc=$?
     if [ $rc -ne 0 ]; then
         exit $rc
@@ -46,6 +47,7 @@ INSTALL_MODULE() {
 
 UPDATE_MODULE() {
     "$SYSREPOCTL" -a -U $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
+    echo "$SYSREPOCTL" -a -U $MODDIR/$1 -s "$MODDIR" -p "$PERMS" -o "$OWNER" -g "$GROUP" -v2
     local rc=$?
     if [ $rc -ne 0 ]; then
         exit $rc
@@ -54,6 +56,7 @@ UPDATE_MODULE() {
 
 ENABLE_FEATURE() {
     "$SYSREPOCTL" -a -c $1 -e $2 -v2
+    echo "$SYSREPOCTL" -a -c $1 -e $2 -v2
     local rc=$?
     if [ $rc -ne 0 ]; then
         exit $rc
@@ -64,41 +67,54 @@ ENABLE_FEATURE() {
 SCTL_MODULES=`$SYSREPOCTL -l`
 
 for i in "${MODULES[@]}"; do
-    name=`echo "$i" | sed 's/\([^@]*\).*/\1/'`
-
+    echo "$i"
+	name=`echo "$i" | sed 's/\([^@]*\).*/\1/'`
+    echo $name
     SCTL_MODULE=`echo "$SCTL_MODULES" | grep "^$name \+|[^|]*| I"`
+    echo $SCTL_MODULE
     if [ -z "$SCTL_MODULE" ]; then
         # install module with all its features
+	echo "$i"
         INSTALL_MODULE "$i"
         continue
     fi
 
     sctl_revision=`echo "$SCTL_MODULE" | sed 's/[^|]*| \([^ ]*\).*/\1/'`
+    echo $sctl_revision
     revision=`echo "$i" | sed 's/[^@]*@\([^\.]*\).*/\1/'`
+    echo $revision
     if [ "$sctl_revision" \< "$revision" ]; then
         # update module without any features
         file=`echo "$i" | cut -d' ' -f 1`
+	echo $file
         UPDATE_MODULE "$file"
     fi
 
     # parse sysrepoctl features and add extra space at the end for easier matching
     sctl_features="`echo "$SCTL_MODULE" | sed 's/\([^|]*|\)\{6\}\(.*\)/\2/'` "
+    echo "sctl_feature"
     # parse features we want to enable
     features=`echo "$i" | sed 's/[^ ]* \(.*\)/\1/'`
+    echo "$features"
     while [ "${features:0:3}" = "-e " ]; do
         # skip "-e "
         features=${features:3}
+	echo "$features"
         # parse feature
         feature=`echo "$features" | sed 's/\([^[:space:]]*\).*/\1/'`
+	echo "$feature"
 
         # enable feature if not already
         sctl_feature=`echo "$sctl_features" | grep " ${feature} "`
+	echo "sctl_feature"
         if [ -z "$sctl_feature" ]; then
             # enable feature
+	    echo $name $feature
             ENABLE_FEATURE $name $feature
         fi
 
         # next iteration, skip this feature
         features=`echo "$features" | sed 's/[^[:space:]]* \(.*\)/\1/'`
+	echo $features
     done
 done

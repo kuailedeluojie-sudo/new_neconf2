@@ -108,8 +108,9 @@ YANG建模NETCONF协议的操作和内容层（RFC4741,Section1.1）<br>
   ##### RPC
   * rpc：用于定义netconf的一个rpc操作。它可能包含input和output子节点，分别是该rpc操作所需要的输入和输出数据结构。若没有则表明该操作不需要输入数据或者没有输出数据。<br>
    ![image](https://img1.sdnlab.com/wp-content/uploads/2015/12/SDN-battle-group-share-7-picture-12.png)
-    ##### NOTIFICAION
+  ##### NOTIFICAION
     ![image](https://img1.sdnlab.com/wp-content/uploads/2015/12/SDN-battle-group-share-7-picture-13.png)
     * 除了rpc，yang还有一个类似的“notification”， notification用于定义netconf的通知消息的内容，也是用来定义一个服务。两者的区别在于rpc是一对一的，即单播，而notification是多播的，当Provider提交一个notification时，所有的订阅该服务的Consumer都会收到通知，如典型的PacketIn消息，所谓的订阅即实现该notification的接口。rpc生成的接口类名后缀都是Service。nontification生成的接口类名后缀是Listener。<br>
-  
+  ##### Plugin Example
+  [添加插件链接](https://netopeer.liberouter.org/doc/sysrepo/master/sysrepo_plugind.html)
 

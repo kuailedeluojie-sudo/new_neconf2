@@ -580,36 +580,6 @@ linenoise/linenoise.h
 dirent.h
 -
 
-/home/mo/share/netconf2_new/netopeer2/cli/linenoise/linenoise.c
-termios.h
--
-unistd.h
--
-stdlib.h
--
-stdio.h
--
-errno.h
--
-string.h
--
-stdlib.h
--
-ctype.h
--
-dirent.h
--
-sys/types.h
--
-sys/ioctl.h
--
-sys/stat.h
--
-unistd.h
--
-linenoise.h
-/home/mo/share/netconf2_new/netopeer2/cli/linenoise/linenoise.h
-
 /home/mo/share/netconf2_new/netopeer2/cli/linenoise/linenoise.h
 
 /home/mo/share/netconf2_new/netopeer2/cli/main.c
