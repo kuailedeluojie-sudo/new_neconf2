@@ -112,8 +112,8 @@ YANG建模NETCONF协议的操作和内容层（RFC4741,Section1.1）<br>
   ![image](https://img1.sdnlab.com/wp-content/uploads/2015/12/SDN-battle-group-share-7-picture-13.png)
   * 除了rpc，yang还有一个类似的“notification”， notification用于定义netconf的通知消息的内容，也是用来定义一个服务。两者的区别在于rpc是一对一的，即单播，而notification是多播的，当Provider提交一个notification时，所有的订阅该服务的Consumer都会收到通知，如典型的PacketIn消息，所谓的订阅即实现该notification的接口。rpc生成的接口类名后缀都是Service。nontification生成的接口类名后缀是Listener。<br>
   ##### Plugin Example
-  [添加插件链接](https://netopeer.liberouter.org/doc/sysrepo/master/sysrepo_plugind.html)
+  * [添加插件链接](https://netopeer.liberouter.org/doc/sysrepo/master/sysrepo_plugind.html)
 
   ##### netopeer2-cli使用教程
-  [视频教程链接](https://asciinema.org/a/160247)
-  *我的理解是：需要安装yang模型,启动netopeer2-server和sysrepod，然后用专用的程序监视这个模块的动态，编辑xml文件添加到数据库中，可以通过get --filter-xpath来获取添加后的数据，添加后都是有记录存在的。可以拷贝running表到startup表中。
+  * [视频教程链接](https://asciinema.org/a/160247)
+  * 我的理解是：需要安装yang模型,启动netopeer2-server和sysrepod，然后用专用的程序监视这个模块的动态，编辑xml文件添加到数据库中，可以通过get --filter-xpath来获取添加后的数据，添加后都是有记录存在的。可以拷贝running表到startup表中。
