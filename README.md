@@ -114,3 +114,6 @@ YANG建模NETCONF协议的操作和内容层（RFC4741,Section1.1）<br>
   ##### Plugin Example
   [添加插件链接](https://netopeer.liberouter.org/doc/sysrepo/master/sysrepo_plugind.html)
 
+  ##### netopeer2-cli使用教程
+  [视频教程链接](https://asciinema.org/a/160247)
+  *我的理解是：需要安装yang模型,启动netopeer2-server和sysrepod，然后用专用的程序监视这个模块的动态，编辑xml文件添加到数据库中，可以通过get --filter-xpath来获取添加后的数据，添加后都是有记录存在的。可以拷贝running表到startup表中。
