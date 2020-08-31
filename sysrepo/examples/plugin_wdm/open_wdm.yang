@@ -1,0 +1,1199 @@
+module open_wdm {
+    namespace "urn:sysrepo:open_wdm";
+    prefix wdm;
+    revision 2020-08-25 
+	{
+        description "Initial revision.";
+    }
+
+   
+	typedef eq-name
+	{
+		description "eq-name range that is accepted by the wdm.";
+		type uint32; 
+	}
+	container wdm 
+	{
+		description "configuration container of the  wdm";
+		leaf name 
+		{
+			description "Network element name. ";
+			type string ;
+			default "gjsun";
+		}
+	
+	leaf uuid
+	{
+		description "The network element is uniquely identified, and MAC address is recommended";
+		type string;
+		default "11:22:33:dd:bb:aa";
+	}
+	
+	leaf status
+	{
+		description "Network element status Installing Running Maintenance";
+		type enumeration
+		{
+			
+			enum Installing 
+			{
+				description "Network element Installing";
+			}
+			
+			enum  Running 
+			{
+				description "Network element Running";
+			}
+			enum  Maintenance
+			{
+				description "Network element Maintenance";
+			}
+			
+		}			
+	}
+	leaf manufacturer
+	{
+		
+		description "Network element name";
+		type string;
+		default "gjsun";
+	} 
+	leaf productName
+	{
+	
+		description "Product name";
+		type string ;
+		default "OTDR";
+	}
+	leaf softwareVersion
+	{
+		
+		description "software Version";
+		type string;
+		default "v1.17";
+	}
+	leaf deviceType
+	{
+		description "Device Type";
+		
+		type enumeration
+		{
+			enum youyuan
+			{
+				description "youyuan";
+			}
+			enum wuyuan
+			{
+				description "wuyuan";
+			}
+		}
+	}
+	leaf eq
+	{
+		
+		description "<EQ/name>";
+		type eq-name;
+		default 1;
+	}
+	leaf layerprotocolname
+	{
+		description "layer protocol name";
+		type enumeration
+		{
+			enum OCH
+			{
+				description "OCH";
+			}
+			enum OMS
+			{
+				description "OMS";
+			}
+			enum CBR
+			{
+				description "CBR";
+			}
+		}
+	}
+	leaf ipAddres
+	{
+		description "ipAddres";
+		type string;
+		default "192.168.1.178";
+	}
+	leaf mask
+	{
+		description "mask";
+		type string;
+		default "255.255.255.0";
+	}
+	leaf ntpEnable
+	{
+		description "ntpEnable";
+		type boolean;
+		default false;
+	}	
+	
+	leaf gateWay1
+	{
+		description "gateWay1";
+		type boolean;
+		default false;
+	}
+	
+	leaf gateWay2
+	{
+		description "gateWay2";
+		type boolean;
+		default false;
+	}
+		
+	}
+	
+	container EQ 
+	{
+		leaf name
+		{
+			description "Name of manufacturer's board";
+			type string;
+			default "OTDR";
+		}
+		
+		leaf plugState
+		{
+			description "Is the board inserted?";
+			type boolean;
+			default true;
+		}
+		leaf  ptp
+		{
+			description "PTP/name";
+			type string;
+			default "otdr";
+			
+		}
+		leaf softwarversion
+		{
+			description "softwarversion";
+			type string;
+			default "1.17";
+		}
+		leaf hardwareversion
+		{
+			description "hardwareversion";
+			type string;
+			default "1.17";
+		}
+		
+	}
+	typedef LayerProtocolName
+	{
+		description "LayerProtocolName";
+		type uint32;
+		
+	}
+	typedef CTP-name
+	{
+		description "CTP-name";
+		type uint32;
+		
+	}
+	container PTP
+	{
+		leaf name
+		{
+			description "PTP name";
+			type  string;
+			default "ptp";
+		}
+		leaf statePac
+		{
+			description "General state properties";
+			type string;
+			default "statePac";
+		}
+		leaf layerProtocoName
+		{
+			description "The suspected name of the layer to which the PTP belongs.";
+			type enumeration
+			{
+				enum OCH
+				{
+					description "OCH";
+				}
+				enum OMS
+				{
+					description "OMS";
+				}
+				enum CBR
+				{
+					description "CBR";
+				}
+			}
+		}
+		leaf supportedLayerProtocolName
+		{
+			description "supportedLayer Protocol Name";
+			type uint32;
+			default 0;
+		}
+		
+		leaf ctp
+		{
+			description "The CTP index Li carried by the PTP";
+			type CTP-name;
+			default 0;
+		}
+		leaf interfaceType
+		{
+			description "interface Type ";
+			type enumeration
+			{
+				enum UNI
+				{
+					description "UNI";
+				}
+				enum NNI
+				{
+					description "NNI";
+				}
+			}
+		}
+		
+		leaf opticalPowPac
+		{
+			description "opticalPowPac";
+			type string;
+			default "1.2";
+		}
+		leaf loopback
+		{
+			description "loopback";
+			type enumeration
+			{
+				enum FacilityLoopback
+				{
+					description "Facility Loop back";
+				}
+				enum TerminalLoopback
+				{
+					description "Terminal Loop back";
+				}
+				enum NonLoopback
+				{
+					description "Non Loop back";
+				}
+			}
+		}
+		leaf laserStatus
+		{
+			description "LaserStatus";
+			type enumeration
+			{
+				enum laserOn
+				{
+					description "laserOn";
+				}
+				enum laserOff
+				{
+					description "laserOff";
+				}
+				enum noOpticalModule
+				{
+					description "noOpticalModule";
+				}
+			}
+		}
+		
+		leaf inputPower
+		{
+			description "Input optical power /dBm";
+			type string;
+			default "0";
+		}
+		
+		leaf outputPower
+		{
+			description "ouput optical power";
+			type string;
+			default "0";
+		}
+		
+		leaf inputPowerUpperThreshold
+		{
+			description "input Power Upper Threshold";
+			type string;
+			default "0";
+		}
+		
+		leaf inputPowerLowerThreshold
+		{
+			description "input Power Lower Threshold";
+			type string;
+			default "0";
+		}
+		
+		leaf channelSpace
+		{
+			description "channel Space";
+			type enumeration
+			{
+				enum 5nm
+				{
+					description "5nm";
+				}
+				enum 20nm
+				{	
+					description "20nm";
+				}
+				enum 50GHz
+				{
+					description "50GHz";
+				}
+				enum 100GHz
+				{
+					description "100GHZ";
+				}
+			}
+		}
+		
+		leaf channelNumber
+		{
+			description "channel number 6/12/18";
+			type uint8;
+			default 12;
+		}
+		leaf  expectWavelenthOrFreqency
+		{
+			description "expect Wavelenth Or Freqency";
+		type enumeration
+		{
+			enum 1271
+			{
+				description "1271";
+			}
+			enum 1291
+			{
+				description "1291";
+			}
+			enum 1311
+			{
+				description "1311";
+			}
+			enum 1331
+			{
+				description "1331";
+			}
+			enum 1351
+			{
+				description "1351";
+			}
+			enum 1371
+			{
+				description "1371";
+			}
+			enum 1391
+			{
+				description "1391";
+			}
+			enum 1411
+			{
+				description "1411";
+			}
+			enum 1431
+			{
+				description "1431";
+			}
+			enum 1451
+			{
+				description "1451";
+			}
+			enum 1471
+			{
+				description "1471";
+			}
+			enum 1491
+			{
+				description "1491";
+			}
+			enum 1267.5
+			{
+				description "1267.5";
+			}
+			enum 1274.5
+			{
+				description "1274.5";
+			}
+			enum 1287.5
+			{
+				description "1287.5";
+			}
+			enum 1294.5
+			{
+				description "1294.5";
+			}
+			enum 1307.5
+			{
+				description "1307.5";
+			}
+			enum 1314.5
+			{
+				description "1314.5";
+			}
+			enum 1327.5
+			{
+				description "1327.5";
+			}
+			enum 1334.5
+			{
+				description "1334.5";
+			}
+			enum 1347.5
+			{
+				description "1347.5";
+			}
+			enum 1354.5
+			{
+				description "1354.5";
+			}
+			enum 1367.5
+			{
+				description "1367.5";
+			}
+			enum 1374.5
+			{
+				description "1374.5";
+			}
+		}
+		}
+		
+		leaf actualWavelenthOrFreqency
+		{
+			description "Center wavelength / frequency actual value";
+			type string;
+			default "";
+		}
+		leaf channelSpace_a
+		{
+			description "channel Space a";
+			type string; 
+			default "";
+		}		
+		leaf optModType
+		{
+			description "opt Mod Type";
+			type enumeration
+			{
+				enum WHITELIGHT
+				{
+					description "WHITELIGHT";
+				}
+				enum CWDM
+				{
+					description "CWDM";
+				}
+				enum NWDM
+				{
+					description "NWDM";
+				}
+			}
+		}
+		leaf optModRate
+		{
+			description "opt Mod Rate";
+			type enumeration
+			{
+				enum 25Gb/s
+				{
+					description "25Gb/s";
+				}
+				enum 10Gb/s
+				{
+					description "10Gb/s";
+				}
+			}
+		}
+		
+		leaf optModVendorName
+		{
+			description "opt Mod Vendor Name";
+			type string;
+			default "gjsun";
+		}
+		
+		leaf optModVendorPN
+		{
+			description "opt Mod Vendor PN";
+			type string;
+			default "1234567890";
+		}
+		leaf optModVendorSN
+		{
+			description "opt Mod Vendor SN";
+			type string;
+			default "0987654321";
+		}
+		leaf optModVendorRev
+		{
+			description "opt Mod Vendor Rev";
+			type string;
+			default "1.17";
+		}
+	}
+	container wu_ptp
+	{
+	
+		description "wu li duan kou ptp";
+		leaf name
+		{
+			description "ctp name";
+			type string;
+			default "";
+		}
+		
+		leaf statePac
+		{
+			description "statePac";
+			type string;
+			default "statepac";
+		}
+		
+		leaf layerProtocolName_ptp
+		{
+			type enumeration
+			{
+				enum OCH
+				{
+					description "OCH";
+				}
+				enum OMS
+				{
+					description "OMS";
+				}
+				enum CBR
+				{
+					description "CBR";
+				}
+			}
+		}
+		
+		leaf protectRole
+		{
+			description "protectRole";
+			type enumeration
+			{
+				enum NULL
+				{
+					description "NULL";
+				}
+				enum Protected
+				{
+					description "Protected";
+				}
+				enum primary
+				{
+					description "primary";
+				}
+				enum secondary
+				{
+					description "secondary";
+				}
+			}
+		}
+		
+		leaf serverTp
+		{
+			description "serverTp";
+			type string;
+			default "";
+		}
+	}
+	typedef CTP
+	{
+		
+		description "CTP";
+		type uint32;
+	
+	}
+	container Connection
+	{
+		leaf name 
+		{
+		
+			description "Connection name";
+			type string;
+			default "gjsun";
+		}
+		leaf layerProtocolName
+		{
+			description "layer Protocol Name";
+			type enumeration
+			{
+				enum CBR 
+				{
+					description "CBR";
+				}
+				enum OCH
+				{
+					description "OCH";
+				}
+				enum OMS
+				{
+					description "OMS";
+				}
+			}
+		}
+		
+		leaf requestedCapacity
+		{
+			description "requested Capacity";
+			type string;
+			default "";
+		}
+		leaf ctp
+		{
+			description "CTP";
+			type CTP;
+			default 2;
+		}
+		leaf pgid
+		{
+		
+			description "pgid";
+			type uint8;
+			default 0;
+		}
+	}
+	container PG
+	{
+		leaf pgid
+		{
+			description "pgid";
+			type uint32;
+			default 1;
+		}
+		
+		leaf protectionType
+		{
+			description "protection Type";
+			type enumeration
+			{
+			
+				
+				enum OMS
+				{
+					description "OMS";
+				}
+			}
+		}
+		
+		leaf  reversionMode
+		{
+			description "ReversionMode";
+			type enumeration
+			{
+				
+				enum RETURN
+				{
+					description "RETURN";
+				}
+				enum NON_RETUEN
+				{
+					description "NON_RETUEN";
+				}
+			}
+		}
+		
+		leaf switchType
+		{
+			description "switch Type";
+			type enumeration
+			{
+				enum UNI_SWITCH
+				{
+					description "UNI_SWITCH";
+				}
+				enum BI_SWITCH
+				{
+					description "BI_SWITCH";
+				}
+			}
+			default UNI_SWITCH;
+		}
+		
+		leaf switchReason
+		{
+			description "Switch Reason";
+			type enumeration
+			{
+				
+				enum NO_WITCH
+				{
+					description "NO_WITCH";
+				}
+				enum SF_SWITCH
+				{
+					description "SF_SWITCH";
+				}
+				enum SD_SWITCH
+				{
+					description "SD_SWITCH";
+				}
+				enum MANUAL_SWITCH
+				{
+					description "MANUAL_SWITCH";
+				}
+				enum FORCE_SWITCH
+				{
+					description "FORCE_SWITCH";
+				}
+				
+				enum Cleared
+				{
+					description "Cleared";
+				}
+				enum WTR
+				{
+					description "WTR";
+				}
+				enum LOCK_OUT
+				{
+					description "LOCK_OUT";
+				}
+				
+			}
+		}
+		
+		leaf protectionDirection
+		{
+			description "Protection Direction";
+			type enumeration
+			{
+				
+				enum ToPrimary
+				{
+					description "ToPrimary";
+				}
+				enum ToSecondary
+				{
+					description "ToSecondary";
+				}
+			}
+		}
+		leaf holdOFF
+		{
+			description "holdOFF time /ms";
+			type uint32 ;
+			default 0;
+		}
+		leaf waitToRestoreTime
+		{
+			description "wait To Restore Time";
+			type uint32;
+			default 0;
+		}
+		leaf primaryPort
+		{
+			description "primary Port";
+			type string;
+			default "";
+		}
+		leaf secondaryPort
+		{
+			description "secondary Port";
+			type string;
+			default "";
+		}
+		leaf selecterPort
+		{
+			description "selecter Port";
+			type string;
+			default "";
+		}
+	}
+	
+	container Alarm
+	{
+		description "Alarm";
+		leaf objectName
+		{
+			description "objectName";
+			type string;
+			default "";
+		}
+		
+		leaf objectType
+		{
+		
+			description "objectType";
+			type string;
+			default "";
+		}
+		
+		leaf alarmCode
+		{
+			description "alarmCode";
+			type enumeration
+			{
+			
+				enum Critical
+				{
+					description "Critical";
+				}
+				enum Major
+				{
+					description "Major";
+				}
+				enum Minor
+				{
+					description "Minor";
+				}
+				enum Warning
+				{
+					description "Warning";
+				}
+			}
+		}
+		
+		leaf alarmSerialNo
+		{
+			description "alarm Serial No";
+			type uint32;
+			default 0;
+		}
+		leaf alarmState
+		{
+			description "alarmState";
+			type enumeration
+			{
+				
+				enum START
+				{
+					description "START";
+				}
+				enum END
+				{
+					description "END";
+				}
+			}
+		}
+		
+		leaf  additionalTex
+		{
+			description "additional Tex";
+			type string;
+			default "";
+		}
+		
+		leaf startTime
+		{
+			description "startTime";
+			type string;
+			default "";
+		}
+		
+		leaf endTime
+		{
+			description "endTime";
+			type string;
+			default "";
+		}
+	}
+	
+	container AlarmMaskState
+	{
+		description "Alarm Mask State";
+		leaf objectName 
+		{
+			description "object Name";
+			type string;
+			default "";
+		}
+		leaf objectType
+		{
+			description "object Name";
+			type string;
+			default "";
+		}
+		leaf alarmCode
+		{
+			description "alarm Code";
+			type string;
+			default "";
+		}
+		leaf maskState
+		{
+			description "mask State";
+			type boolean;
+		}
+		
+	}
+	
+	container TCA
+	{
+		leaf tcaSerialNo
+		{
+			description "tca Serial No";
+			type uint32;
+			default 1;
+		}
+		
+		leaf tcaState
+		{
+			description "tca State";
+			type enumeration
+			{
+				
+				enum START
+				{
+					description "START";
+				}
+				enum END
+				{
+					description "END";
+				}
+			}
+		}
+		leaf tcaParameter
+		{
+			description "tca Parameter";
+			type string;
+			default "";
+		}
+		leaf currentValue
+		{
+			description "current Value";
+			type uint32;
+			default 0;
+		}
+		
+		leaf startTime
+		{
+			description "date time";
+			type string;
+			default "";
+		}
+		
+		leaf endTime 
+		{
+			description "end Time";
+			type string;
+			default "";
+		}
+		
+		leaf objectName
+		{
+			description "object Name";
+			type string;
+			default "";
+		}
+		
+		leaf objectType
+		{
+			description "object Type";
+			type string;
+			default "";
+		}
+		
+		leaf pmParameterName
+		{
+			description "pm Parameter Name";
+			type string;
+			default "";
+		}
+		leaf granularity
+		{
+			description "granularity";
+			type enumeration
+			{
+				enum 1min
+				{
+					description "1min";
+				}
+				enum 15min
+				{
+					description "15min";
+				}
+				enum 24h
+				{
+					description "24h";
+				}
+			}
+		}
+		
+		leaf thresholdValue
+		{
+			description "threshold Value";
+			type uint32;
+			default 0;
+		}
+		
+		leaf thresholdType
+		{
+			description "Threshold Type";
+			type enumeration
+			{
+				enum HIGH
+				{
+					description "HIGH";
+				}
+				enum LOW
+				{
+					description "LOW";
+				}
+				
+			}
+		}
+	}
+	
+	container performance
+	{
+		description "performance";
+		leaf objectName
+		{
+			description "object Name";
+			type string;
+			default "";
+		}
+		leaf objectType
+		{
+			description "object Type";
+			type  string;
+			default "";
+		}
+		
+		leaf granularity
+		{
+			description "granularity";
+			type enumeration
+			{
+				enum 1min
+				{
+					description "1min";
+				}
+				enum 15min
+				{
+					description "15min";
+				}
+				enum 24h
+				{
+					description "24h";
+				}
+			}
+		}
+		
+		leaf pmParameterName
+		{
+			description "pmParameterName";
+			type string;
+			default "";
+		}
+		leaf digitalPmValue
+		{
+			description "digitalPm Value";
+			type uint32;
+			default 0;
+		}
+		leaf analogPmValue
+		{
+			description "Analog Pm Value";
+			type string;
+			default "";
+		}
+		
+		leaf startTime
+		{
+			description "startTime";
+			type string;
+			default "";
+		}
+		
+		leaf maxValue
+		{
+			description "max Value";
+			type uint32;
+			default 0;
+		}
+		
+		leaf minValue
+		{
+			description "minValue";
+			type uint32;
+			default 0;
+		}
+		
+		leaf averageValue
+		{
+			description "Average Value";
+			type uint32;
+			default 0;
+		}
+	}
+	
+	container Event
+	{
+		leaf eventSerialNo
+		{
+			description "event SerialNo";
+			type uint32;
+			default 0;
+		}
+		leaf eventType
+		{
+			description "event Type";
+			type enumeration
+			{
+			
+				enum ObjectCreation
+				{
+					description "Object Creation";
+				}
+				enum AttributeValueChange
+				{
+					description "Attribute Value Change";
+				}
+				enum ObjectDeletion
+				{
+					description "Object Deletion";
+				}
+			}
+		}
+		
+		leaf objectName
+		{
+			description "object Name";
+			type string;
+			default "";
+		}
+		leaf objectType
+		{
+			description "object Type";
+			type string;
+			default "";
+		}
+		
+		leaf attributeName
+		{
+			description "attribute Name";
+			type string;
+			default "";
+		}
+		
+		leaf newValue
+		{
+			description "new Value";
+			type string;
+			default "";
+		}
+		
+		leaf oldValue
+		{
+			description "old Value";
+			type string;
+			default "";
+		}
+	}
+	
+	
+	}
+	
+    
