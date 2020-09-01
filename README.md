@@ -122,6 +122,6 @@ YANG建模NETCONF协议的操作和内容层（RFC4741,Section1.1）<br>
   * 用enum时需要定义type enumeration
   
   ##### 遇到的问题
-   get-data --datastore running --filter-xpath /oven:/* <br>
-   cli_send_recv: Failed to send the RPC.<br>
+  get-data --datastore running --filter-xpath /oven:/* <br>
+  cli_send_recv: Failed to send the RPC.<br>
   ly ERROR: Unexpected character(s) 'o' (oven:/*). <br>

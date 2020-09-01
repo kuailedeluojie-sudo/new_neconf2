@@ -23,7 +23,7 @@ static void * open_wdm_thread(void *arg)
 {
 		
 		(void) arg;
-		while(open_wdm_tid)
+		while(Open_Wdm.open_wdm_tid)
 		{
 			
 		}
@@ -77,6 +77,9 @@ sr_plugin_init_cb(sr_session_ctx_t *session, void **private_data)
     if (rc != SR_ERR_OK) {
         goto error;
     }
+	 /* sysrepo/plugins.h provides an interface for logging */
+    SRP_LOG_DBGMSG("OPEN_WDM: open_wdm plugin initialized successfully.");
+    return SR_ERR_OK;
 error:
     SRP_LOG_ERR("OPEN_WDM: open_wdm plugin initialization failed: %s.", sr_strerror(rc));
     sr_unsubscribe(subscription);
