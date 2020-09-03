@@ -45,11 +45,26 @@ open_wdm_config_change_cb(sr_session_ctx_t *session, const char *module_name, co
     (void)request_id;
     (void)private_data;
 	
-	rc = sr_get_item(session, "/open_wdm:/wdm/name", 0, &val);
+	  rc = sr_get_item(session, "/open_wdm:/wdm/turned-on", 0, &val);
     if (rc != SR_ERR_OK) {
         goto sr_error;
     }
-	//节点对应信息是"/open_wdm:/wdm/name" ,这个节点应该用字符数组保存起来，定义一个结构体来保存这些信息
+	if (val->data.bool_val)
+	{
+		SRP_LOG_ERR("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");	
+		
+	}
+	else
+	{	
+		SRP_LOG_ERR("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK");
+	}
+		
+	//获得节点信息的时候出错
+	rc = sr_get_item(session, "/open_wdm:/open_wdm/name", 0, &val);
+    if (rc != SR_ERR_OK) {
+        goto sr_error;
+    }
+	//节点对应信息是"/open_wdm:/open_wdm/name" ,这个节点应该用字符数组保存起来，定义一个结构体来保存这些信息
 	//string_val string
 	//拷贝名字过来
 	strncpy(Open_Wdm.name,val->data.string_val,DATA_LENGTH);

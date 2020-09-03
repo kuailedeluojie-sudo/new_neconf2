@@ -1,6 +1,6 @@
 module open_wdm {
     namespace "urn:sysrepo:open_wdm";
-    prefix wdm;
+    prefix dm;
     revision 2020-08-25 
 	{
         description "Initial revision.";
@@ -12,7 +12,7 @@ module open_wdm {
 		description "eq-name range that is accepted by the wdm.";
 		type uint32; 
 	}
-	container wdm 
+	container open_wdm 
 	{
 		description "configuration container of the  wdm";
 		leaf name 
@@ -21,7 +21,11 @@ module open_wdm {
 			type string ;
 			default "gjsun";
 		}
-	
+	 leaf turned-on {
+            description "Main switch determining whether the oven is on or off.";
+            type boolean;
+            default false;
+        }
 	leaf uuid
 	{
 		description "The network element is uniquely identified, and MAC address is recommended";
