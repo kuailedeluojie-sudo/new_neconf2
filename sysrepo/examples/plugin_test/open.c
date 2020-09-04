@@ -68,9 +68,9 @@ oven_thread(void *arg)
                 oven_temperature = config_temperature;
                 /* oven reached the desired temperature, create a notification */
                 //发送一个通知，温度已经达到了
-                rc = sr_event_notif_send(sess, "/oven:oven-ready", NULL, 0);
+                rc = sr_event_notif_send(sess, "/open:oven-ready", NULL, 0);
                 if (rc != SR_ERR_OK) {
-                    SRP_LOG_ERR("OVEN: Oven-ready notification generation failed: %s.", sr_strerror(rc));
+                    SRP_LOG_ERR("OPEN: Oven-ready notification generation failed: %s.", sr_strerror(rc));
                 }
             }
         } else if (oven_temperature > config_temperature) {
@@ -87,7 +87,7 @@ oven_thread(void *arg)
             /* food is inserted once the oven is ready */
             insert_food_on_ready = 0;
             food_inside = 1;
-            SRP_LOG_DBGMSG("OVEN: Food put into the oven.");
+            SRP_LOG_DBGMSG("OPEN: Food put into the oven.");
         }
     }
 
@@ -108,24 +108,28 @@ oven_config_change_cb(sr_session_ctx_t *session, const char *module_name, const 
     (void)private_data;
 
     /* get the value from sysrepo, we do not care if the value did not change in our case */
-    rc = sr_get_item(session, "/oven:oven/temperature", 0, &val);
+    rc = sr_get_item(session, "/open:open/temperature", 0, &val);
     if (rc != SR_ERR_OK) {
         goto sr_error;
     }
     //获取温度，保存到全局变量中
     config_temperature = val->data.uint8_val;
-    sr_free_val(val);
+    //释放指针
+	sr_free_val(val);
     //获取烤箱是否打开的布尔值
-    rc = sr_get_item(session, "/oven:oven/turned-on", 0, &val);
+    rc = sr_get_item(session, "/open:open/turned-on", 0, &val);
     if (rc != SR_ERR_OK) {
         goto sr_error;
     }
+	//在这里添加节点信息的获取
+	
     //如果烤箱打开并且线程没有打开
     if (val->data.bool_val && oven_tid == 0) {
         /* the oven should be turned on and is not (create the oven thread) */
         //创建线程
         rc = pthread_create((pthread_t *)&oven_tid, NULL, oven_thread, NULL);
-        if (rc != 0) {
+        if (rc != 0)
+		{
             goto sys_error;
         }
     } else if (!val->data.bool_val && oven_tid != 0) {
@@ -148,12 +152,12 @@ oven_config_change_cb(sr_session_ctx_t *session, const char *module_name, const 
     return SR_ERR_OK;
 
 sr_error:
-    SRP_LOG_ERR("OVEN: Oven config change callback failed: %s.", sr_strerror(rc));
+    SRP_LOG_ERR("OPEN: Open config change callback failed: %s.", sr_strerror(rc));
     return rc;
 
 sys_error:
     sr_free_val(val);
-    SRP_LOG_ERR("OVEN: Oven config change callback failed: %s.", strerror(rc));
+    SRP_LOG_ERR("OPEN: Open config change callback failed: %s.", strerror(rc));
     return SR_ERR_OPERATION_FAILED;
 }
 //找烤箱的温度和食物是否放进了烤箱中的状态
@@ -171,9 +175,9 @@ oven_state_cb(sr_session_ctx_t *session, const char *module_name, const char *pa
 
     sprintf(str, "%u", oven_temperature);
     //温度
-    *parent = lyd_new_path(NULL, sr_get_context(sr_session_get_connection(sess)), "/oven:oven-state/temperature", str, 0, 0);
+    *parent = lyd_new_path(NULL, sr_get_context(sr_session_get_connection(sess)), "/open:oven-state/temperature", str, 0, 0);
     //食物是否放进烤箱中
-    lyd_new_path(*parent, NULL, "/oven:oven-state/food-inside", food_inside ? "true" : "false", 0, 0);
+    lyd_new_path(*parent, NULL, "/open:oven-state/food-inside", food_inside ? "true" : "false", 0, 0);
 
     return SR_ERR_OK;
 }
@@ -193,14 +197,14 @@ oven_insert_food_cb(sr_session_ctx_t *session, const char *path, const sr_val_t 
     (void)private_data;
     //如果食物已经放进烤箱
     if (food_inside) {
-        SRP_LOG_ERRMSG("OVEN: Food already in the oven.");
+        SRP_LOG_ERRMSG("OPEN: Food already in the oven.");
         return SR_ERR_OPERATION_FAILED;
     }
     //对比变量是否为枚举on-oven-ready
     if (strcmp(input[0].data.enum_val, "on-oven-ready") == 0) {
         //如果放进去的食物已经在等待状态
         if (insert_food_on_ready) {
-            SRP_LOG_ERRMSG("OVEN: Food already waiting for the oven to be ready.");
+            SRP_LOG_ERRMSG("OPEN: Food already waiting for the oven to be ready.");
             return SR_ERR_OPERATION_FAILED;
         }
         //食物放进烤箱等待的标志位为1
@@ -210,7 +214,7 @@ oven_insert_food_cb(sr_session_ctx_t *session, const char *path, const sr_val_t 
     
     insert_food_on_ready = 0;
     food_inside = 1;
-    SRP_LOG_DBGMSG("OVEN: Food put into the oven.");
+    SRP_LOG_DBGMSG("OPEN: Food put into the oven.");
     return SR_ERR_OK;
 }
 //食物从烤箱里面拿出来
@@ -229,12 +233,12 @@ oven_remove_food_cb(sr_session_ctx_t *session, const char *path, const sr_val_t 
     (void)private_data;
     //如果食物不在烤箱内
     if (!food_inside) {
-        SRP_LOG_ERRMSG("OVEN: Food not in the oven.");
+        SRP_LOG_ERRMSG("OPEN: Food not in the oven.");
         return SR_ERR_OPERATION_FAILED;
     }
     //从烤箱拿出食物
     food_inside = 0;
-    SRP_LOG_DBGMSG("OVEN: Food taken out of the oven.");
+    SRP_LOG_DBGMSG("OPEN: Food taken out of the oven.");
     return SR_ERR_OK;
 }
 //在烤箱的基础上修改这个，主要是RPC和通知的函数
@@ -257,7 +261,7 @@ sr_plugin_init_cb(sr_session_ctx_t *session, void **private_data)
     /* subscribe for oven module changes - also causes startup oven data to be copied into running and enabling the module */
     //订阅oven模块时调用oven_config_change_cb函数，设置标志位
     //函数中主要获取温度和设置线程开关
-    rc = sr_module_change_subscribe(session, "oven", NULL, oven_config_change_cb, NULL, 0,
+    rc = sr_module_change_subscribe(session, "open", NULL, oven_config_change_cb, NULL, 0,
             SR_SUBSCR_ENABLED | SR_SUBSCR_DONE_ONLY, &subscription);
     if (rc != SR_ERR_OK) {
         goto error;
@@ -265,30 +269,30 @@ sr_plugin_init_cb(sr_session_ctx_t *session, void **private_data)
     //xpath是获取yang文件的节点信息
     /* subscribe as state data provider for the oven state data */
     //订阅烤箱状态数据的状态数据提供程序
-    rc = sr_oper_get_items_subscribe(session, "oven", "/oven:oven-state", oven_state_cb, NULL, SR_SUBSCR_CTX_REUSE, &subscription);
+    rc = sr_oper_get_items_subscribe(session, "open", "/open:oven-state", oven_state_cb, NULL, SR_SUBSCR_CTX_REUSE, &subscription);
     if (rc != SR_ERR_OK) {
         goto error;
     }
     //订阅insert-food RPC调用函数
     /* subscribe for insert-food RPC calls */
-    rc = sr_rpc_subscribe(session, "/oven:insert-food", oven_insert_food_cb, NULL, 0, SR_SUBSCR_CTX_REUSE, &subscription);
+    rc = sr_rpc_subscribe(session, "/open:insert-food", oven_insert_food_cb, NULL, 0, SR_SUBSCR_CTX_REUSE, &subscription);
     if (rc != SR_ERR_OK) {
         goto error;
     }
 
     /* subscribe for remove-food RPC calls */
     //拿出食物
-    rc = sr_rpc_subscribe(session, "/oven:remove-food", oven_remove_food_cb, NULL, 0, SR_SUBSCR_CTX_REUSE, &subscription);
+    rc = sr_rpc_subscribe(session, "/open:remove-food", oven_remove_food_cb, NULL, 0, SR_SUBSCR_CTX_REUSE, &subscription);
     if (rc != SR_ERR_OK) {
         goto error;
     }
 
     /* sysrepo/plugins.h provides an interface for logging */
-    SRP_LOG_DBGMSG("OVEN: Oven plugin initialized successfully.");
+    SRP_LOG_DBGMSG("OPEN: Open plugin initialized successfully.");
     return SR_ERR_OK;
 
 error:
-    SRP_LOG_ERR("OVEN: Oven plugin initialization failed: %s.", sr_strerror(rc));
+    SRP_LOG_ERR("OPEN: Open plugin initialization failed: %s.", sr_strerror(rc));
     sr_unsubscribe(subscription);
     return rc;
 }
@@ -301,5 +305,5 @@ sr_plugin_cleanup_cb(sr_session_ctx_t *session, void *private_data)
 
     /* nothing to cleanup except freeing the subscriptions */
     sr_unsubscribe(subscription);
-    SRP_LOG_DBGMSG("OVEN: Oven plugin cleanup finished.");
+    SRP_LOG_DBGMSG("OPEN: Open plugin cleanup finished.");
 }
